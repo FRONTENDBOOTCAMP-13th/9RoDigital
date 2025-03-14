@@ -6,23 +6,198 @@
     <title>윌리의 서제</title>
     <link rel="icon" href="/willie-logo.svg" />
     <link
-      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="./src/style..css">
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <h1>Vite + Tailwindcss</h1>
-    <h2>Vite로 환경 구성하고 Netlify로 배포하기</h2>
-    <ul>
-      <li>컴포넌트를 분리해서 구현해주세요.</li>
-      <li>컴포넌트의 코드 리뷰를 AI를 통해 받은 후 개선해보세요.</li>
-      <li>개선점을 문서화하여 정리해 보세요</li>
-      <li>구현한 컴포넌트를 기반으로 페이지를 만들어주세요.</li>
-      <li>접근성과 성능을 신경써주세요</li>
-      <li>소통하고 화합하며 프로젝트 즐겨주세요.</li>
-      <li>결과보다 과정이 중요합니다.‼️</li>
-    </ul>
+    <!--header-->
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <img class="logo" src="./public/MyPage/헤더로고.png" alt="" />
+            </li>
+            <li>
+              <button>투데이</button>
+            </li>
+            <li>
+              <button>피드</button>
+            </li>
+            <li>
+              <button>검색</button>
+            </li>
+            <li>
+              <button><strong>내서재</strong></button>
+            </li>
+            <li>
+              <button>관리</button>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>
+              <img class="time" src="./public/MyPage/알림.png" alt="" />
+            </li>
+            <li>
+              <button class="log-out ">로그아웃</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--main-->
+    <main>
+      <!--left-->
+      <div id="left">
+        <div class="profill">
+          <img src="./public/MyPage/프로필.png" alt="" />
+          <div class="name">
+            <h1>꿈을 꾸는 해적왕</h1>
+            <div class="categori">
+              <p>팔로워:0</p>
+              <p>팔로잉:0</p>
+            </div>
+          </div>
+        </div>
+        <div class="highlight">
+          <button>
+            <h1>0</h1>
+            <p>하이라이트</p>
+          </button>
+          <button>
+            <h1>0</h1>
+            <p>포스트</p>
+          </button>
+          <button>
+            <h1>0</h1>
+            <p>한 줄 리뷰</p>
+          </button>
+          <button>
+            <h1>0</h1>
+            <p>필기</p>
+          </button>
+        </div>
+        <div class="write">
+          <div class="plus">
+            <button>+글쓰기</button>
+          </div>
+          <div class="book">
+            <button>도서담기</button>
+          </div></div>
+        <img src="./public/MyPage/구독.png" alt="" />
+      </div>
+      <!--right-->
+      <div id="right">
+        <div class="commend">
+          <h4>추천 도서</h4>
+          <div class="commendbooklist">
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/싯타르타.png" alt="" />
+              <h2>싯다르타</h2>
+              <p>헤르만 헤세 지음</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/결국.jpeg" alt="" />
+              <h2>결국 잘 되는...</h2>
+              <p>앤드루 매코널 지음</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/단어.jpg" alt="" />
+              <h2>단어가 품은...</h2>
+              <p>황선염</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/스토너.jpg" alt="" />
+              <h2>스토너</h2>
+              <p>존월리엄스 지음</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/그렇게.jpeg" alt="" />
+              <h2>그렇게 나는...</h2>
+              <p>최지은</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/퇴마록.jpg" alt="" />
+              <h2>퇴마록 국내편</h2>
+              <p>이우혁</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/율의.jpg" alt="" />
+              <h2>율의 시선</h2>
+              <p>김민서</p>
+            </div>
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/급류.jpeg" alt="" />
+              <h2>급류</h2>
+              <p>정대건</p>
+            </div>
+          </div>
+        </div>
+        <div class="bookcase">
+          <div class="bookcasetitle">
+            <h4>책장</h4> 
+            <h2>전체보기</h2>
+          </div>
+          <div class="commendbooklist">
+            <div class="commendbook">
+              <img src="./public/MyPage/추천도서/책장.png" alt="" />
+              <h2>My Favorite</h2>
+              <p>0권</p>
+            </div>
+          </div>
+        </div>
+        <div class="calendar">
+          <div class="bookcasetitle">
+            <h4>3월 독서 캘린더</h4> 
+            <h2>전체보기</h2>
+          </div>
+          <img src="./public/MyPage/달력.png" alt="" />
+        </div>
+        <div class="riport">
+          <div class="bookcasetitle">
+            <div class="ripoetlist">
+              <h4>독서 리포트</h4> 
+              <p>밀리 회원들은 한 달 평균 2권 읽어요</p>
+            </div>
+            <h2>전체보기</h2>
+          </div>
+          <div class="gauge">
+            <div class="gaugelist">
+              <div class="mygauge">
+                <h2>나</h2>
+                <button></button>
+                <h2 class="point">0권</h2>
+              </div>
+              <div class="allgauge">
+                <h2>밀리</h2>
+                <button><img src="./public/MyPage/게이지.png" alt="" /></button>
+                <h2>2권</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activity">
+          <h4>독서 활동</h4>
+          <div class="activitybutton">
+            <button>
+              <h2>나의 인생책</h2>
+              <h4>설정하기</h4>
+              <img src="./public/MyPage/인생책.png" alt="" />
+            </button>
+            <button>
+              <h2>나의 관심사</h2>
+              <h4>설정하기</h4>
+              <img src="./public/MyPage/관심사.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
