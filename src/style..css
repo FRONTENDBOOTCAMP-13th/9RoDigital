@@ -160,259 +160,580 @@
   --card-height: 300px;
   --card-width: calc(var(--card-height) / 1.5);
 }
-* {
+/*초기화*/
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: -0.6px;
 }
 a,a:link,a:visited{
-  color: inherit;
   text-decoration: none;
+}
+ul{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 li{
   list-style: none;
 }
-main{
-  display: flex;
-  margin-top: 7.5%;
+body{
+  font-weight: 400;
+  font-size: 14px;
+  color: #242424;
 }
-/*header*/
+/*헤더*/
 header{
   position: fixed;
   background-color: white;
-  color: black;
-  top: 0;
+  top:0;
   z-index: 1;
   width: 100%;
-  padding: 0 3.25rem;
-  border-bottom: 0.1px solid #000;
-}
-.container{
-  width: 100%;
-  margin: 0 auto;
-}
-header .logo{
-  width: 3rem;
-  height: 1.3rem;
-}
-header .time{
-  width: 1.75rem;
-  height: 1.75rem;
+  border-bottom: 1px solid #ededed;
 }
 header .container{
   display: flex;
+  height: 64px;
+  padding: 0px 4.25%;
+}
+/*헤더-로고*/
+.header-logo{
+  width: 50px;
+  height: 100%;
+}
+.header-logo a{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header-logo img{
+  width: 50px;
+  height: 21px;
+}
+/*헤더-요소*/
+.header-element{
+  height: 100%;
+  margin-left: 24px;
+}
+.header-element ul{
+  display: flex;
+  flex-direction: row;
+}
+.header-element a{
+  display: flex;
+  width: 100%;
+  height: inherit;
+  padding: 0px 24px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #242424;
+}
+.header-element a.select{
+  font-weight: 700;
+}
+/*헤더-버튼*/
+.header-button{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: auto;
+}
+.header-button a img{
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.header-button .header-login{
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.header-button .header-login button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  font-size: 12px;
+  color: #fff;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #242424;
+}
+/*메인*/
+main{
+  width: 100%;
+  height: 100%;
+}
+main .container{
+  width: 100%;
+  height: 100%;
+}
+/*서브-헤더*/
+.sub-header{
+  z-index: 1;
+  top: 65px;
+  position: sticky;
+  background-color: #fff;
+}
+.sub-headerbar{
+  width: 100%;
+  height: 38px;
+  display: flex;
+}
+.Mybookcase{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  opacity: 0;
+}
+.plus{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 4.25%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.plus-button{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+/*메인-전체*/
+.content{
+  margin-top: 65px;
+  display: flex;
+  width: 100%;
+  padding: 0px 4.25%;
+  overflow: hidden;
+}
+/*메인-왼쪽*/
+.left{
+  width: 27.5%;
+  padding: 0px 20px;
+}
+.left section{
+  padding: 0px 0px 24px;
+}
+/*메인-왼쪽-프로필*/
+.profile{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-element{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.profile-image{
+  display: inline-block;
+  width: 80px;
+}
+.profile-image img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+.profile-name{
+  display: flex;
+  flex-direction: column;
+}
+.profile-name span{
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+}
+.before{
+  align-items: center;
+  margin-left: 4px;
+  font-weight: 700;
+  color: #6f6f6f;
+}
+.profile-tag{
+  display: flex;
+}
+.profile-tag a{
+  display: flex;
+  gap: 4px;
+}
+.profile-tag span{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+}
+.profile-tag .select{
+  font-weight: 700;
+}
+.post{
+  position: relative;
+}
+.post1{
+  opacity: 1;
+}
+.post2{
+  margin-top: -125px;
+  opacity: 0;
+}
+/*메인-왼쪽-하이라이트*/
+.highlights{
+  display: flex;
+  margin: 20px -8px;
   justify-content: space-between;
   align-items: center;
+}
+.highlights a{
   width: 100%;
-}
-header nav ul{
-  display: flex;
-}
-header nav ul li{
-  padding: 15px;
-}
-header button{
-  background-color: transparent;
-  border: 0;
+  height: 100%;
   cursor: pointer;
 }
-header nav ul li button{
-  font-size: 1rem;
-}
-header nav ul li button.log-out{
-  color: white;
-  background-color: black;
-  border-radius: 10%;
-  padding: 4px 10px;
-}
-/*left*/
-#left{
-  width: auto;
-  margin-left: 4%;
-}
-/*profill*/
-#left .profill{
+.highlights-content{
   display: flex;
-  margin-bottom: 1rem;
-}
-#left .profill .name{
-  display: block;
-  margin-top: 1.75rem;
-}
-#left .profill .name h1{
-  font-size: 1.25rem;
-}
-#left .profill .name .categori{
-  display: flex;
-}
-/*highlight*/
-#left .highlight{
-  margin-bottom: 1rem;
-}
-#left .highlight button{
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  width: 6rem;
-}
-#left .highlight button h1{
-  font-size: 1.25rem;
-}
-#left .highlight button p{
-  font-size: 0.75rem;
-}
-/*write*/
-#left .write{
-  display: flex;
-  justify-content: space-evenly;  
-  margin-bottom: 1rem;
-}
-#left .write button{
-  border-radius: 20px;
-  width: 10rem;
-  margin: 0.5rem;
-  height: 2.5rem;
-}
-#left .write .plus button{
-  background-color: #000;
-  color: white;
-}
-#left .write .book button{
-  background-color: white;
-  color: black;
-}
-/*commend*/
-#right .commend{
-  margin-bottom: 5%;
-}
-#right .commend h4{
-  font-size: 1.5rem;
-}
-#right .commend h2{
-  font-size: 1rem;
-}
-#right .commend p{
-  font-size: 0.75rem;
-}
-#right .commend .commendbooklist{
-  display: flex;
-}
-#right .commend .commendbooklist .commendbook img{
-  width: 7rem;
-  height: 10rem;
-  border-radius: 20px;
-}
-#right .commend .commendbook{
-  margin-right: 1rem;
-}
-/*bookcase*/
-#right .bookcase{
-  margin-bottom: 5%;
-}
-#right .bookcasetitle h4{
-  font-size: 1.5rem;
-}
-#right .bookcasetitle h2{
-  font-size: 1rem;
-  font-weight: none;
-}
-#right .bookcasetitle{
-  display: flex;
-  justify-content: space-between
-}
-#right .bookcase .commendbooklist{
-  display: flex;
-}
-#right .bookcase .commendbooklist .commendbook img{
-  width: 10rem;
-  height: 10rem;
-  border-radius: 20px;
-}
-/*calendar*/
-#right .calendar{
-  margin-bottom: 3%;
-}
-#right .calendar img{
-  width: 60rem;
-}
-/*riport*/
-#right .riport{
-  margin-bottom: 3%;
-}
-#right .riport .bookcasetitle{
-  margin-bottom: 0;
-}
-#right .riport .bookcasetitle.ripoetlist{
-  margin-bottom: 0;
-}
-#right .riport h4{
- font-size: 1.5rem;
-}
-#right .riport .gauge .gaugelist .mygauge h2{
-  font-size: 1rem;
+  flex-direction: column;
   text-align: center;
 }
-#right .riport .gauge .gaugelist .mygauge .point{
-  color: blueviolet;
+.highlights-num{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242424;
 }
-#right .riport .gauge .gaugelist .allgauge h2{
-  font-size: 1rem;
- }
-#right .riport p{
-  font-size: 0.8rem;
+.highlights-name{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
 }
-#right .riport .gauge .gaugelist{
+/*메인-왼쪽-버튼*/
+.button{
   display: flex;
+  gap: 12px;
 }
-#right .riport .gauge .gaugelist .mygauge{
+.write{
+  height: 40px;
   display: flex;
-  margin: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #242424;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 100px;
 }
-#right .riport .gauge .gaugelist .allgauge{
+.book{
+  height: 40px;
   display: flex;
-  margin: 1%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #242424;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 100px;
 }
-#right .riport .gauge button{
-  width: 25rem;
-  height: 1.75rem;
-  background-color: #f7f7f7;
-  border: none;
+/*메인-왼쪽-광고*/
+.post{
+  margin-top: 16px;
 }
-#right .riport .gauge img{
-  width: 25rem;
-  height: 1.75rem;
-  border: none;
-  margin-top: -2.5%;
+.post img{
+  width: 100%;
+  height: 62px;
 }
-#right .riport .gauge h2{
-  font-size: 1.25rem;
+/*메인-오른쪽*/
+.right{
+  width: 75%;
+  padding-left: 44px;
 }
-/*activity*/
-#right .activity h4{
-  font-size: 1.5rem;
-  margin-bottom: 1%;
-}
-#right .activity .activitybutton{
+.right-title{
   display: flex;
+  position: relative;
+  flex-direction: column;
+  gap:2px;
 }
-#right .activity .activitybutton button{
-  text-align: left;
-  width: 8rem;
-  height: 8rem;
+.right-title h4{
+  display: flex;
+  gap: 2px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+  width: 100%;
+}
+.right-title p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+}
+.right-title a{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f6f6f;
+  cursor: pointer;
+}
+.right-list{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 24px 0px;
+  gap: 12px;
+  overflow: hidden;
+}
+/*메인-오른쪽-추천 도서*/
+.book-content{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+.book-list{
+  display: flex;
+  align-items: baseline;
+}
+.book{
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.book-select{
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+.book-element{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  gap: 8px;
+}
+.book-element img{
+  width: 100px;
+  height: 160px;
   border-radius: 10px;
-  border: none;
-  margin-left: 2.5%;
 }
-#right .activity .activitybutton h4{
-  margin: 1%;
-  font-size: 1rem;
+.book-option{
+  width: 100%;
+  text-align: left;
 }
-#right .activity .activitybutton h2{
-  margin: 1%;
-  font-size: 0.75rem;
+.book-name{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
 }
-#right .activity .activitybutton img{
-  width: 5rem;
-  height: 5rem;
-  float: right;
+.book-sub{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.book a{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 15px;
+}
+/*메인-오른쪽-책장*/
+.bookcase{
+  display: flex;
+  flex-direction: column;
+  width: 148px;
+}
+.bookcase-image{
+  margin-right: 16px;
+  width: 148px;
+  height: 148px;
+}
+.bookcase-image img{
+  width: 100%;
+  height: 100%;
+  object-fit:  cover;
+}
+.bookcase-name p{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #242424;
+  margin-left: 1px;
+}
+.bookcase-name span{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6f6f6f;
+}
+/*메인-오른쪽-달력*/
+.calendar img{
+  width: 100%;
+  height: 375px;
+}
+/*메인-오른쪽-리포트*/
+.riport-list{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.riport-list li{
+  width: 100%;
+  height: 20px;
+}
+.riport-list li .target{
+  display: table-cell;
+  padding-right: 8px;
+  color: #242424;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.prograss-bar{
+  display: table-cell;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+.prograss-state-mili{
+  width: 40%;
+  height: 20px;
+  background-color: #c1c1c1;
+}
+.count{
+  display: table-cell;
+  padding-left: 8px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*메인-오른쪽-독서 활동*/
+.read{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.read-book{
+  margin-right: 12px;
+  position: relative;
+  display: flex;
+  width: 157px;
+  height: 160px;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+}
+.read-book a{
+  padding: 16px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.read-book a div{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.read-book a img{
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 68px;
+  height: 68px;
+}
+.read-name{
+  color: #6f6f6f;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+.read-caption{
+  color: #242424;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+/*반응형*/
+@media  screen and (max-width:1440px) {
+  header .container{
+    padding: 0px 24px;
+  }
+  .content{
+    padding: 0px 24px;
+  }
+  .plus{
+    padding-right: 24px;
+  }
+}
+@media  screen and (max-width:1024px) {
+  .plus{
+    padding-right: 14px;
+  }
+  .Mybookcase{
+    opacity: 1;
+  }
+  .content{
+    flex-direction: column;
+    
+  padding: 0px 1%;
+  }
+  .left{
+    width: 100%;
+  }.right{
+    width: 100%;
+  }
+  .post1{
+    opacity: 0;
+  }
+  .post2{
+    opacity: 1;
+  }
+}
+@media  screen and (max-width:768px) {
+  main{
+    top: 64px;
+  }
+  .sub-header{  
+  top: 0px;
+  }
+  header{
+    top: auto;
+    bottom: 0;
+  }
 }
