@@ -35,13 +35,13 @@ function setupButtonGroups() {
           if (isClickedButton && !isCurrentlyActive) {
             btn.classList.remove('button-inactive');
             btn.classList.add('button-active');
-            btn.setAttribute('aria-pressed', 'true');
+            btn.setAttribute("aria-selected", "true");
           }
           // 클릭하지 않은 버튼이 활성화되어 있으면 비활성화
           else if (!isClickedButton && isCurrentlyActive) {
             btn.classList.remove('button-active');
             btn.classList.add('button-inactive');
-            btn.setAttribute('aria-pressed', 'false');
+            btn.setAttribute("aria-selected", "false");
           }
         });
       });
