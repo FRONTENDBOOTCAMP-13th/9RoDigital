@@ -156,3 +156,12 @@
   /* Paragraph Spacing */
   --paragraph-spacing-default: 0px;
 }
+
+/* custom style */
+@layer components {
+  .list-style li:not(:first-child):before {
+    content: '|';
+    margin: 0 12px;
+    color: var(--gray-09);
+  }
+}

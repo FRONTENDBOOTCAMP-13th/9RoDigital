@@ -15,5 +15,6 @@
   },
   "tailwindCSS.includeLanguages": {
     "plaintext": "html"
-  }
+  },
+  "livePreview.defaultPreviewPath": "/src/login/components/button.html"
 }
