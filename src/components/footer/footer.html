@@ -1,35 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>윌리의 서제</title>
     <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
-    <link
-      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <details class="group text-xs text-gray-500">
-      <summary class="flex items-center justify-between cursor-pointer p-2 select-none">
-        <span class="flex items-center gap-1">
-          사업자 정보 펼쳐보기
-          <span class="transition-transform group-open:rotate-180">&#9660;</span>
-        </span>
-      </summary>
-      <div class="flex flex-row flex-wrap">
-        <p><strong>대표이사:</strong> 박현진</p>
-        <p><strong>사업자등록번호:</strong> 423-88-00370</p>
-        <p><strong>호스팅 제공자:</strong> (주)밀리의 서재</p>
-        <p><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</p>
-        <p><strong>주소:</strong> 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</p>
-        <p><strong>개인정보보호 관련 문의:</strong> privacy@millie.town</p>
-        <p><strong>마케팅 제휴 문의:</strong> business@millie.town</p>
-        <p><strong>고객센터:</strong> 070-7510-5415</p>
-      </div>
-    </details>
+    <fieldset class="border-4">
+      <legend class="mx-3">더보기 버튼</legend>
+      <details class="group text-xs text-gray-500">
+        <summary class="flex items-center justify-between cursor-pointer select-none">
+          <span class="flex items-center gap-1">
+            사업자 정보 펼쳐보기
+            <span class="transition-transform group-open:rotate-180">&#9660;</span>
+          </span>
+        </summary>
+        <div class="flex flex-row flex-wrap">
+          <p><strong>대표이사:</strong> 박현진</p>
+          <p><strong>사업자등록번호:</strong> 423-88-00370</p>
+          <p><strong>호스팅 제공자:</strong> (주)밀리의 서재</p>
+          <p><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</p>
+          <p><strong>주소:</strong> 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</p>
+          <p><strong>개인정보보호 관련 문의:</strong> privacy@millie.town</p>
+          <p><strong>마케팅 제휴 문의:</strong> business@millie.town</p>
+          <p><strong>고객센터:</strong> 070-7510-5415</p>
+        </div>
+      </details>
+    </fieldset>
+    <fieldset class="border-4">
+      <legend class="mx-3">약관들</legend>
+      <li>
+        <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 가제 텍스트">
+          가제 텍스트
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+              fill="#444444"
+            />
+          </svg>
+        </a>
+      </li>
+    </fieldset>
+    <fieldset class="border-4">
+      <legend class="mx-3">footer 조립본</legend>
+      <footer class="text-(--light-text-03) mb-[4.375rem] lg:mb-0">
+        <div>
+          <h3 class="text-black font-[500]">(주) 윌리의 서재</h3>
+          <ul>
+            <li>
+              <a href="#void"><img src="" alt="" /></a>
+            </li>
+            <li>
+              <a href="#void"><img src="" alt="" /></a>
+            </li>
+            <li>
+              <a href="#void"><img src="" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <details class="group text-xs text-gray-500 mb-6 mt-2">
+          <summary class="flex items-center justify-between cursor-pointer select-none">
+            <span class="flex items-center gap-1">
+              사업자 정보 펼쳐보기
+              <span class="transition-transform group-open:rotate-180">&#9660;</span>
+            </span>
+          </summary>
+          <div class="flex flex-row flex-wrap">
+            <p><strong>대표이사:</strong> 박현진</p>
+            <p><strong>사업자등록번호:</strong> 423-88-00370</p>
+            <p><strong>호스팅 제공자:</strong> (주)밀리의 서재</p>
+            <p><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</p>
+            <p><strong>주소:</strong> 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</p>
+            <p><strong>개인정보보호 관련 문의:</strong> privacy@millie.town</p>
+            <p><strong>마케팅 제휴 문의:</strong> business@millie.town</p>
+            <p><strong>고객센터:</strong> 070-7510-5415</p>
+          </div>
+        </details>
+        <ul class="flex flex-wrap gap-3">
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 이용약관">
+              이용약관
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1 font-bold" aria-label="더보기: 개인정보처리방침">
+              개인정보처리방침
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 청소년보호정책">
+              청소년보호정책
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 고객센터">
+              고객센터
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 환불신청">
+              환불신청
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: B2B 문의">
+              B2B 문의
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 콘텐츠 제휴문의">
+              콘텐츠 제휴문의
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 저작권/도서오류 신고">
+              저작권/도서오류 신고
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 뷰어 다운로드">
+              뷰어 다운로드
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기:종료 예정 도서">
+              종료 예정 도서
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 회사 소개">
+              회사 소개
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z"
+                  fill="#444444"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p class="mt-4 mb-6">Copyright &copy; 2025 밀리의 서재 All Rights Reserved.</p>
+        <ul class="list-style flex flex-wrap items-center">
+          <li class="inline-flex items-center">
+            <img src="/public/assets/logo/ISMS.png" alt="ISMS 인증 로고" class="w-16" />
+            정보보호관리체계 ISMS 인증획득
+          </li>
+          <li>인증범위 : 밀리의 서재 대고객 서비스</li>
+          <li>유효기간 : 2023-05-03~2026-05-02</li>
+        </ul>
+      </footer>
+    </fieldset>
   </body>
 </html>
