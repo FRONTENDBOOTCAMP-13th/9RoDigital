@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>배너 | 윌리의 서재</title>
-    <link rel="icon" href="/willie-logo.svg" />
+    <title>윌리의 서재</title>
+    <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
     <link
     href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
     rel="stylesheet"
@@ -13,7 +13,16 @@
   <script type="module" src="/src/main.js"></script>
   </head>
 <body class="font-sans">
-    <a href="./src/components/landing/landing.html">랜딩</a>
+  
+    <div class="flex justify-center items-center min-h-screen">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-8 bg-white rounded-lg shadow-lg">
+        <a href="./src/components/header/header.html" class="hover:text-blue-600 p-3 border rounded text-center">헤더</a>
+        <a href="./src/components/footer/footer.html" class="hover:text-blue-600 p-3 border rounded text-center">푸터</a>
+        <a href="./src/components/landing/landing.html" class="hover:text-blue-600 p-3 border rounded text-center">랜딩</a>
+        <a href="./src/components/login/login.html" class="hover:text-blue-600 p-3 border rounded text-center">로그인</a>
+        <a href="./src/components/mypage/mypage.html" class="hover:text-blue-600 p-3 border rounded text-center">마이 페이지</a>
+      </div>
+    </div>
 </body>
   </body>
 </html>
