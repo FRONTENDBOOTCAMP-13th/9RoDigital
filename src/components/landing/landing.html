@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>윌리의 서제</title>
+    <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <main>
+      <section
+        class="w-screen h-[17.75rem] flex flex-row gap-8 justify-center items-center bg-gradient-to-b from-[#67AFBF] to-[#2D94A9] relative"
+        aria-labelledby="section-title"
+      >
+        <!-- 네비게이션 버튼 - 이전 -->
+        <button
+          class="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+          aria-label="이전 슬라이드"
+        >
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 18L9 12L15 6"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <div class="flex flex-row justify-center items-start gap-8 mt-[5rem]">
+          <!-- 책 표지 이미지 -->
+          <img
+            src="/assets/images/landing-thumbnail-xl-01.webp"
+            alt="우리가 반짝이는 계절 - 장유진 에세이 책 표지"
+            class="w-full max-w-[31.5rem] h-auto rounded-2xl"
+          />
+
+          <!-- 책 정보 및 오디오 컨트롤 -->
+          <div>
+            <h1 id="section-title" class="text-(length:--font-size-lg) font-bold mb-2 pt-10">
+              핀란드의 감성을 더하는<br />장류진 작가의 특별 멘트 수록
+            </h1>
+            <p class="text-(length:--font-size-sm)">《우리가 반짝이는 계절》 오디오북</p>
+
+            <!-- 오디오북 컨트롤러 -->
+            <div
+              class="flex items-center gap-4 w-full max-w-md py-2 mt-15 rounded-lg"
+              role="group"
+              aria-label="오디오북 재생 컨트롤"
+            >
+              <!-- 진행 상태바 -->
+              <div
+                class="relative w-[13.75rem] h-[.0625rem] bg-gray-300 rounded-full"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="25"
+              >
+                <div class="absolute left-0 top-0 h-[.0625rem] bg-white rounded-full w-1/4"></div>
+              </div>
+
+              <!-- 페이지 표시 텍스트 -->
+              <span
+                class="text-(length:--font-size-xs) text-(color:--light-ui-01)"
+                aria-label="현재 1페이지, 총 4페이지"
+              >
+                1 <span class="text-(color:--light-ui-01)/60">/ 4</span>
+              </span>
+
+              <!-- 재생 컨트롤 버튼 -->
+              <button
+                class="w-8 h-8 flex items-center justify-center rounded-full"
+                aria-label="일시 정지"
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 26 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <g clip-path="url(#clip0_505_2)">
+                    <circle cx="13.0031" cy="13.0002" r="12.8" fill="#D9D9D9" fill-opacity="0.3" />
+                    <rect x="14.5938" y="6.60059" width="3.2" height="12.8" fill="white" />
+                    <rect x="8.19531" y="6.60059" width="3.2" height="12.8" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_505_2">
+                      <rect
+                        width="25.6"
+                        height="25.6"
+                        fill="white"
+                        transform="translate(0.203125 0.200195)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 네비게이션 버튼 - 다음 -->
+        <button
+          class="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+          aria-label="다음 슬라이드"
+        >
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 18L15 12L9 6"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

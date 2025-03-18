@@ -2,13 +2,16 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-	plugins: [
-    tailwindcss(),
-  ],
+  plugins: [tailwindcss()],
   build: {
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+        landing: '/src/components/landing/landing.html', // Main 랜딩 섹션
+        header: '/src/components/header/header.html', // 헤더
+        footer: '/src/components/footer/footer.html', // 푸터
+        login: '/src/components/login/login.html', // 로그인 페이지
+        signup: '/src/components/mypage/mypage.html' // 마이 페이지
       },
     },
   },

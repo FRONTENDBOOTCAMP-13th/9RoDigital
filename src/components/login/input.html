@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>입력서식 컴포넌트 | 윌리의 서재</title>
+    <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <h1>입력서식 컴포넌트</h1>
+    <form action="/" method="post">
+      <fieldset>
+        <legend class="sr-only">로그인 폼</legend>
+        <div
+          class="relative rounded-sm border border-[var(--gray-06)] focus-within:outline-[var(--gray-14)]"
+        >
+          <label class="absolute left-3 top-1 text-[var(--gray-09)] text-[10px]" for="id"
+            >아이디</label
+          >
+          <input
+            class="w-full px-3 pt-6 pb-2 focus:outline-none focus:ring-1 focus:ring-[var(--gray-14)]"
+            type="text"
+            id="id"
+            name="id"
+            required
+            placeholder="아이디 혹은 휴대폰 번호 입력"
+          />
+        </div>
+
+        <div
+          class="relative rounded-sm border border-[var(--gray-06)] focus-within:outline-[var(--gray-14)]"
+        >
+          <label for="pw" class="absolute left-3 top-1 text-[var(--gray-09)] text-[10px]"
+            >비밀번호</label
+          >
+          <input
+            type="password"
+            id="pw"
+            name="pw"
+            class="w-full px-3 pt-6 pb-2 focus:outline-none focus:ring-1 focus:ring-[var(--gray-14)]"
+            required
+            placeholder="비밀번호 입력"
+          />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
