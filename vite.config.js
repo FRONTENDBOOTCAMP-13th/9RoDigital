@@ -14,7 +14,7 @@ export default defineConfig({
         member: '/src/components/member/member.html', // 멤버 페이지
         button: '/src/components/button/button.html', // 버튼
         signup: '/src/components/mypage/mypage.html', // 마이 페이지
-        quote: '/src/components/seaction8/seaction8.html', // 오늘의 한 문장
+        quote: '/src/components/section8/section8.html', // 오늘의 한 문장
       },
     },
   },
