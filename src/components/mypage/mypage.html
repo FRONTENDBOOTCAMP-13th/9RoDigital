@@ -1,354 +1,456 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>윌리의 서제</title>
+    <title>내페이지 | 윌리의 서재</title>
     <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
-    <link rel="stylesheet" href="./style..css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    <!--헤더-->
-    <header>
-      <div class="container">
-        <!--헤더-로고-->
-        <div class="header-logo">
-          <a href="">
-            <img src="./public/MyPage/logo/logo.png" alt="" />
-          </a>
-        </div>
-        <!--헤더-요소-->
-        <nav class="header-element">
-          <ul>
-            <li>
-              <a href="">
-                <div>
-                  <span>투데이</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <span>피드</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <span>검색</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="select" href="">
-                <div>
-                  <span>내서재</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div>
-                  <span>관리</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!--헤더-로그아웃버튼-->
-        <div class="header-button">
-          <a href="">
-            <img src="./public/MyPage/icon/alarm.png" alt="" />
-          </a>
-          <div class="header-login">
-            <button>로그아웃</button>
+  <body class="m-0 p-0 box-border">
+    <!--메인-->
+    <main class="w-full h-full">
+      <!--서브헤더-->
+      <div class="z-100 top-0 sticky bg-white">
+        <div class="w-full h-9.5 items-end">
+          <div
+            class="text-base pr-5 flex items-center justify-between h-full xl:pr-6"
+          >
+            <h4 class="opacity-100 pl-5 font-bold text-2xl xl:opacity-0"
+              >내 서재</h4
+            >
+            <button class="flex w-6 h-6 p-1.5 border-0 cursor-pointer bg-white">
+              <img src="./assets/icon/plus.png" alt="" />
+            </button>
           </div>
         </div>
       </div>
-    </header>
-    <!--메인-->
-    <main>
-      <div class="container">
-        <!--서브헤더-->
-        <div class="sub-header">
-          <div class="sub-headerbar">
-            <h4 class="Mybookcase">내서재</h4>
-            <div class="plus">
-              <button class="plus-button">
-                <img src="./public/MyPage/icon/plus.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        <!--메인-요소-->
-        <div class="content">
-          <!--메인-왼쪽-->
-          <div class="left">
-            <section>
-              <!--프로필-->
-              <div class="profile">
-                <div class="profile-element">
-                  <div class="profile-image">
-                    <img src="./public/MyPage/icon/profile.png" alt="" />
-                  </div>
-                  <div class="profile-name">
-                    <span>꿈을 꾸는 해적왕_18312</span>
-                    <div class="profile-tag">
-                      <a href="">
-                        <span>팔로워</span>
-                        <span class="select">0</span>
-                      </a>
-                      <a href="">
-                        <span class="before">&#183;</span>
-                        <span>팔로잉</span>
-                        <span class="select">0</span>
-                      </a>
-                    </div>
-                  </div>
+      <!--메인-요소-->
+      <div
+        class="flex flex-col w-full px-5 overflow-hidden xl:flex-row xl:px-6"
+      >
+        <!--메인-왼쪽-->
+        <div class="w-full px-0 xl:w-1/4 xl:px-5">
+          <section class="pb-6">
+            <!--프로필-->
+            <div class="flex w-full flex-col gap-5">
+              <div class="flex w-full flex-row items-center gap-4">
+                <div class="inline-block w-20">
+                  <img
+                    src="./assets/icon/profile.png"
+                    alt=""
+                    class="h-20 w-20 object-cover"
+                  />
                 </div>
-              </div>
-              <!--하이라이트-->
-              <div class="highlights">
-                <a href="">
-                  <div class="highlights-content">
-                    <p class="highlights-num">0</p>
-                    <p class="highlights-name">하이라이트</p>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="highlights-content">
-                    <p class="highlights-num">0</p>
-                    <p class="highlights-name">포스트</p>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="highlights-content">
-                    <p class="highlights-num">0</p>
-                    <p class="highlights-name">한줄리뷰</p>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="highlights-content">
-                    <p class="highlights-num">0</p>
-                    <p class="highlights-name">필기</p>
-                  </div>
-                </a>
-              </div>
-              <!--글쓰기 버튼-->
-              <div class="button">
-                <button class="write">글쓰기</button>
-                <button class="book">도서 담기</button>
-              </div>
-              <!--광고-->
-              <div class="post">
-                <img class="post1" src="./public/MyPage/icon/subscribe.png" alt="" />
-                <img class="post2" src="./public/MyPage/icon/subscribe2.png" alt="" />
-              </div>
-            </section>
-          </div>
-          <!--메인 오른쪽-->
-          <div class="right">
-            <!--추천 도서-->
-            <section class="right-list">
-              <div class="right-title">
-                <h4>추천 도서</h4>
-              </div>
-              <div class="book-content">
-                <div class="book-list">
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended1.jpeg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">결국 잘되는 사람들의 태도</p>
-                      <p class="book-sub">앤드루 매코널 지음/ 안종설 옮김</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended2.jpeg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">그렇게 나는 다시 삶을 선택했다</p>
-                      <p class="book-sub">최지은</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended3.jpeg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">단어가 품은 세계</p>
-                      <p class="book-sub">황선염</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended4.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">날개</p>
-                      <p class="book-sub">이상</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended5.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">단어가 품은 세계</p>
-                      <p class="book-sub">황선염</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended6.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">스토너</p>
-                      <p class="book-sub">존윌리엄스 지음, 김승욱 옮김</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended7.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">싯다르타</p>
-                      <p class="book-sub">헤르만 헤세 지음/박병덕 옮김</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended8.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">율의 시선</p>
-                      <p class="book-sub">김민서</p>
-                    </div>
-                  </div>
-                  <div class="book">
-                    <div class="book-select">
-                      <div class="book-element">
-                        <img src="./public/MyPage/image/Recommended9.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="book-option">
-                      <p class="book-name">퇴마록 국내편 1</p>
-                      <p class="book-sub">이우혁</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!--책장-->
-            <section class="right-list">
-              <div class="right-title">
-                <h4>책장</h4>
-                <a>전체보기</a>
-              </div>
-              <div class="bookcase">
-                <div class="book-list">
-                  <div class="book">
+                <div class="flex flex-col">
+                  <span class="items-center font-bold text-xl whitespace-nowrap"
+                    >꿈을 꾸는 해적왕_18312</span
+                  >
+                  <div class="flex">
+                    <a href="" class="flex gap-1">
+                      <span class="text-sm">팔로워</span>
+                      <span class="text-sm font-bold">0</span>
+                    </a>
                     <a href="">
-                      <div class="bookcase-image">
-                        <img src="./public/MyPage/icon/bookcase.png" alt="" />
-                      </div>
-                      <div class="bookcase-name">
-                        <p>My Favorite</p>
-                        <span>0권</span>
-                      </div>
+                      <span class="items-center ml-1 font-bold">&#183;</span>
+                      <span class="text-sm">팔로잉</span>
+                      <span class="text-sm font-bold">0</span>
                     </a>
                   </div>
                 </div>
               </div>
-            </section>
-            <!--캘린더-->
-            <section class="right-list">
-              <div class="right-title">
-                <h4>3월 독서 캘린더</h4>
-                <a>전체보기</a>
-              </div>
-              <div class="calendar">
-                <img src="./public/MyPage/icon/calendar.png" alt="" />
-              </div>
-            </section>
-            <!--독서 리포트-->
-            <section class="right-list">
-              <div class="right-title">
-                <h4>독서 리포트</h4>
-                <p>밀리 회원들은 한 달 평균 2권 읽어요</p>
-                <a>전체보기</a>
-              </div>
-              <div>
-                <ul class="riport-list">
-                  <li>
-                    <span class="target">나</span>
-                    <div class="prograss-bar">
-                      <div class="prograss-state"></div>
+            </div>
+            <!--하이라이트-->
+            <div class="flex my-5 justify-between items-center">
+              <a href="" class="w-full h-full cursor-pointer">
+                <div class="flex flex-col text-center">
+                  <p class="font-bold text-base leading-6">0</p>
+                  <p class="text-sm leading-6">하이라이트</p>
+                </div>
+              </a>
+              <a href="" class="w-full h-full cursor-pointer">
+                <div class="flex flex-col text-center">
+                  <p class="font-bold text-base leading-6">0</p>
+                  <p class="text-sm leading-6">포스트</p>
+                </div>
+              </a>
+              <a href="" class="w-full h-full cursor-pointer">
+                <div class="flex flex-col text-center">
+                  <p class="font-bold text-base leading-6">0</p>
+                  <p class="text-sm leading-6">한 줄 리뷰</p>
+                </div>
+              </a>
+              <a href="" class="w-full h-full cursor-pointer">
+                <div class="flex flex-col text-center">
+                  <p class="font-bold text-base leading-6">0</p>
+                  <p class="text-sm leading-6">필기</p>
+                </div>
+              </a>
+            </div>
+            <!--글쓰기 버튼-->
+            <div class="flex gap-3">
+              <button
+                class="h-10 flex items-center justify-center w-full text-base bg-black text-white rounded-full"
+                >글쓰기</button
+              >
+              <button
+                class="h-10 flex items-center justify-center w-full text-base bg-white text-black rounded-full border-1"
+                >도서 담기</button
+              >
+            </div>
+            <!--광고-->
+            <div class="relative mt-4">
+              <img
+                class="object-cover w-full h-15.5 opacity-0 xl:opacity-100"
+                src="./assets/icon/subscribe.png"
+                alt=""
+              />
+              <img
+                class="absolute bottom-0 inset-x-0 w-full h-15.5 opacity-100 xl:opacity-0"
+                src="./assets/icon/subscribe2.png"
+                alt=""
+              />
+            </div>
+          </section>
+        </div>
+        <!--메인 오른쪽-->
+        <div class="w-full pl-0 xl:w-3/4 xl:pl-11">
+          <!--추천 도서-->
+          <section class="flex w-full flex-col py-6 gap-3 overflow-hidden">
+            <div class="flex relative flex-col gap-0.5">
+              <h4 class="flex font-bold text-xl w-full">추천 도서</h4>
+            </div>
+            <div class="overflow-hidden list-none p-0">
+              <div class="flex top-0 left-0 grid-cols-6">
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended1.jpeg"
+                        alt=""
+                      />
                     </div>
-                    <span class="count">0권</span>
-                  </li>
-                  <li>
-                    <span class="target">밀리</span>
-                    <div class="prograss-bar">
-                      <div class="prograss-state-mili"></div>
+                  </div>
+                  <div class="w-full text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >결국 잘되는 사람들의 태도</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >앤드루 매코널 지음/ 안종설 옮김</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended2.jpeg"
+                        alt=""
+                      />
                     </div>
-                    <span class="count">2권</span>
-                  </li>
-                </ul>
+                  </div>
+                  <div class="w-full text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >그렇게 나는 다시 삶을 선택했다</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >최지은</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended3.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >단어가 품은 세계</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >황선염</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended4.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >날개</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >이상</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40="
+                        src="./assets/images/Recommended/Recommended5.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >단어가 품은 세계</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >황선염</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended6.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >스토너</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >존윌리엄스 지음, 김승욱 옮김</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended7.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >싯다르타</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >헤르만 헤세 지음/박병덕 옮김</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended8.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >율의 시선</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >김민서</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended9.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >퇴마록 국내편 1</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >이우혁</p
+                    >
+                  </div>
+                </div>
+                <div class="w-25 flex flex-col mr-3 cursor-pointer">
+                  <div class="w-25 flex items-end">
+                    <div class="flex flex-col gap-2">
+                      <img
+                        class="rounded-2xl h-40"
+                        src="./assets/images/Recommended/Recommended10.webp"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-25 text-left">
+                    <p
+                      class="font-bold text-sm overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >애 같은 말투 10분 만에 바꿔 드립니다</p
+                    >
+                    <p
+                      class="text-xs overflow-hidden whitespace-nowrap overflow-ellipsis break-all"
+                      >김채린</p
+                    >
+                  </div>
+                </div>
               </div>
-            </section>
-            <!--독서 활동-->
-            <section class="right-list">
-              <div class="right-title">
-                <h4>독서 활동</h4>
-              </div>
-              <div class="read">
-                <div class="read-book">
-                  <a href="">
+            </div>
+          </section>
+          <!--책장-->
+          <section class="flex w-full flex-col py-6 gap-3 overflow-hidden">
+            <div lass="flex relative flex-col gap-0.5">
+              <h4 class="flex font-bold text-xl w-full">책장</h4></div
+            >
+            <div class="flex flex-col w-37">
+              <div class="flex items-baseline">
+                <div class="flex flex-col mr-3 w-full h-auto cursor-pointer">
+                  <a class="flex flex-col gap-2" href="">
+                    <div class="mr-4 w-37 h-37">
+                      <img
+                        class="w-full h-full object-cover"
+                        src="./assets/icon/bookcase.png"
+                        alt=""
+                      />
+                    </div>
                     <div>
-                      <p class="read-name">나의 인생책</p>
-                      <p class="read-caption">설정하기</p>
+                      <p class="font-bold text-sm ml-0.25">My Favorite</p>
+                      <span class="text-xs">0권</span>
                     </div>
-                    <img src="./public/MyPage/icon/bookoflife.png" alt="" />
                   </a>
                 </div>
-                <div class="read-book">
-                  <a href="">
-                    <div>
-                      <p class="read-name">나의 관심사</p>
-                      <p class="read-caption">설정하기</p>
-                    </div>
-                    <img src="./public/MyPage/icon/interest.png" alt="" />
-                  </a>
-                </div>
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
+          <!--캘린더-->
+          <section class="flex w-full flex-col py-6 gap-3 overflow-hidden">
+            <div lass="flex relative flex-col gap-0.5">
+              <h4 class="flex font-bold text-xl w-full"
+                >3월 독서 캘린더</h4
+              ></div
+            >
+            <div>
+              <img
+                class="w-full h-94"
+                src="./assets/icon/calendar.png"
+                alt=""
+              />
+            </div>
+          </section>
+          <!--독서 리포트-->
+          <section class="flex w-full flex-col py-6 gap-3 overflow-hidden">
+            <div lass="flex relative flex-col gap-0.5">
+              <h4 class="flex font-bold text-xl w-full">독서 리포트</h4>
+              <p class="text-sm">밀리 회원들은 한 달 평균 2권 읽어요</p>
+            </div>
+            <div>
+              <ul class="flex flex-col gap-1 xl:flex-row xl:gap-6">
+                <li class="w-full h-5">
+                  <span class="table-cell pr-2 whitespace-nowrap text-sm"
+                    >나&emsp;</span
+                  >
+                  <div class="table-cell relative w-full h-full bg-gray-100">
+                  </div>
+                  <span
+                    class="table-cell pl-2 whitespace-nowrap font-bold text-sm text-violet-600"
+                    >0권</span
+                  >
+                </li>
+                <li class="w-full h-5">
+                  <span class="table-cell pr-2 whitespace-nowrap text-sm"
+                    >밀리</span
+                  >
+                  <div class="table-cell relative w-full h-full bg-gray-100">
+                    <div class="w-2/5 h-5 bg-gray-300"></div>
+                  </div>
+                  <span
+                    class="table-cell pl-2 whitespace-nowrap font-bold text-sm"
+                    >2권</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--독서 활동-->
+          <section class="flex w-full flex-col py-6 gap-3 overflow-hidden">
+            <div lass="flex relative flex-col gap-0.5">
+              <h4 class="flex font-bold text-xl w-full">독서 활동</h4>
+            </div>
+            <div class="flex w-full h-full">
+              <div class="mr-3 relative flex w-39.25 h-40 flex-col bg-gray-100">
+                <a class="p-4 font-bold w-full h-full relative" href="">
+                  <div class="flex flex-col gap0.5">
+                    <p class="font-bold text-xs">나의 인생책</p>
+                    <p class="font-bold text-sm">설정하기</p>
+                  </div>
+                  <img
+                    class="absolute right-3 bottom-3 w-17 h-17"
+                    src="./assets/icon/bookoflife.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="mr-3 relative flex w-39.25 h-40 flex-col bg-gray-100">
+                <a class="p-4 font-bold w-full h-full relative" href="">
+                  <div class="flex flex-col gap0.5">
+                    <p class="font-bold text-xs">나의 관심사</p>
+                    <p class="font-bold text-sm">설정하기</p>
+                  </div>
+                  <img
+                    class="absolute right-3 bottom-3 w-17 h-17"
+                    src="./assets/icon/interest.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <!-- scripts -->
-      <script src="./main.js"></script>
     </main>
   </body>
 </html>
