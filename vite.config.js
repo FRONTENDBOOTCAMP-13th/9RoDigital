@@ -11,6 +11,7 @@ export default defineConfig({
         header: '/src/components/header/header.html', // 헤더
         footer: '/src/components/footer/footer.html', // 푸터
         login: '/src/components/login/login.html', // 로그인 페이지
+        button: '/src/components/button/button.html', // 버튼
         signup: '/src/components/mypage/mypage.html' // 마이 페이지
       },
     },
