@@ -9,27 +9,49 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
+    <!-- 더보기 버튼 -->
     <fieldset class="border-4">
       <legend class="mx-3">더보기 버튼</legend>
-      <details class="group text-xs text-gray-500">
-        <summary class="flex items-center justify-between cursor-pointer select-none">
+      <details class="group text-xs text-gray-500 mb-6 mt-2">
+        <summary class="flex items-center justify-between cursor-pointer select-none" role="button" aria-expanded="false">
           <span class="flex items-center gap-1">
             사업자 정보 펼쳐보기
             <span class="transition-transform group-open:rotate-180">&#9660;</span>
           </span>
         </summary>
-        <div class="flex flex-row flex-wrap">
-          <p><strong>대표이사:</strong> 박현진</p>
-          <p><strong>사업자등록번호:</strong> 423-88-00370</p>
-          <p><strong>호스팅 제공자:</strong> (주)밀리의 서재</p>
-          <p><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</p>
-          <p><strong>주소:</strong> 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</p>
-          <p><strong>개인정보보호 관련 문의:</strong> privacy@millie.town</p>
-          <p><strong>마케팅 제휴 문의:</strong> business@millie.town</p>
-          <p><strong>고객센터:</strong> 070-7510-5415</p>
-        </div>
+        <ul class="text-sm/7">
+          <li><strong>대표이사:</strong> 박현진</li>
+          <li><strong>사업자등록번호:</strong> 423-88-00370</li>
+          <li><strong>호스팅 제공자:</strong> (주)밀리의 서재</li>
+          <li><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</li>
+          <li>
+            <strong>주소:</strong>
+            <a
+              href="https://naver.me/x5GfOMVv"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워) 위치 보기 (새 창에서 열림)"
+            >
+              서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)
+            </a>
+          </li>
+          <li>
+            <strong>개인정보보호 관련 문의:</strong>
+            <a href="mailto:privacy@millie.town" aria-label="privacy@millie.town으로 이메일 보내기"> privacy@millie.town </a>
+          </li>
+          <li>
+            <strong>마케팅 제휴 문의:</strong>
+            <a href="mailto:business@millie.town" aria-label="business@millie.town으로 이메일 보내기"> business@millie.town </a>
+          </li>
+          <li>
+            <strong>고객센터:</strong>
+            <a href="tel:070-7510-5415" aria-label="070-7510-5415로 전화 걸기"> 070-7510-5415 </a>
+          </li>
+        </ul>
       </details>
     </fieldset>
+
+    <!-- 약관들 -->
     <fieldset class="border-4">
       <legend class="mx-3">약관들</legend>
       <li>
@@ -46,9 +68,11 @@
         </a>
       </li>
     </fieldset>
+
+    <!-- footer 조립본 -->
     <fieldset class="border-4">
       <legend class="mx-3">footer 조립본</legend>
-      <footer class="text-(--light-text-03) mb-[4.375rem] lg:mb-0">
+      <footer class="text-(--light-text-03) max-w-[81.25rem] mx-auto mb-[4.375rem] px-4 xl:px-0 lg:mb-0">
         <div class="flex items-center justify-between">
           <h3 class="text-black font-[500]">(주) 윌리의 서재</h3>
           <ul class="flex gap-2">
@@ -103,16 +127,35 @@
               <span class="transition-transform group-open:rotate-180">&#9660;</span>
             </span>
           </summary>
-          <div class="flex flex-row flex-wrap">
-            <p><strong>대표이사:</strong> 박현진</p>
-            <p><strong>사업자등록번호:</strong> 423-88-00370</p>
-            <p><strong>호스팅 제공자:</strong> (주)밀리의 서재</p>
-            <p><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</p>
-            <p><strong>주소:</strong> 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</p>
-            <p><strong>개인정보보호 관련 문의:</strong> privacy@millie.town</p>
-            <p><strong>마케팅 제휴 문의:</strong> business@millie.town</p>
-            <p><strong>고객센터:</strong> 070-7510-5415</p>
-          </div>
+          <ul class="text-sm/7">
+            <li><strong>대표이사:</strong> 박현진</li>
+            <li><strong>사업자등록번호:</strong> 423-88-00370</li>
+            <li><strong>호스팅 제공자:</strong> (주)밀리의 서재</li>
+            <li><strong>통신판매업 신고번호:</strong> 2016-서울마포-2012호</li>
+            <li>
+              <strong>주소:</strong>
+              <a
+                href="https://naver.me/x5GfOMVv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워) 위치 보기 (새 창에서 열림)"
+              >
+                서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)
+              </a>
+            </li>
+            <li>
+              <strong>개인정보보호 관련 문의:</strong>
+              <a href="mailto:privacy@millie.town" aria-label="privacy@millie.town으로 이메일 보내기"> privacy@millie.town </a>
+            </li>
+            <li>
+              <strong>마케팅 제휴 문의:</strong>
+              <a href="mailto:business@millie.town" aria-label="business@millie.town으로 이메일 보내기"> business@millie.town </a>
+            </li>
+            <li>
+              <strong>고객센터:</strong>
+              <a href="tel:070-7510-5415" aria-label="070-7510-5415로 전화 걸기"> 070-7510-5415 </a>
+            </li>
+          </ul>
         </details>
         <ul class="flex flex-wrap gap-3">
           <li>
