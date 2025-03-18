@@ -4,39 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>프로필 컴포넌트 | 윌리의 서재</title>
-    <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
-    <link
-    href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script type="module" src="/src/main.js"></script>
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/src/main.js"></script>
   </head>
-<body class="font-sans">
+  <body class="font-sans">
     <!-- 프로필 + 구독관리-->
     <div class="mb-6 px-4 pt-6">
-        <svg class="rotate-90" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_13065_77710)"><mask id="mask0_13065_77710" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0v12H0v-.644c.004-1.645.238-6.044 2.482-8.502C4.882.506 7.281.124 10.665 0 11.31.012 12 0 12 0zm12 12H12V0h.644c1.645.004 6.044.238 8.502 2.482 2.348 2.4 2.73 4.799 2.854 8.183-.012.644 0 1.335 0 1.335zm-12 0v12s.69-.012 1.335 0c3.384-.124 5.782-.506 8.183-2.854 2.244-2.458 2.478-6.857 2.482-8.502V12H12.001zM0 12h12v12h-.644c-1.645-.004-6.044-.238-8.502-2.482C.506 19.118.124 16.719 0 13.335.012 12.69 0 12 0 12z" fill="color(display-p3 .7686 .7686 .7686)"/></mask><g mask="url(#mask0_13065_77710)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 24A12 12 0 1012 .001 12 12 0 0012 24z" fill="color(display-p3 1 .9216 .3765)"/><path d="M19.973 9.96c-.907.166-.232 5.954-2.78 6.179h-.043c-.029 0-.065.007-.102.007h-.014c-2.765 0-1.996-6.165-2.969-6.194-.972.036-.203 6.194-2.968 6.194h-.022c-2.773 0-1.989-6.194-2.976-6.194-.987 0-.203 6.194-2.976 6.194-.058 0-.101 0-.138-.007a8.17 8.17 0 007.084 4.088c4.515 0 8.18-3.667 8.18-8.184a8.537 8.537 0 00-.276-2.084z" fill="color(display-p3 .6431 .3176 .9686)"/><path d="M5.413 14.265c.008-.021.022-.043.03-.065.515-1.343.268-6.143 2.656-6.143h.08c.029 0 .058 0 .08.007.029 0 .05.007.072.007a.26.26 0 01.08.015h.014c2.396.472 1.72 6.383 2.657 6.419.973-.036.203-6.448 2.968-6.448h.015c2.446 0 2.127 5.061 2.7 6.245.073.13.16.203.261.203.893 0 .341-5.25 2.265-6.274a8.162 8.162 0 00-7.23-4.371c-4.514 0-8.18 3.667-8.18 8.183 0 .865.139 1.692.386 2.47l.094.326s.326.109.798-.21c.073-.066.167-.168.254-.364z" fill="color(display-p3 .6431 .3176 .9686)"/></g></g><defs><clipPath id="clip0_13065_77710"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
-        <p class="text-[var(--gray-10)]">아이디 계정 회원</p>
-        <P class="mb-[20px] text-(length:--font-size-lg) font-bold text-[var(--gray-14)]">겨울에 태어난 베이글_34888</P>
-        <div class="border border-[var(--gray-05)] rounded-sm">
-            <a href="/" class="px-4 bg-[var(--gray-02)] inline-block">나의 정기구독</a>
-            <img class="rotate-180" width="24px" height="24px" src="/public/assets/icon/left-chevron.png" alt="구독관리 더보기" />
-            <div>
-                <p>전자책 월 정기구독 무료 이용</p>
-                <span>전자책 구독</span>
-                <ul>
-                    <li>
-                        <p>구독 기간</p>
-                        <span>2025.03.14 ~ 2025.04.14</span>
-                    </li>
-                    <li>
-                        <p>다음 결제일</p>
-                        <span>2025.04.14</span>
-                    </li>
-                </ul>
-            </div>
+      <svg class="rotate-90" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_13065_77710)">
+          <mask id="mask0_13065_77710" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 0v12H0v-.644c.004-1.645.238-6.044 2.482-8.502C4.882.506 7.281.124 10.665 0 11.31.012 12 0 12 0zm12 12H12V0h.644c1.645.004 6.044.238 8.502 2.482 2.348 2.4 2.73 4.799 2.854 8.183-.012.644 0 1.335 0 1.335zm-12 0v12s.69-.012 1.335 0c3.384-.124 5.782-.506 8.183-2.854 2.244-2.458 2.478-6.857 2.482-8.502V12H12.001zM0 12h12v12h-.644c-1.645-.004-6.044-.238-8.502-2.482C.506 19.118.124 16.719 0 13.335.012 12.69 0 12 0 12z"
+              fill="color(display-p3 .7686 .7686 .7686)"
+            />
+          </mask>
+          <g mask="url(#mask0_13065_77710)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24A12 12 0 1012 .001 12 12 0 0012 24z" fill="color(display-p3 1 .9216 .3765)" />
+            <path
+              d="M19.973 9.96c-.907.166-.232 5.954-2.78 6.179h-.043c-.029 0-.065.007-.102.007h-.014c-2.765 0-1.996-6.165-2.969-6.194-.972.036-.203 6.194-2.968 6.194h-.022c-2.773 0-1.989-6.194-2.976-6.194-.987 0-.203 6.194-2.976 6.194-.058 0-.101 0-.138-.007a8.17 8.17 0 007.084 4.088c4.515 0 8.18-3.667 8.18-8.184a8.537 8.537 0 00-.276-2.084z"
+              fill="color(display-p3 .6431 .3176 .9686)"
+            />
+            <path
+              d="M5.413 14.265c.008-.021.022-.043.03-.065.515-1.343.268-6.143 2.656-6.143h.08c.029 0 .058 0 .08.007.029 0 .05.007.072.007a.26.26 0 01.08.015h.014c2.396.472 1.72 6.383 2.657 6.419.973-.036.203-6.448 2.968-6.448h.015c2.446 0 2.127 5.061 2.7 6.245.073.13.16.203.261.203.893 0 .341-5.25 2.265-6.274a8.162 8.162 0 00-7.23-4.371c-4.514 0-8.18 3.667-8.18 8.183 0 .865.139 1.692.386 2.47l.094.326s.326.109.798-.21c.073-.066.167-.168.254-.364z"
+              fill="color(display-p3 .6431 .3176 .9686)"
+            />
+          </g>
+        </g>
+        <defs>
+          <clipPath id="clip0_13065_77710"><path fill="#fff" d="M0 0h24v24H0z" /></clipPath>
+        </defs>
+      </svg>
+      <p class="text-[var(--gray-10)]">아이디 계정 회원</p>
+      <p class="mb-[20px] text-(length:--font-size-lg) font-bold text-[var(--gray-14)]">겨울에 태어난 베이글_34888</p>
+      <div class="border border-[var(--gray-05)] rounded-sm">
+        <a href="/" class="px-4 bg-[var(--gray-02)] inline-block">나의 정기구독</a>
+        <img class="rotate-180" width="24px" height="24px" src="/public/assets/icon/left-chevron.png" alt="구독관리 더보기" />
+        <div>
+          <p>전자책 월 정기구독 무료 이용</p>
+          <span>전자책 구독</span>
+          <ul>
+            <li>
+              <p>구독 기간</p>
+              <span>2025.03.14 ~ 2025.04.14</span>
+            </li>
+            <li>
+              <p>다음 결제일</p>
+              <span>2025.04.14</span>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-
   </body>
 </html>

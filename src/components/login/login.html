@@ -1,15 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>로그인 | 윌리의 서재</title>
-    <link rel="icon" href="/public/assets/logo/willie-logo.svg" />
-    <link
-      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
@@ -17,40 +13,25 @@
       <!-- 모바일에서만 보이는 뒤로가기 버튼 -->
       <div class="lg:hidden absolute top-2 left-4">
         <a href="/" class="text-[var(--gray-14)]">
-          <img
-            src="/public/assets/icon/left-chevron.png"
-            alt="뒤로가기 버튼"
-            width="24"
-            height="24"
-          />
+          <img src="/public/assets/icon/left-chevron.png" alt="뒤로가기 버튼" width="24" height="24" />
         </a>
       </div>
       <!-- 데스크탑에서만 보이는 배경 이미지 -->
       <div class="lg:flex w-full h-full">
         <div
           class="hidden lg:block lg:flex-grow lg:w-4/6 h-full"
-          style="
-            background-image: url('/public/assets/images/promotion_intro_bg_2024.jpg');
-            background-size: cover;
-            background-position: center;
-          "
+          style="background-image: url('/public/assets/images/promotion_intro_bg_2024.jpg'); background-size: cover; background-position: center"
         ></div>
         <!-- 로그인 폼 컨테이너 -->
         <div class="px-4 lg:w-2/6 lg:px-10 lg:py-20">
           <div class="lg:max-w-[520px] lg:mx-auto w-full">
             <h2 class="title font-bold mb-1 mt-8 lg:mt-0 text-[24px]">독서와 무제한 친해지리</h2>
-            <p class="sub-title text-[var(--gray-10)] text-[16px] mb-6">
-              20만 권 속에서 인생책을 찾아보세요
-            </p>
+            <p class="sub-title text-[var(--gray-10)] text-[16px] mb-6">20만 권 속에서 인생책을 찾아보세요</p>
             <form action="/" method="post">
               <fieldset>
                 <legend class="sr-only">로그인 폼</legend>
-                <div
-                  class="relative rounded-sm border border-[var(--gray-06)] focus-within:outline-[var(--gray-14)] mb-2"
-                >
-                  <label class="absolute left-3 top-1 text-[var(--gray-09)] text-[10px]" for="id"
-                    >아이디</label
-                  >
+                <div class="relative rounded-sm border border-[var(--gray-06)] focus-within:outline-[var(--gray-14)] mb-2">
+                  <label class="absolute left-3 top-1 text-[var(--gray-09)] text-[10px]" for="id">아이디</label>
                   <input
                     class="w-full px-3 pt-6 pb-2 focus:outline-none focus:ring-1 focus:ring-[var(--gray-14)]"
                     type="text"
@@ -61,12 +42,8 @@
                   />
                 </div>
 
-                <div
-                  class="relative rounded-sm border border-[var(--gray-06)] focus-within:outline-[var(--gray-14)] mb-2"
-                >
-                  <label for="pw" class="absolute left-3 top-1 text-[var(--gray-09)] text-[10px]"
-                    >비밀번호</label
-                  >
+                <div class="relative rounded-sm border border-[var(--gray-06)] focus-within:outline-[var(--gray-14)] mb-2">
+                  <label for="pw" class="absolute left-3 top-1 text-[var(--gray-09)] text-[10px]">비밀번호</label>
                   <input
                     type="password"
                     id="pw"
@@ -84,9 +61,7 @@
                 </button>
               </fieldset>
             </form>
-            <ul
-              class="list-style flex justify-center items-center text-[var(--gray-09)] mt-6 mb-[34px]"
-            >
+            <ul class="list-style flex justify-center items-center text-[var(--gray-09)] mt-6 mb-[34px]">
               <li class="inline-flex"><a href="/">회원가입</a></li>
               <li class="inline-flex"><a href="/">ID/PW 찾기</a></li>
               <li class="inline-flex"><a href="/">기업회원 로그인</a></li>
@@ -100,47 +75,23 @@
             <!-- sns 버튼 -->
             <div class="flex items-center justify-center gap-6">
               <button type="button">
-                <img
-                  class="w-[40px] h-[40px]"
-                  src="/public/assets/icon/kakao-icon.svg"
-                  alt="카카오로 로그인하기"
-                />
+                <img class="w-[40px] h-[40px]" src="/public/assets/icon/kakao-icon.svg" alt="카카오로 로그인하기" />
               </button>
               <button type="button">
-                <img
-                  class="w-[40px] h-[40px]"
-                  src="/public/assets/icon/naver-icon.svg"
-                  alt="네이버로 로그인하기"
-                />
+                <img class="w-[40px] h-[40px]" src="/public/assets/icon/naver-icon.svg" alt="네이버로 로그인하기" />
               </button>
               <button type="button">
-                <img
-                  class="w-[40px] h-[40px]"
-                  src="/public/assets/icon/facebook-icon.svg"
-                  alt="페이스북으로 로그인하기"
-                />
+                <img class="w-[40px] h-[40px]" src="/public/assets/icon/facebook-icon.svg" alt="페이스북으로 로그인하기" />
               </button>
               <button type="button">
-                <img
-                  class="w-[40px] h-[40px]"
-                  src="/public/assets/icon/apple-icon.svg"
-                  alt="애플로 로그인하기"
-                />
+                <img class="w-[40px] h-[40px]" src="/public/assets/icon/apple-icon.svg" alt="애플로 로그인하기" />
               </button>
               <button type="button">
-                <img
-                  class="w-[40px] h-[40px]"
-                  src="/public/assets/icon/google-icon.svg"
-                  alt="구글로 로그인하기"
-                />
+                <img class="w-[40px] h-[40px]" src="/public/assets/icon/google-icon.svg" alt="구글로 로그인하기" />
               </button>
             </div>
             <!-- 페이스북 로그인 계정전환 안내문 link -->
-            <a
-              href="/"
-              class="mt-10 mb-6 underline flex items-center justify-center text-[var(--gray-09)]"
-              >페이스북 로그인 계정 전환 안내</a
-            >
+            <a href="/" class="mt-10 mb-6 underline flex items-center justify-center text-[var(--gray-09)]">페이스북 로그인 계정 전환 안내</a>
           </div>
         </div>
       </div>
