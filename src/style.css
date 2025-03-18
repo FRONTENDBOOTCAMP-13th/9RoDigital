@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: 'Spoqa Han Sans Neo', sans-serif;
+  --font-NotoSerifKR: 'Noto Serif KR', serif;
 
   /* Light Theme */
   --light-ui-background: #ffffff;
@@ -199,5 +200,36 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+.daily-quote {
+  background: url('./assets/images/section-08-01.webp') no-repeat center/cover;
+  width: 100%;
+
+  article {
+    background-color: #fff;
+    padding: 50px 20px;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+    }
+    &::after {
+      background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+      top: 20px;
+      left: 20px;
+    }
+    &::before {
+      background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+      transform: rotate(180deg); /* 45도 회전 */
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }
