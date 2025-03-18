@@ -12,9 +12,10 @@
     <h1 class="text-3xl mb-5 font-bold">타이틀 컴포넌트</h1>
 
     <h2 class="text-2xl mb-5 font-bold">기본 타이틀</h2>
-    <a href="#" class="w-full flex flex-row justify-between items-center">
+    <a href="#" class="w-full flex flex-row justify-between items-center" aria-label="제목 더보기">
       <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">제목</h3>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <title>더보기</title>
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -24,13 +25,15 @@
           stroke-width="0.5"
         />
       </svg>
+      <span class="sr-only">더보기</span>
     </a>
 
     <h2 class="text-2xl mb-5 mt-5 font-bold">부제목이 있는 타이틀</h2>
     <!-- 부제목의 역할을 하는 <h4> 태그 까지 같이 쓰세요 -->
-    <a href="#" class="w-full flex flex-row justify-between items-center">
+    <a href="#" class="w-full flex flex-row justify-between items-center" aria-label="제목 더보기">
       <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">제목</h3>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <title>더보기</title>
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -40,6 +43,7 @@
           stroke-width="0.5"
         />
       </svg>
+      <span class="sr-only">더보기</span>
     </a>
     <h4 class="text-(length:--font-size-sm) font-(--font-weight-norma) text-(--dark-ui-05)">부제목</h4>
 
@@ -50,26 +54,36 @@
       <div class="flex flex-row justify-center items-center gap-2">
         <!-- "밀리 랭킹" 링크 -->
         <h3>
-          <a href="/ranking-page" class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)"> 밀리 랭킹 </a>
+          <a href="#" class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)" aria-label="밀리 랭킹 보기"> 밀리 랭킹 </a>
         </h3>
 
         <!-- 구분자 -->
         <span class="text-gray-400 text-(length:--font-size-xs)" aria-hidden="true">|</span>
 
-        <!-- 도서 종류 모달 버튼 -->
-        <button id="modalButton" class="flex flex-row justify-center gap-1 items-center text-(length:--font-size-md) font-(--font-weight-regular) text-(--light-ui-10) cursor-pointer">
+        <!-- 도서 종류 버튼 -->
+        <button
+          type="button"
+          class="flex flex-row justify-center gap-1 items-center text-(length:--font-size-md) font-(--font-weight-regular) text-(--light-ui-10) cursor-pointer"
+          aria-expanded="false"
+          aria-controls="book-type-dropdown"
+        >
           도서 종류
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.02882 2.90376C1.05785 2.87466 1.09233 2.85157 1.1303 2.83581C1.16827 2.82006 1.20897 2.81195 1.25007 2.81195C1.29117 2.81195 1.33188 2.82006 1.36984 2.83581C1.40781 2.85157 1.44229 2.87466 1.47132 2.90376L5.00007 6.43313L8.52882 2.90376C8.55788 2.8747 8.59237 2.85166 8.63033 2.83593C8.66829 2.82021 8.70898 2.81211 8.75007 2.81211C8.79116 2.81211 8.83185 2.82021 8.86981 2.83593C8.90777 2.85166 8.94227 2.8747 8.97132 2.90376C9.00038 2.93281 9.02342 2.96731 9.03915 3.00527C9.05487 3.04323 9.06296 3.08392 9.06296 3.12501C9.06296 3.1661 9.05487 3.20679 9.03915 3.24475C9.02342 3.28271 9.00038 3.3172 8.97132 3.34626L5.22132 7.09626C5.19229 7.12536 5.15781 7.14845 5.11984 7.1642C5.08188 7.17996 5.04117 7.18807 5.00007 7.18807C4.95897 7.18807 4.91827 7.17996 4.8803 7.1642C4.84233 7.14845 4.80785 7.12536 4.77882 7.09626L1.02882 3.34626C0.999718 3.31723 0.976629 3.28275 0.960875 3.24478C0.945121 3.20681 0.937012 3.16611 0.937012 3.12501C0.937012 3.0839 0.945121 3.0432 0.960875 3.00524C0.976629 2.96727 0.999718 2.93279 1.02882 2.90376Z" fill="#242424"/>
-            </svg>
-            
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <title>더보기</title>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.02882 2.90376C1.05785 2.87466 1.09233 2.85157 1.1303 2.83581C1.16827 2.82006 1.20897 2.81195 1.25007 2.81195C1.29117 2.81195 1.33188 2.82006 1.36984 2.83581C1.40781 2.85157 1.44229 2.87466 1.47132 2.90376L5.00007 6.43313L8.52882 2.90376C8.55788 2.8747 8.59237 2.85166 8.63033 2.83593C8.66829 2.82021 8.70898 2.81211 8.75007 2.81211C8.79116 2.81211 8.83185 2.82021 8.86981 2.83593C8.90777 2.85166 8.94227 2.8747 8.97132 2.90376C9.00038 2.93281 9.02342 2.96731 9.03915 3.00527C9.05487 3.04323 9.06296 3.08392 9.06296 3.12501C9.06296 3.1661 9.05487 3.20679 9.03915 3.24475C9.02342 3.28271 9.00038 3.3172 8.97132 3.34626L5.22132 7.09626C5.19229 7.12536 5.15781 7.14845 5.11984 7.1642C5.08188 7.17996 5.04117 7.18807 5.00007 7.18807C4.95897 7.18807 4.91827 7.17996 4.8803 7.1642C4.84233 7.14845 4.80785 7.12536 4.77882 7.09626L1.02882 3.34626C0.999718 3.31723 0.976629 3.28275 0.960875 3.24478C0.945121 3.20681 0.937012 3.16611 0.937012 3.12501C0.937012 3.0839 0.945121 3.0432 0.960875 3.00524C0.976629 2.96727 0.999718 2.93279 1.02882 2.90376Z"
+              fill="#242424"
+            />
+          </svg>
         </button>
       </div>
 
-      
       <!-- 우측: SVG 아이콘 (다른 페이지 링크) -->
-      <a href="#" class="flex items-center">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="#" class="flex items-center" aria-label="밀리 랭킹 더보기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <title>더보기</title>
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
@@ -79,6 +93,7 @@
             stroke-width="0.5"
           />
         </svg>
+        <span class="sr-only">더보기</span>
       </a>
     </div>
   </body>
