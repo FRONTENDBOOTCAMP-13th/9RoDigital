@@ -227,7 +227,7 @@
     }
     &::before {
       background: url('./assets/icon/highlight.svg') no-repeat center/cover;
-      transform: rotate(180deg); /* 45도 회전 */
+      transform: rotate(180deg);
       bottom: 20px;
       right: 20px;
     }
