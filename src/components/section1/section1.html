@@ -9,164 +9,217 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <section>
-      <ul>
-        <li>
+    <section class="flex items-center gap-3 overflow-x-hidden">
+      <div class="min-w-[15.25rem]">
+        <a href="#void">
+          <div class="rounded-2xl">
+            <img src="../../assets/images/section-01-01.webp" alt="" class="rounded-2xl" />
+          </div>
+          <p></p>
+        </a>
+      </div>
+      <ul class="flex items-center gap-4 overflow-x-scroll max-w-full">
+        <li class="min-w-[145px]">
           <a href="#void">
             <div>
-              <img src="../../assets/images/section-01-01.webp" alt="" />
+              <div>
+                <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                  <img
+                    srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
+                    src="../../assets/images/section-01-02-sm.webp"
+                    alt="그래서 브랜딩이 필요합니다"
+                    class="rounded-[0 4px 4px 0]"
+                  />
+                </p>
+              </div>
+              <div>
+                <div>
+                  <h4 class="font-bold text-(--dark-ui-01)">그래서 브랜딩이 필요합니다</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">전우성</p>
+                </div>
+                <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+                  <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
+                  <li><span class="sr-only">진행사항</span><span>36%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>100분</span></li>
+                </ul>
+              </div>
             </div>
-            <p></p>
           </a>
         </li>
-        <li>
+        <li class="min-w-[145px] hidden sm:block">
           <a href="#void">
             <div>
               <div class="badge">
                 <!-- 책 영역 -->
                 <div class="inline-block book-rounded shadow-sm badge-img">
                   <img
-                    srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
-                    src="../../assets/images/section-01-02-sm.webp"
-                    alt="책 이름"
+                    srcset="../../assets/images/section-01-03-sm.webp 1x, ../../assets/images/section-01-03-xl.webp 2x"
+                    src="../../assets/images/section-01-03-sm.webp"
+                    alt="2025 대한민국 재테크 트렌드"
                     class="book-rounded"
                   />
                   <div class="badge-text flex flex-col">
                     <div class="badge-bg">
-                      <span class="text-xs p-1">텍스트</span>
+                      <span class="text-xs p-1">완독</span>
                     </div>
                     <div class="badge-bg">
-                      <span class="text-xs p-1">텍스트</span>
+                      <span class="text-xs p-1">10분</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
-                  <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
-                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
+                  <h4 class="font-bold text-(--dark-ui-01)">2025 대한민국 재테크 트렌드</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">조선일보 경제부</p>
                 </div>
                 <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
                   <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
-                  <li><span class="sr-only">진행사항</span><span>n%</span></li>
-                  <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
+                  <li><span class="sr-only">진행사항</span><span>38%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>127분</span></li>
                 </ul>
               </div>
             </div>
           </a>
         </li>
-        <li>
-          <a href="#void">
-            <div>
-              <div>
-                <p class="inline-block shadow-sm book-rounded overflow-hidden">
-                  <img
-                    srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
-                    src="../../assets/images/section-01-02-sm.webp"
-                    alt="책 이름"
-                    class="rounded-[0 4px 4px 0]"
-                  />
-                </p>
-              </div>
-              <div>
-                <div>
-                  <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
-                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
-                </div>
-                <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                  <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
-                  <li><span class="sr-only">진행사항</span><span>n%</span></li>
-                  <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
-                </ul>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li>
+        <li class="min-w-[145px] hidden sm:block">
           <a href="#void">
             <div>
               <div class="badge">
                 <!-- 책 영역 -->
                 <div class="inline-block book-rounded shadow-sm badge-img">
                   <img
-                    srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
-                    src="../../assets/images/section-01-02-sm.webp"
-                    alt="책 이름"
+                    srcset="../../assets/images/section-01-04-sm.webp 1x, ../../assets/images/section-01-04-xl.webp 2x"
+                    src="../../assets/images/section-01-04-sm.webp"
+                    alt="새벽에 그리다"
                     class="book-rounded"
                   />
                   <div class="badge-text flex flex-col">
                     <div class="badge-bg">
-                      <span class="text-xs p-1">텍스트</span>
-                    </div>
-                    <div class="badge-bg">
-                      <span class="text-xs p-1">텍스트</span>
+                      <span class="text-xs p-1">완독</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
-                  <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
-                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
+                  <h4 class="font-bold text-(--dark-ui-01)">새벽에 그리다</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">마노엘</p>
                 </div>
                 <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
                   <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
-                  <li><span class="sr-only">진행사항</span><span>n%</span></li>
-                  <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
+                  <li><span class="sr-only">진행사항</span><span>52%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>144분</span></li>
                 </ul>
               </div>
             </div>
           </a>
         </li>
-        <li>
+        <li class="min-w-[145px] hidden md:block">
           <a href="#void">
             <div>
               <div>
                 <p class="inline-block shadow-sm book-rounded overflow-hidden">
                   <img
-                    srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
-                    src="../../assets/images/section-01-02-sm.webp"
-                    alt="책 이름"
+                    srcset="../../assets/images/section-01-05-sm.webp 1x, ../../assets/images/section-01-05-xl.webp 2x"
+                    src="../../assets/images/section-01-05-sm.webp"
+                    alt="복숭아 토끼"
                     class="rounded-[0 4px 4px 0]"
                   />
                 </p>
               </div>
               <div>
                 <div>
-                  <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
-                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
+                  <h4 class="font-bold text-(--dark-ui-01)">복숭아 토끼</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">글, 그림 김지윤</p>
                 </div>
                 <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
                   <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
-                  <li><span class="sr-only">진행사항</span><span>n%</span></li>
-                  <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
+                  <li><span class="sr-only">진행사항</span><span>76%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>10분</span></li>
                 </ul>
               </div>
             </div>
           </a>
         </li>
-        <li>
+        <li class="min-w-[145px] hidden lg:block">
           <a href="#void">
             <div>
               <div>
                 <p class="inline-block shadow-sm book-rounded overflow-hidden">
                   <img
-                    srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
-                    src="../../assets/images/section-01-02-sm.webp"
-                    alt="책 이름"
+                    srcset="../../assets/images/section-01-06-sm.webp 1x, ../../assets/images/section-01-06-xl.webp 2x"
+                    src="../../assets/images/ssection-01-06-sm.webp"
+                    alt="진화하는 언어"
                     class="rounded-[0 4px 4px 0]"
                   />
                 </p>
               </div>
               <div>
                 <div>
-                  <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
-                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
+                  <h4 class="font-bold text-(--dark-ui-01)">진화하는 언어</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">
+                    모텐 H.크리스티악센, 닉 채너 지음 / 이혜경 옮김
+                  </p>
                 </div>
                 <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
                   <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
-                  <li><span class="sr-only">진행사항</span><span>n%</span></li>
-                  <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
+                  <li><span class="sr-only">진행사항</span><span>48%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>261분</span></li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="min-w-[145px] hidden xl:block">
+          <a href="#void">
+            <div>
+              <div>
+                <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                  <img
+                    srcset="../../assets/images/section-01-07-sm.webp 1x, ../../assets/images/section-01-07-xl.webp 2x"
+                    src="../../assets/images/section-01-07-sm.webp"
+                    alt="삶이 허기질 때 나는 교양을 읽는다"
+                    class="rounded-[0 4px 4px 0]"
+                  />
+                </p>
+              </div>
+              <div>
+                <div>
+                  <h4 class="font-bold text-(--dark-ui-01)">삶이 허기질 때 나는 교양을 읽는다</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">지식 브런치</p>
+                </div>
+                <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+                  <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
+                  <li><span class="sr-only">진행사항</span><span>53%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>333분</span></li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="min-w-[145px] hidden xl:block">
+          <a href="#void">
+            <div>
+              <div>
+                <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                  <img
+                    srcset="../../assets/images/section-01-08-sm.webp 1x, ../../assets/images/section-01-08-xl.webp 2x"
+                    src="../../assets/images/section-01-08-sm.webp"
+                    alt="인간 실격"
+                    class="rounded-[0 4px 4px 0]"
+                  />
+                </p>
+              </div>
+              <div>
+                <div>
+                  <h4 class="font-bold text-(--dark-ui-01)">인간 실격 &#183; 사양</h4>
+                  <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">다자이오사무 지음, 오유리 옮김</p>
+                </div>
+                <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+                  <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
+                  <li><span class="sr-only">진행사항</span><span>38%</span></li>
+                  <li><span class="sr-only">총 진행 타임</span><span>201분</span></li>
                 </ul>
               </div>
             </div>
