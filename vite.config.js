@@ -22,6 +22,7 @@ export default defineConfig({
         section4: '/src/components/section4/section4.html', // 마이 페이지
         frames: '/src/components/quote-frames/quote-frames.html', // 마이 페이지
         section7: '/src/components/section7/thisbook.html', // 이럴떈 이런책
+        feed: './src/components/feed/feed.html', //피드
       },
     },
   },
