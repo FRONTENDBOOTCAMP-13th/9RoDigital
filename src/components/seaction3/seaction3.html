@@ -9,8 +9,37 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <section>
-      
+    <section class="flex flex-col md:flex-row lg:py-[2.5rem] justify-center items-center gap-3 today-must-read rounded-2xl">
+      <div class="md:w-[50%] lg:w-[20.625rem] rounded-lg today-must-read-img overflow-hidden">
+        <span class="rounded-lg"></span>
+        <figure class="flex justify-center p-10">
+          <img
+            srcset="../../assets/images/section-02-03-lg.webp 2x, ../../assets/images/section-02-03-sm.webp 1x"
+            src="../../assets/images/section-02-03-sm.webp"
+            alt=""
+            class="shadow-md rounded-lg"
+          />
+          <figcaption class="sr-only">밑줄과 생각 - 정용준</figcaption>
+        </figure>
+      </div>
+      <main class="flex flex-col md:w-[50%] lg:w-[20.625rem] h-auto md:h-[23rem] p-4 bg-white/80 rounded-lg text-(length:--font-size-sm)">
+        <aside class="flex items-center">
+          <p class="w-[3rem]"><img src="../../assets/logo/willie-logo.svg" alt="프론트 엔드 멋사들 프로필 사진" /></p>
+          <div>
+            <h3 class="font-black">프론트엔드 13기 멋사들</h3>
+            <span class="text-gray-500"> 슬비 선생님의 선택</span>
+          </div>
+        </aside>
+        <div class="flex justify-center items-center flex-1 text-center rounded-xl my-4">
+          <blockquote id="quote-text" class="break-keep">
+            깊이 있는 문장과 감각적인 고백이 우리에게 감동과 깨달음을 선사해요. 읽기와 쓰기가 주는 의미를 담아낸 소중한 산문집이랍니다!
+          </blockquote>
+        </div>
+        <ul class="border-t border-gray-300 pt-3 pl-6">
+          <li>정용준 작가의 신간</li>
+          <li>읽고 쓰는 기쁨을 공유하고 싶다면?</li>
+        </ul>
+      </main>
     </section>
   </body>
 </html>
