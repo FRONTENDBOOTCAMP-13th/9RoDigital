@@ -271,4 +271,31 @@
       }
     }
   }
+  .daily-quote-read {
+    blockquote {
+      padding: 50px 20px;
+      position: relative;
+
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        opacity: 0.2;
+      }
+      &::after {
+        background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+        top: 5px;
+        left: 20px;
+      }
+      &::before {
+        background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+        transform: rotate(180deg);
+        bottom: 5px;
+        right: 20px;
+      }
+    }
+  }
 }
