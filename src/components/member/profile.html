@@ -52,9 +52,11 @@
           <!-- 프로필: 나의 정기구독 -->
           <div class="border border-[var(--gray-05)] rounded-sm">
             <!-- 더보기 -->
-            <div class="flex justify-between items-center px-4 h-12 bg-[var(--gray-02)]">
-              <a href="/" class="text-[var(--gray-14)] font-semibold">나의 정기구독</a>
-              <img class="rotate-180" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="구독관리 더보기" />
+            <div class="flex justify-between items-center px-4 h-12 bg-[var(--gray-02)] border-b border-[var(--gray-05)]">
+              <a href="/" class="text-[var(--gray-14)] font-semibold flex w-full"
+                ><span>나의 정기구독</span>
+                <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="구독관리 더보기"
+              /></a>
             </div>
             <!-- 정기구독 요약 -->
             <div class="p-4">
@@ -63,12 +65,12 @@
                 <span class="text-white bg-[var(--gray-13)] ml-2 px-1 text-[10px] rounded-sm h-5 content-center">전자책 구독</span>
               </div>
               <!-- 기간 + 다음결제일 -->
-              <ul class="space-y-3">
+              <ul>
                 <li class="flex">
                   <p class="pr-3 text-[var(--gray-10)] text-(length:--font-size-sm) h-[20px] w-[95px]">구독 기간</p>
                   <span class="text-(length:--font-size-sm) text-[var(--gray-14)]">2025.03.14 ~ 2025.04.14</span>
                 </li>
-                <li class="flex">
+                <li class="flex pt-1">
                   <p class="pr-3 text-[var(--gray-10)] text-(length:--font-size-sm) h-[20px] w-[95px]">다음 결제일</p>
                   <span class="text-(length:--font-size-sm) text-[var(--gray-14)]">2025.04.14</span>
                 </li>
