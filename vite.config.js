@@ -17,6 +17,7 @@ export default defineConfig({
         title: '/src/components/title/title.html', // 타이틀
         quote: '/src/components/section8/section8.html', // 오늘의 한 문장
         section5: '/src/components/section5/original.html', // 밀리 오리지널
+        section7: '/src/components/section7/thisbook.html', // 이럴떈 이런책
       },
     },
   },
