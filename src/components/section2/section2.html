@@ -96,65 +96,88 @@
       </button>
     </div>
 
-    <h2 class="text-2xl mb-5">랭킹 상승 컴포넌트</h2>
-    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full">
+    <h2 class="text-2xl my-5">랭킹 상승 컴포넌트</h2>
+    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2" role="article">
       <div class="flex items-center space-x-6 w-full">
         <!-- 이미지 -->
-        <img src="../../assets/images/section-02-01-xl.webp" alt="도서 표지" class="w-20 h-28 rounded-sm flex-shrink-0" />
+        <img src="../../assets/images/section-02-01-xl.webp" alt="율의 시선 도서 표지" class="w-20 h-28 rounded-sm flex-shrink-0" />
         <!-- 텍스트 정보 -->
         <div class="flex-1 max-w-1/2">
-          <h2 class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
-          <p class="text-sm text-(--light-text-03) truncate">김민서</p>
+          <h2 id="book-title-2" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
         </div>
       </div>
       <!-- 랭킹 변동 -->
-      <p class="text-sm text-(--blue-08) flex items-center flex-shrink-0">
-        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M5.43538 9.7475L1.83838 4.95075C1.41388 4.38638 1.75888 3.5 2.40313 3.5H9.59713C9.74131 3.49986 9.88248 3.5482 10.0037 3.63925C10.125 3.73029 10.2211 3.86018 10.2807 4.01336C10.3403 4.16653 10.3608 4.3365 10.3397 4.50291C10.3186 4.66931 10.2569 4.8251 10.1619 4.95163L6.56488 9.74663C6.49448 9.84061 6.40767 9.91593 6.31026 9.96754C6.21286 10.0192 6.10711 10.0459 6.00013 10.0459C5.89315 10.0459 5.78741 10.0192 5.69 9.96754C5.59259 9.91593 5.50578 9.84061 5.43538 9.74663V9.7475Z"
-            fill="#0073cb"
-          />
-        </svg>
-        1
-      </p>
-    </a>
-
-    <h2 class="text-2xl my-5">랭킹 하락 컴포넌트</h2>
-    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full">
-      <div class="flex items-center space-x-6 w-full">
-        <!-- 이미지 -->
-        <img src="../../assets/images/section-02-01-xl.webp" alt="도서 표지" class="w-20 h-28 rounded-sm flex-shrink-0" />
-        <!-- 텍스트 정보 -->
-        <div class="flex-1 max-w-1/2">
-          <h2 class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
-          <p class="text-sm text-(--light-text-03) truncate">김민서</p>
-        </div>
-      </div>
-      <!-- 랭킹 변동 -->
-      <p class="text-sm text-(--light-danger) flex items-center flex-shrink-0">
-        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <p class="text-sm text-(--light-danger) flex items-center flex-shrink-0" aria-live="polite">
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
           <path
             d="M5.43538 4.25246L1.83838 9.04833C1.41388 9.61446 1.75888 10.5 2.40313 10.5H9.59713C9.74131 10.5001 9.88248 10.4518 10.0037 10.3607C10.125 10.2697 10.2211 10.1398 10.2807 9.9866C10.3403 9.83343 10.3608 9.66346 10.3397 9.49705C10.3186 9.33065 10.2569 9.17485 10.1619 9.04833L6.56488 4.25333C6.49448 4.15935 6.40767 4.08402 6.31026 4.03241C6.21286 3.9808 6.10711 3.9541 6.00013 3.9541C5.89315 3.9541 5.78741 3.9808 5.69 4.03241C5.59259 4.08402 5.50578 4.15848 5.43538 4.25246Z"
             fill="#df1d1d"
           />
         </svg>
-        1
+        <span class="ml-1">1</span>
+        <span class="sr-only">순위 하락</span>
+      </p>
+    </a>
+
+    <h2 class="text-2xl mb-5">랭킹 하락 컴포넌트</h2>
+    <a
+      href="/books/율의-시선"
+      class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full"
+      aria-labelledby="book-title-1"
+      role="article"
+    >
+      <div class="flex items-center space-x-6 w-full">
+        <!-- 이미지 -->
+        <img src="../../assets/images/section-02-01-xl.webp" alt="율의 시선 도서 표지" class="w-20 h-28 rounded-sm flex-shrink-0" />
+        <!-- 텍스트 정보 -->
+        <div class="flex-1 max-w-1/2">
+          <h2 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
+        </div>
+      </div>
+      <!-- 랭킹 변동 -->
+      <p class="text-sm text-(--blue-08) flex items-center flex-shrink-0" aria-live="polite">
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path
+            d="M5.43538 9.7475L1.83838 4.95075C1.41388 4.38638 1.75888 3.5 2.40313 3.5H9.59713C9.74131 3.49986 9.88248 3.5482 10.0037 3.63925C10.125 3.73029 10.2211 3.86018 10.2807 4.01336C10.3403 4.16653 10.3608 4.3365 10.3397 4.50291C10.3186 4.66931 10.2569 4.8251 10.1619 4.95163L6.56488 9.74663C6.49448 9.84061 6.40767 9.91593 6.31026 9.96754C6.21286 10.0192 6.10711 10.0459 6.00013 10.0459C5.89315 10.0459 5.78741 10.0192 5.69 9.96754C5.59259 9.91593 5.50578 9.84061 5.43538 9.74663V9.7475Z"
+            fill="#0073cb"
+          />
+        </svg>
+        <span class="ml-1">1</span>
+        <span class="sr-only">순위 상승</span>
       </p>
     </a>
 
     <h2 class="text-2xl my-5">랭킹 변동 없음 컴포넌트</h2>
-    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full">
+    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-3" role="article">
       <div class="flex items-center space-x-6 w-full">
         <!-- 이미지 -->
-        <img src="../../assets/images/section-02-01-xl.webp" alt="도서 표지" class="w-20 h-28 rounded-sm flex-shrink-0" />
+        <img src="../../assets/images/section-02-01-xl.webp" alt="율의 시선 도서 표지" class="w-20 h-28 rounded-sm flex-shrink-0" />
         <!-- 텍스트 정보 -->
         <div class="flex-1 max-w-1/2">
-          <h2 class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
-          <p class="text-sm text-(--light-text-03) truncate">김민서</p>
+          <h2 id="book-title-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
         </div>
       </div>
       <!-- 랭킹 변동 -->
-      <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0">-</p>
+      <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+        <span>-</span>
+        <span class="sr-only">순위 변동 없음</span>
+      </p>
     </a>
+    <h2 class="text-2xl my-5">밀리 랭킹 섹션 완성</h2>
+    <section class="w-full mx-auto p bg-amber-300">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+    </section>
   </body>
 </html>
