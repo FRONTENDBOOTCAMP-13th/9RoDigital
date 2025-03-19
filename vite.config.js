@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+        // 컴포넌트
         landing: '/src/components/landing/landing.html', // Main 랜딩 섹션
         header: '/src/components/header/header.html', // 헤더
         footer: '/src/components/footer/footer.html', // 푸터
@@ -15,13 +16,14 @@ export default defineConfig({
         button: '/src/components/button/button.html', // 버튼
         signup: '/src/components/mypage/mypage.html', // 마이 페이지
         title: '/src/components/title/title.html', // 타이틀
-        quote: '/src/components/section8/section8.html', // 오늘의 한 문장
-        section5: '/src/components/section5/original.html', // 밀리 오리지널
+        frames: '/src/components/quote-frames/quote-frames.html', // 마이 페이지
+        // 섹션들
+        section1: '/src/components/section1/section1.html', // 마이 페이지
         ranking: '/src/components/section2/section2.html', // 밀리 랭킹
-        seaction3: '/src/components/seaction3/seaction3.html', // 마이 페이지
-        seaction4: '/src/components/seaction4/seaction4.html', // 마이 페이지
-        frames: '/src/components/quote-frames/quote-frames.html' // 마이 페이지
-        
+        section3: '/src/components/section3/section3.html', // 마이 페이지
+        section4: '/src/components/section4/section4.html', // 마이 페이지
+        section5: '/src/components/section5/original.html', // 밀리 오리지널
+        section8: '/src/components/section8/section8.html', // 오늘의 한 문장
       },
     },
   },
