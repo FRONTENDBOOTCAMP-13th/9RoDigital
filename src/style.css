@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: 'Spoqa Han Sans Neo', sans-serif;
+  --font-NotoSerifKR: 'Noto Serif KR', serif;
 
   /* Light Theme */
   --light-ui-background: #ffffff;
