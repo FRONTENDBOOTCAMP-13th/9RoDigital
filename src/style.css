@@ -165,6 +165,15 @@
     margin: 0 12px;
     color: var(--gray-09);
   }
+
+  .text-outline {
+    -webkit-text-stroke: 1px gray;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
 
 /* button component */
