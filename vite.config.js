@@ -7,6 +7,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+        home: '/home.html', // 홈
         landing: '/src/components/landing/landing.html', // Main 랜딩 섹션
         header: '/src/components/header/header.html', // 헤더
         footer: '/src/components/footer/footer.html', // 푸터
