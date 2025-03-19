@@ -13,7 +13,10 @@ export default defineConfig({
         login: '/src/components/login/login.html', // 로그인 페이지
         member: '/src/components/member/member.html', // 멤버 페이지
         button: '/src/components/button/button.html', // 버튼
-        signup: '/src/components/mypage/mypage.html' // 마이 페이지
+        signup: '/src/components/mypage/mypage.html', // 마이 페이지
+        seaction3: '/src/components/seaction3/seaction3.html', // 마이 페이지
+        seaction4: '/src/components/seaction4/seaction4.html', // 마이 페이지
+        frames: '/src/components/quote-frames/quote-frames.html', // 마이 페이지
       },
     },
   },
