@@ -21,7 +21,7 @@ export default defineConfig({
         seaction3: '/src/components/seaction3/seaction3.html', // 마이 페이지
         seaction4: '/src/components/seaction4/seaction4.html', // 마이 페이지
         frames: '/src/components/quote-frames/quote-frames.html' // 마이 페이지
-        
+        section7: '/src/components/section7/thisbook.html', // 이럴떈 이런책
       },
     },
   },
