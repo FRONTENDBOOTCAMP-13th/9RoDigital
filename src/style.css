@@ -328,3 +328,19 @@
     top: 4px; /* 텍스트만 내리기 */
   }
 }
+
+.new-book-title {
+  margin-left: 1.6rem;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 24px;
+    background: url('./assets/icon/twinkle.png') no-repeat center/cover;
+    left: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
