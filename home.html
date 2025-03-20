@@ -5,105 +5,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>윌리의 서재를 소개합니다!</title>
     <link rel="icon" href="/favicon.svg" />
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
     <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="font-pretendard bg-gray-100 text-gray-800 leading-relaxed">
+  <body class="font-pretendard bg-white text-black leading-relaxed">
     <!-- 헤더 -->
     <header class="bg-white shadow-sm">
       <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="index.html" class="flex items-center text-xl font-bold text-gray-800">
-          <img src="../../assets/" alt="윌리의 서재 로고" class="h-10 mr-2" />
-          윌리의 서재
+        <a
+          href="index.html"
+          class="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+          aria-label="윌리의 서재 메인 페이지로 이동"
+        >
+          <img src="./src/assets/logo/willie-english.svg" alt="윌리의 서재" class="h-[1.375rem]" height="22" />
         </a>
-        <div>
+        <div class="flex items-center justify-center gap-2.5">
           <a
-            href="https://github.com/9lo-digital/willy-library"
+            href="https://github.com/FRONTENDBOOTCAMP-13th/9RoDigital"
             target="_blank"
-            class="inline-flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-gray-200 transition-colors"
+            class="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+            aria-label="GitHub 프로젝트 저장소 바로가기"
           >
-            <i class="fab fa-github mr-1"></i> GitHub
+            <img src="./src/assets/icon/github.svg" alt="깃허브" class="h-[1.375rem]" height="22" />
+          </a>
+          <a
+            href="https://9rodigital-willie.netlify.app"
+            target="_blank"
+            class="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+            aria-label="9ro Digital 프로젝트 웹사이트 바로가기"
+            rel="noopener noreferrer"
+          >
+            <img src="./src/assets/icon/link_45deg.svg" alt="링크" class="h-[1.375rem]" height="22" />
           </a>
         </div>
       </div>
     </header>
 
     <!-- 메인 내비게이션 -->
-    <nav class="bg-gray-200">
-      <div class="max-w-7xl mx-auto px-4 py-2 flex justify-center">
-        <a href="#components" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">컴포넌트</a>
-        <a href="#team" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">팀 소개</a>
-        <a href="#service" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">서비스</a>
-        <a href="#guide" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">가이드</a>
-      </div>
+    <nav class="bg-gray-100 shadow-sm">
+      <ul class="max-w-7xl mx-auto flex justify-center gap-6 py-4">
+        <a href="#team" class="focus:outline-none focus:ring focus:ring-[#A451F7] focus:ring-offset-2">팀 소개</a>
+        <a href="#components" class="focus:outline-none focus:ring focus:ring-[#A451F7] focus:ring-offset-2">컴포넌트</a>
+        <a href="#service" class="focus:outline-none focus:ring focus:ring-[#A451F7] focus:ring-offset-2">서비스</a>
+        <a href="#guide" class="focus:outline-none focus:ring focus:ring-[#A451F7] focus:ring-offset-2">가이드</a>
+      </ul>
     </nav>
 
     <!-- 메인 콘텐츠 -->
     <main class="max-w-7xl mx-auto px-4 py-8">
       <!-- 팀 소개 섹션 -->
-      <section id="team" class="bg-white rounded-lg shadow p-8 mb-8">
-        <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">9로 디지털</h2>
-        <p class="text-gray-600 text-center mb-4">
-          안녕하세요! 9로 디지털 팀은 디지털 시대에 맞춰 책과 독서 문화를 디지털화하는 '윌리의 서재' 프로젝트를 진행하고 있습니다.
+      <section id="team" class="bg-white rounded-lg shadow py-8 px-4 mb-8">
+        <h2 class="text-3xl font-bold text-center mb-8">9로디지털</h2>
+
+        <h3 class="text-2xl font-semibold text-center mb-8">프로젝트 소개</h3>
+
+        <img src="./src/assets/logo/willie_purple_korean_logo.svg" alt="윌리의 서재" class="w-xs mx-auto mb-8" />
+        <p class="text-center mb-8">
+          안녕하세요! 9로디지털 팀은 국내 최대 전자책 구독 서비스 '밀리의 서재'의 디자인을 참고하여 '윌리의 서재' 프로젝트를 진행했습니다.<br />
+          사용자 중심의 UI 디자인과 직관적인 인터페이스를 만들기 위해 노력했습니다.<br />
+          팀원 각자의 강점을 살린 효율적인 협업 과정을 통해 아이디어를 발전시키고, 함께 문제를 해결하며 성장하는 값진 경험을 얻었습니다.
         </p>
-        <p class="text-gray-600 text-center">사용자 중심의 UI 개발과 최신 웹 기술을 활용하여 독서 경험을 새롭게 디자인하고 있습니다.</p>
+
+        <h3 class="text-2xl font-semibold text-center mb-8">팀원 소개</h3>
+        <!-- 팀원 소개 섹션 -->
+        <section class="w-full px-4 py-8 md:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <!-- 팀원 카드 : 정유진 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div class="p-4 flex flex-col items-center h-full">
+                <!-- 프로필 이미지 -->
+                <img
+                  src="./src/assets/images/yujin_profile.webp"
+                  alt="정유진 프로필"
+                  class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full shadow-md mb-3"
+                />
+
+                <!-- 이름 및 역할 -->
+                <div class="text-center mb-2">
+                  <div class="font-semibold text-base">팀장</div>
+                  <div class="text-lg font-bold text-[#A451F7]">정유진</div>
+                </div>
+
+                <!-- MBTI 배지 -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#FFEF6D] mb-3" aria-label="MBTI 유형: INFP"
+                  >INFP</span
+                >
+
+                <!-- 메시지  -->
+                <div class="bg-gray-50 rounded-lg p-3 w-full mb-3 flex-grow">
+                  <p class="italic text-sm text-gray-600 line-clamp-3">
+                    팀 멤버들과의 협력, UIUX 중심으로 진행한 프로젝트입니다. 9로디지털조 화이팅ʕ •ᴥ•ʔ
+                  </p>
+                </div>
+
+                <!-- 링크 섹션 -->
+                <div class="flex flex-col w-full gap-2 mt-auto">
+                  <!-- GitHub 링크 -->
+                  <a
+                    href="https://github.com/Yujin0528"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="정유진 GitHub 페이지 (새 창에서 열림)"
+                    class="inline-flex items-center justify-center px-4 py-2 rounded bg-gray-900 text-white text-sm font-medium transition-colors hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A451F7]"
+                  >
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.16 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                      ></path>
+                    </svg>
+                    GitHub
+                  </a>
+
+                  <!-- 이메일 링크 -->
+                  <div class="relative w-full border border-gray-200 rounded overflow-hidden">
+                    <a
+                      href="mailto:yjjeong0528@gmail.com"
+                      class="block text-center hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A451F7] px-2 py-1 truncate"
+                      aria-label="정유진 이메일: yjjeong0528@gmail.com"
+                      title="yjjeong0528@gmail.com"
+                    >
+                      yjjeong0528@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 팀원 카드 : 노현수 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div class="p-4 flex flex-col items-center h-full">
+                <!-- 프로필 이미지 -->
+                <img
+                  src="./src/assets/images/hyunsoo_profile.webp"
+                  alt="노현수 프로필"
+                  class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full shadow-md mb-3"
+                />
+
+                <!-- 이름 및 역할 -->
+                <div class="text-center mb-2">
+                  <div class="font-semibold text-base">스크럼 마스터</div>
+                  <div class="text-lg font-bold text-[#A451F7]">노현수</div>
+                </div>
+
+                <!-- MBTI 배지 -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#FFEF6D] mb-3" aria-label="MBTI 유형: INFP"
+                  >INFP</span
+                >
+
+                <!-- 메시지 -->
+                <div class="bg-gray-50 rounded-lg p-3 w-full mb-3 flex-grow">
+                  <p class="italic text-sm text-gray-600 line-clamp-3">
+                    결과보다는 과정에 집중해서 프로젝트를 잘 마무리했으면 좋겠습니다. 다들 파이팅 해요!!
+                  </p>
+                </div>
+
+                <!-- 링크 섹션 -->
+                <div class="flex flex-col w-full gap-2 mt-auto">
+                  <!-- GitHub 링크 -->
+                  <a
+                    href="https://github.com/toosign00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="노현수 GitHub 페이지 (새 창에서 열림)"
+                    class="inline-flex items-center justify-center px-4 py-2 rounded bg-gray-900 text-white text-sm font-medium transition-colors hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A451F7]"
+                  >
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.16 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                      ></path>
+                    </svg>
+                    GitHub
+                  </a>
+
+                  <!-- 이메일 링크 -->
+                  <div class="relative w-full border border-gray-200 rounded overflow-hidden">
+                    <a
+                      href="mailto:kevinsoo1014@gmail.com"
+                      class="block text-center hover:underline focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2 px-2 py-1 truncate"
+                      aria-label="노현수 이메일: kevinsoo1014@gmail.com"
+                      title="kevinsoo1014@gmail.com"
+                    >
+                      kevinsoo1014@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 팀원 카드 : 구성연 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div class="p-4 flex flex-col items-center h-full">
+                <!-- 프로필 이미지 -->
+                <img
+                  src="./src/assets/images/rogie_profile.webp"
+                  alt="구성연 프로필"
+                  class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full shadow-md mb-3"
+                />
+
+                <!-- 이름 및 역할 -->
+                <div class="text-center mb-2">
+                  <div class="font-semibold text-base">팀원</div>
+                  <div class="text-lg font-bold text-[#A451F7]">구성연</div>
+                </div>
+
+                <!-- MBTI 배지 -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#FFEF6D] mb-3" aria-label="MBTI 유형: ISFP"
+                  >ISFP</span
+                >
+
+                <!-- 메시지 -->
+                <div class="bg-gray-50 rounded-lg p-3 w-full mb-3 flex-grow">
+                  <p class="italic text-sm text-gray-600 line-clamp-3">
+                    팀원들과 원활하게 협업하며, 팀 규칙을 준수하며 최선을 다하는 사람입니다! 다들 화이팅!!! 🚀
+                  </p>
+                </div>
+
+                <!-- 링크 섹션 -->
+                <div class="flex flex-col w-full gap-2 mt-auto">
+                  <!-- GitHub 링크 -->
+                  <a
+                    href="https://github.com/koo-rogie"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="구성연 GitHub 페이지 (새 창에서 열림)"
+                    class="inline-flex items-center justify-center px-4 py-2 rounded bg-gray-900 text-white text-sm font-medium transition-colors hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A451F7]"
+                  >
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.16 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                      ></path>
+                    </svg>
+                    GitHub
+                  </a>
+
+                  <!-- 이메일 링크 -->
+                  <div class="relative w-full border border-gray-200 rounded overflow-hidden">
+                    <a
+                      href="mailto:rn5184@naver.com"
+                      class="block text-center hover:underline focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2 px-2 py-1 truncate"
+                      aria-label="구성연 이메일: rn5184@naver.com"
+                      title="rn5184@naver.com"
+                    >
+                      rn5184@naver.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 팀원 카드 : 신동수 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div class="p-4 flex flex-col items-center h-full">
+                <!-- 프로필 이미지 -->
+                <img
+                  src="./src/assets/images/dongsu_profile.webp"
+                  alt="신동수 프로필"
+                  class="w-28 h-28 md:w-32 md:h-32 object-cover rounded-full shadow-md mb-3"
+                />
+
+                <!-- 이름 및 역할 -->
+                <div class="text-center mb-2">
+                  <div class="font-semibold text-base">팀원</div>
+                  <div class="text-lg font-bold text-[#A451F7]">신동수</div>
+                </div>
+
+                <!-- MBTI 배지 -->
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#FFEF6D] mb-3" aria-label="MBTI 유형: INTP"
+                  >INTP</span
+                >
+
+                <!-- 메시지 -->
+                <div class="bg-gray-50 rounded-lg p-3 w-full mb-3 flex-grow">
+                  <p class="italic text-sm text-gray-600 line-clamp-3">
+                    다같이 협력하며 규칙을 준수해서 프로젝트를 마무리했으면 좋겠습니다 화이팅입니다.
+                  </p>
+                </div>
+
+                <!-- 링크 섹션 -->
+                <div class="flex flex-col w-full gap-2 mt-auto">
+                  <!-- GitHub 링크 -->
+                  <a
+                    href="https://github.com/Dongsusin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="신동수 GitHub 페이지 (새 창에서 열림)"
+                    class="inline-flex items-center justify-center px-4 py-2 rounded bg-gray-900 text-white text-sm font-medium transition-colors hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#A451F7]"
+                  >
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.48C19.138 20.16 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                      ></path>
+                    </svg>
+                    GitHub
+                  </a>
+
+                  <!-- 이메일 링크 -->
+                  <div class="relative w-full border border-gray-200 rounded overflow-hidden">
+                    <a
+                      href="mailto:auroratime020715@gmail.com"
+                      class="block text-center hover:underline focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2 px-2 py-1 truncate"
+                      aria-label="신동수 이메일: auroratime020715@gmail.com"
+                      title="auroratime020715@gmail.com"
+                    >
+                      auroratime020715@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- 컴포넌트 섹션 -->
       <section id="components" class="mb-8">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">컴포넌트</h2>
+        <h2 class="text-2xl font-bold mb-4">컴포넌트</h2>
 
         <!-- UI 요소 아코디언 -->
-        <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
-          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+        <div class="mb-4 bg-white rounded-lg shadow">
+          <div
+            class="p-4 flex justify-between items-center cursor-pointer border-b border-gray-200 transition-colors duration-200 hover:bg-[#FFF7BF]"
+            data-accordion="header"
+          >
             <span class="font-medium">UI 요소</span>
-            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+            <i class="fas fa-chevron-down transition-transform duration-300" data-accordion="icon"></i>
           </div>
           <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <!-- 버튼 컴포넌트 -->
               <a
                 href="components/button.html"
-                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
               >
                 <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
                   <i class="fas fa-square text-gray-500 text-4xl"></i>
                 </div>
                 <div class="p-4">
-                  <h3 class="text-lg font-medium text-gray-800">버튼</h3>
+                  <h3 class="text-lg font-medium">버튼</h3>
                   <p class="text-gray-600 mt-1">다양한 스타일과 크기의 버튼 컴포넌트</p>
                   <div class="mt-3">
-                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">UI 요소</span>
+                    <span class="inline-block bg-[#A451F7] text-white text-xs px-3 py-1 rounded-full">UI 요소</span>
                   </div>
                 </div>
               </a>
 
               <!-- 폼 컴포넌트 -->
-              <a href="components/form.html" class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300">
+              <a
+                href="components/form.html"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+              >
                 <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
                   <i class="fas fa-keyboard text-gray-500 text-4xl"></i>
                 </div>
                 <div class="p-4">
-                  <h3 class="text-lg font-medium text-gray-800">폼</h3>
+                  <h3 class="text-lg font-medium">폼</h3>
                   <p class="text-gray-600 mt-1">사용자 입력을 위한 폼 컴포넌트</p>
                   <div class="mt-3">
-                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">UI 요소</span>
+                    <span class="inline-block bg-[#A451F7] text-white text-xs px-3 py-1 rounded-full">UI 요소</span>
                   </div>
                 </div>
               </a>
 
               <!-- 모달 컴포넌트 -->
-              <a href="components/modal.html" class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300">
+              <a
+                href="components/modal.html"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+              >
                 <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
                   <i class="fas fa-window-maximize text-gray-500 text-4xl"></i>
                 </div>
                 <div class="p-4">
-                  <h3 class="text-lg font-medium text-gray-800">모달</h3>
+                  <h3 class="text-lg font-medium">모달</h3>
                   <p class="text-gray-600 mt-1">팝업 형태의 모달 컴포넌트</p>
                   <div class="mt-3">
-                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">UI 요소</span>
+                    <span class="inline-block bg-[#A451F7] text-white text-xs px-3 py-1 rounded-full">UI 요소</span>
                   </div>
                 </div>
               </a>
@@ -113,22 +398,28 @@
 
         <!-- 레이아웃 아코디언 -->
         <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
-          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+          <div
+            class="p-4 flex justify-between items-center cursor-pointer border-b border-gray-200 transition-colors duration-200 hover:bg-[#FFF7BF]"
+            data-accordion="header"
+          >
             <span class="font-medium">레이아웃</span>
-            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+            <i class="fas fa-chevron-down transition-transform duration-300" data-accordion="icon"></i>
           </div>
           <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <!-- 카드 컴포넌트 -->
-              <a href="components/card.html" class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300">
+              <a
+                href="components/card.html"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+              >
                 <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
                   <i class="fas fa-credit-card text-gray-500 text-4xl"></i>
                 </div>
                 <div class="p-4">
-                  <h3 class="text-lg font-medium text-gray-800">카드</h3>
+                  <h3 class="text-lg font-medium">카드</h3>
                   <p class="text-gray-600 mt-1">도서 정보를 표시하는 카드 컴포넌트</p>
                   <div class="mt-3">
-                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">레이아웃</span>
+                    <span class="inline-block bg-[#A451F7] text-white text-xs px-3 py-1 rounded-full">레이아웃</span>
                   </div>
                 </div>
               </a>
@@ -138,25 +429,28 @@
 
         <!-- 네비게이션 아코디언 -->
         <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
-          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+          <div
+            class="p-4 flex justify-between items-center cursor-pointer border-b border-gray-200 transition-colors duration-200 hover:bg-[#FFF7BF]"
+            data-accordion="header"
+          >
             <span class="font-medium">네비게이션</span>
-            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+            <i class="fas fa-chevron-down transition-transform duration-300" data-accordion="icon"></i>
           </div>
           <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <!-- 내비게이션 컴포넌트 -->
               <a
                 href="components/navigation.html"
-                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
               >
                 <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
                   <i class="fas fa-bars text-gray-500 text-4xl"></i>
                 </div>
                 <div class="p-4">
-                  <h3 class="text-lg font-medium text-gray-800">내비게이션</h3>
+                  <h3 class="text-lg font-medium">내비게이션</h3>
                   <p class="text-gray-600 mt-1">상단 및 사이드 내비게이션 컴포넌트</p>
                   <div class="mt-3">
-                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">네비게이션</span>
+                    <span class="inline-block bg-[#A451F7] text-white text-xs px-3 py-1 rounded-full">네비게이션</span>
                   </div>
                 </div>
               </a>
@@ -166,25 +460,28 @@
 
         <!-- 데이터 표시 아코디언 -->
         <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
-          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+          <div
+            class="p-4 flex justify-between items-center cursor-pointer border-b border-gray-200 transition-colors duration-200 hover:bg-[#FFF7BF]"
+            data-accordion="header"
+          >
             <span class="font-medium">데이터 표시</span>
-            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+            <i class="fas fa-chevron-down transition-transform duration-300" data-accordion="icon"></i>
           </div>
           <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
             <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <!-- 도서 목록 컴포넌트 -->
               <a
                 href="components/book-list.html"
-                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
               >
                 <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
                   <i class="fas fa-list text-gray-500 text-4xl"></i>
                 </div>
                 <div class="p-4">
-                  <h3 class="text-lg font-medium text-gray-800">도서 목록</h3>
+                  <h3 class="text-lg font-medium">도서 목록</h3>
                   <p class="text-gray-600 mt-1">도서 목록을 보여주는 리스트 컴포넌트</p>
                   <div class="mt-3">
-                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">데이터 표시</span>
+                    <span class="inline-block bg-[#A451F7] text-white text-xs px-3 py-1 rounded-full">데이터 표시</span>
                   </div>
                 </div>
               </a>
@@ -194,34 +491,164 @@
       </section>
 
       <!-- 서비스 링크 섹션 -->
-      <section id="service" class="text-center my-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">서비스 바로가기</h2>
+      <section id="service" class="text-center my-12" aria-labelledby="service-heading">
+        <h2 id="service-heading" class="text-2xl font-bold mb-6">서비스 바로가기</h2>
         <a
-          href="https://willy-library.example.com"
-          class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-700 transition-colors"
+          href="https://9rodigital-willie.netlify.app"
+          class="inline-flex flex-row items-center justify-center gap-2 bg-[#FFEF6D] text-[#000] px-6 py-3 rounded-full font-medium focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2 hover:bg-[#FFE84A] transition-colors"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="윌리의 서재 서비스 이용하기 (새 창에서 열림)"
         >
-          윌리의 서재 서비스 이용하기 <i class="fas fa-arrow-right ml-2"></i>
+          윌리의 서재 서비스 이용하기
+          <img src="./src/assets/icon/arrow_right.svg" alt="오른쪽 화살표" class="w-[1.125rem]" width="18" height="18" aria-hidden="true" />
         </a>
       </section>
 
       <!-- 가이드 섹션 -->
       <section id="guide" class="bg-white rounded-lg shadow p-8 mb-8">
-        <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">가이드</h2>
-        <p class="text-gray-600 text-center mb-4">윌리의 서재 UI 컴포넌트는 재사용성과 확장성을 고려하여 개발되었습니다.</p>
-        <p class="text-gray-600 text-center">각 컴포넌트 페이지에서 사용 방법과 예시 코드를 확인하실 수 있습니다.</p>
+        <h2 class="text-2xl font-bold text-center mb-4">가이드</h2>
+
+        <div class="space-y-6">
+          <!-- 소개 부분 -->
+          <div class="text-center mb-6">
+            <p class="mb-4">
+              윌리의 서재 UI는 HTML, Tailwind CSS를 활용한 컴포넌트 방식으로 제작되었습니다. 각 요소는 재사용성과 확장성을 고려하여 분리되었습니다.
+            </p>
+          </div>
+
+          <!-- 주요 특징 -->
+          <section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-medium mb-2">모듈식 레이아웃</h3>
+              <p class="text-gray-600 text-sm">헤더, 푸터, 버튼, 타이틀 등 레이아웃 요소를 독립적으로 관리하고 조합하여 사용할 수 있습니다.</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-medium mb-2">Tailwind 기반 디자인</h3>
+              <p class="text-gray-600 text-sm">일관된 디자인 시스템으로 빠른 스타일링이 가능하며, 커스터마이징이 용이합니다.</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-medium mb-2">반응형 디자인</h3>
+              <p class="text-gray-600 text-sm">모바일부터 데스크탑까지 모든 화면 크기에 최적화된 레이아웃을 제공합니다.</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-medium mb-2">간편한 사용법</h3>
+              <p class="text-gray-600 text-sm">HTML 파일에 컴포넌트 요소를 포함하는 방식으로 간편하게 페이지를 구성할 수 있습니다.</p>
+            </div>
+          </section>
+
+          <!-- 사용 방법 -->
+          <section class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400 mb-4">
+            <h3 class="font-medium mb-2">폴더 구조 다이어그램</h3>
+            <pre class="mermaid">
+              graph TD
+    Root["9RoDigital"] --> ConfigFiles["
+    .prettierrc.cjs
+    README.md
+    package.json
+    package-lock.json
+    labels.json
+    vite.config.js"]
+    
+    Root --> HTMLFiles["index.html"]
+    
+    Root --> Public["public/"]
+    Public --> Favicon["favicon.svg"]
+    Public --> Font["font/"]
+    
+    Root --> Src["src/"]
+    
+    Src --> MainJS["main.js"]
+    Src --> StyleCSS["style.css"]
+    
+    Src --> Assets["assets/"]
+    Assets --> Icon["icon/"]
+    Assets --> Images["images/"]
+    Assets --> Logo["logo/"]
+    
+    Src --> Components["components/"]
+    Components -->
+    
+    CompFolders --> CompFiles["각 컴포넌트 HTML 파일들"]
+    
+    Src --> Scripts["scripts/"]
+    Scripts --> AccordionHandler["accordionHandler.js"]
+    
+    classDef rootNode fill:#e0e0e0,stroke:#000,stroke-width:2px,color:#000;
+    classDef folderNode fill:#a6caf0,stroke:#000,stroke-width:1px,color:#000;
+    classDef fileNode fill:#a0e5a0,stroke:#000,stroke-width:1px,color:#000;
+    classDef configNode fill:#ffe0b0,stroke:#000,stroke-width:1px,color:#000;
+    
+    class Root rootNode;
+    class Public,Src,Assets,Components,Scripts,Font,Icon,Images,Logo,CompFolders folderNode;
+    class MainJS,StyleCSS,AccordionHandler,Favicon,HTMLFiles,CompFiles fileNode;
+    class ConfigFiles configNode;
+            </pre>
+          </section>
+
+          <section class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400" role="region" aria-labelledby="component-assembly-guide">
+            <h3 id="component-assembly-guide" class="font-medium mb-2">컴포넌트 조립 방법</h3>
+
+            <h4 id="preparation-stage" class="font-semibold text-lg mb-4">1. 사전 준비 단계</h4>
+
+            <div class="pl-4 space-y-4">
+              <div aria-describedby="design-analysis-description" class="mb-4">
+                <h5 id="design-analysis-title" class="font-medium text-gray-900 mb-2">1.1 디자인 시안 분석</h5>
+                <p id="design-analysis-description" class="text-gray-700 pl-2">
+                  전체 레이아웃과 구조를 면밀히 검토합니다. 각 섹션별 필요한 컴포넌트를 식별합니다. 컴포넌트 간 관계를 파악합니다.
+                </p>
+              </div>
+
+              <div aria-describedby="component-check-description" class="mb-4">
+                <h5 id="component-check-title" class="font-medium text-gray-900 mb-2">1.2 컴포넌트 확인</h5>
+                <p id="component-check-description" class="text-gray-700 pl-2">
+                  components 폴더 내 모든 컴포넌트 목록을 확인합니다. 각 컴포넌트의 역할과 기능을 검토합니다. 필요한 컴포넌트가 없다면 새로 생성하거나
+                  기존 컴포넌트 수정을 고려합니다.
+                </p>
+              </div>
+            </div>
+
+            <h4 id="assembly-process" class="font-semibold text-lg mb-4">2. 컴포넌트 조립 프로세스</h4>
+
+            <div class="pl-4 space-y-4">
+              <div aria-describedby="basic-structure-description" class="mb-4">
+                <h5 id="basic-structure-title" class="font-medium text-gray-900 mb-2">2.1 기본 구조 설정</h5>
+                <p id="basic-structure-description" class="text-gray-700 pl-2">
+                  먼저 메인 레이아웃을 구성합니다. 전체 페이지 또는 애플리케이션의 기본 구조를 정의합니다.
+                </p>
+              </div>
+
+              <div aria-describedby="component-placement-description" class="mb-4">
+                <h5 id="component-placement-title" class="font-medium text-gray-900 mb-2">2.2 컴포넌트 배치</h5>
+                <p id="component-placement-description" class="text-gray-700 pl-2">디자인 시안의 레이아웃 순서대로 컴포넌트를 배치합니다.</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
     </main>
 
     <!-- 푸터 -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-white py-8">
       <div class="max-w-7xl mx-auto px-4 text-center">
         <div class="flex justify-center mb-4">
-          <a href="#" class="mx-4 text-gray-300 hover:text-white transition-colors">소개</a>
-          <a href="#" class="mx-4 text-gray-300 hover:text-white transition-colors">연락처</a>
-          <a href="#" class="mx-4 text-gray-300 hover:text-white transition-colors">GitHub</a>
+          <a
+            href="https://github.com/FRONTENDBOOTCAMP-13th/9RoDigital"
+            target="_blank"
+            class="mx-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+            >GitHub</a
+          >
+          <a
+            href="https://github.com/FRONTENDBOOTCAMP-13th/9RoDigital/wiki"
+            target="_blank"
+            class="mx-4 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#A451F7] focus:ring-offset-2"
+            >GitHub Wiki</a
+          >
         </div>
-        <p class="text-gray-400 text-sm">© 2025 9로 디지털. 모든 권리 보유.</p>
+        <p class="text-gray-400 text-sm">© 2025. 9RoDigital. All rights reserved.</p>
       </div>
     </footer>
   </body>
