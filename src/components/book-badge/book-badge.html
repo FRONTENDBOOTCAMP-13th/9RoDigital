@@ -14,12 +14,12 @@
       <legend class="mx-6">책 영역</legend>
       <div>
         <!-- 책 영역 -->
-        <p class="inline-block shadow-sm">
+        <p class="inline-block shadow-sm book-rounded overflow-hidden">
           <img
             srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
             src="../../assets/images/section-01-02-sm.webp"
             alt="책 이름"
-            class="book-rounded"
+            class="rounded-[0 4px 4px 0]"
           />
         </p>
       </div>
@@ -57,9 +57,10 @@
           <p class="truncate text-(--light-text-03) text-(length:--font-size-sm)">이름</p>
         </div>
         <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-          <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
-          <li><span class="sr-only">밀리 유저의 평균 완독 확률</span><span>n%</span></li>
-          <li><span class="sr-only">밀리 유저의 완독까지 소요된 시간</span><span>n분</span></li>
+          <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+          <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>n%</span></li>
+          <li><span aria-hidden="true"> | </span></li>
+          <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>n분</span></li>
         </ul>
       </div>
     </fieldset>
@@ -83,9 +84,10 @@
             <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
             <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
           </div>
-          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
             <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
             <li><span class="sr-only">진행사항</span><span>n%</span></li>
+            <li><span aria-hidden="true"> | </span></li>
             <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
           </ul>
         </div>
@@ -120,9 +122,10 @@
             <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
             <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
           </div>
-          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
             <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
             <li><span class="sr-only">진행사항</span><span>n%</span></li>
+            <li><span aria-hidden="true"> | </span></li>
             <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
           </ul>
         </div>
