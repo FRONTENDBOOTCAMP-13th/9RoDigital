@@ -24,6 +24,9 @@ export default defineConfig({
         section4: '/src/components/section4/section4.html', // 마이 페이지
         section5: '/src/components/section5/original.html', // 밀리 오리지널
         section8: '/src/components/section8/section8.html', // 오늘의 한 문장
+        frames: '/src/components/quote-frames/quote-frames.html', // 마이 페이지
+        section7: '/src/components/section7/thisbook.html', // 이럴떈 이런책
+        feed: './src/components/feed/feed.html', //피드
       },
     },
   },

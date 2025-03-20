@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>메뉴 컴포넌트 | 윌리의 서재</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <!-- 메뉴 컨테이너 -->
+    <div class="menu-container min-w-[600px] max-w-[600px]">
+      <!-- 메뉴 타이틀 -->
+      <h2 class="menu-title px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 설정</h2>
+      <!-- 메뉴 리스트 -->
+      <!-- 테일윈드 border-b-[var(--color)] 가 작동하지 않아 내부 스타일을 직접 부여함 -->
+      <ul>
+        <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
+          <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="내 정보 관리 페이지 이동">
+            <span>내 정보 관리</span>
+            <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+          </a>
+        </li>
+        <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
+          <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="내 정보 관리 페이지 이동">
+            <span>내 정보 관리</span>
+            <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+          </a>
+        </li>
+        <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
+          <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="내 정보 관리 페이지 이동">
+            <span>내 정보 관리</span>
+            <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

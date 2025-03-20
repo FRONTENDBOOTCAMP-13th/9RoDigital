@@ -9,6 +9,9 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans p-10">
+    <h1 class="text-3xl mb-5">밀리 랭킹 컴포넌트</h1>
+
+    <!-- <h2 class="text-2xl mb-5">버튼 영역</h2>
     <div class="mb-5" data-group="willie-ranking">
       <button
         type="button"
@@ -91,20 +94,557 @@
       >
         판타지/무협
       </button>
-    </div>
+    </div> -->
 
-    <div class="inline-flex items-center justify-between bg-white p-4 rounded-lg shadow-md min-w-md">
-      <div class="flex items-center space-x-4 w-full">
-        <!-- 이미지 (크기 조정) -->
-        <img src="../../assets/images/section-02-01-xl.webp" alt="도서 표지" class="w-20 h-28 rounded-lg flex-shrink-0" />
+    <h2 class="text-2xl my-5">랭킹 상승 컴포넌트</h2>
+    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2" role="article">
+      <div class="flex items-center space-x-6 w-full">
+        <div class="relative flex-shrink-0">
+          <!-- 큰 숫자 - 시각적 순위 표시 -->
+          <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">1</div>
+          <!-- 이미지 -->
+          <img
+            src="../../assets/images/section-02-01-xl.webp"
+            alt="율의 시선 도서 표지"
+            class="w-20 h-28 rounded-sm flex-shrink-0"
+            aria-describedby="book-rank-1"
+          />
+          <span id="book-rank-1" class="sr-only">랭킹 1위</span>
+        </div>
         <!-- 텍스트 정보 -->
-        <div class="flex-1 max-w-36">
-          <h2 class="text-xl font-bold text-gray-900 truncate">율의 시선입니다!!!!!!!!!!!!!!!!</h2>
-          <p class="text-gray-500 truncate">김민서</p>
+        <div class="flex-1 max-w-1/2">
+          <h2 id="book-title-2" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
         </div>
       </div>
       <!-- 랭킹 변동 -->
-      <p class="text-sm text-red-500 flex items-center flex-shrink-0">▲ 1</p>
-    </div>
+      <p class="text-sm text-(--light-danger) flex items-center flex-shrink-0" aria-live="polite">
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path
+            d="M5.43538 4.25246L1.83838 9.04833C1.41388 9.61446 1.75888 10.5 2.40313 10.5H9.59713C9.74131 10.5001 9.88248 10.4518 10.0037 10.3607C10.125 10.2697 10.2211 10.1398 10.2807 9.9866C10.3403 9.83343 10.3608 9.66346 10.3397 9.49705C10.3186 9.33065 10.2569 9.17485 10.1619 9.04833L6.56488 4.25333C6.49448 4.15935 6.40767 4.08402 6.31026 4.03241C6.21286 3.9808 6.10711 3.9541 6.00013 3.9541C5.89315 3.9541 5.78741 3.9808 5.69 4.03241C5.59259 4.08402 5.50578 4.15848 5.43538 4.25246Z"
+            fill="#df1d1d"
+          />
+        </svg>
+        <span class="ml-1">1</span>
+        <span class="sr-only">순위 상승</span>
+      </p>
+    </a>
+
+    <h2 class="text-2xl mb-5">랭킹 하락 컴포넌트</h2>
+    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+      <div class="flex items-center space-x-6 w-full">
+        <div class="relative flex-shrink-0">
+          <!-- 큰 숫자 - 시각적 순위 표시 -->
+          <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">1</div>
+          <!-- 이미지 -->
+          <img
+            src="../../assets/images/section-02-01-xl.webp"
+            alt="율의 시선 도서 표지"
+            class="w-20 h-28 rounded-sm flex-shrink-0"
+            aria-describedby="book-rank-1"
+          />
+          <span id="book-rank-1" class="sr-only">랭킹 1위</span>
+        </div>
+        <!-- 텍스트 정보 -->
+        <div class="flex-1 max-w-1/2">
+          <h2 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
+        </div>
+      </div>
+      <!-- 랭킹 변동 -->
+      <p class="text-sm text-(--blue-08) flex items-center flex-shrink-0" aria-live="polite">
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path
+            d="M5.43538 9.7475L1.83838 4.95075C1.41388 4.38638 1.75888 3.5 2.40313 3.5H9.59713C9.74131 3.49986 9.88248 3.5482 10.0037 3.63925C10.125 3.73029 10.2211 3.86018 10.2807 4.01336C10.3403 4.16653 10.3608 4.3365 10.3397 4.50291C10.3186 4.66931 10.2569 4.8251 10.1619 4.95163L6.56488 9.74663C6.49448 9.84061 6.40767 9.91593 6.31026 9.96754C6.21286 10.0192 6.10711 10.0459 6.00013 10.0459C5.89315 10.0459 5.78741 10.0192 5.69 9.96754C5.59259 9.91593 5.50578 9.84061 5.43538 9.74663V9.7475Z"
+            fill="#0073cb"
+          />
+        </svg>
+        <span class="ml-1">1</span>
+        <span class="sr-only">순위 하락</span>
+      </p>
+    </a>
+
+    <h2 class="text-2xl my-5">랭킹 변동 없음 컴포넌트</h2>
+    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-3" role="article">
+      <div class="flex items-center space-x-6 w-full">
+        <div class="relative flex-shrink-0">
+          <!-- 큰 숫자 - 시각적 순위 표시 -->
+          <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">1</div>
+          <!-- 이미지 -->
+          <img
+            src="../../assets/images/section-02-01-xl.webp"
+            alt="율의 시선 도서 표지"
+            class="w-20 h-28 rounded-sm flex-shrink-0"
+            aria-describedby="book-rank-1"
+          />
+          <span id="book-rank-1" class="sr-only">랭킹 1위</span>
+        </div>
+        <!-- 텍스트 정보 -->
+        <div class="flex-1 max-w-1/2">
+          <h2 id="book-title-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
+        </div>
+      </div>
+      <!-- 랭킹 변동 -->
+      <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+        <span>-</span>
+        <span class="sr-only">순위 변동 없음</span>
+      </p>
+    </a>
+
+    <h2 class="text-2xl my-5">추가 설명 텍스트가 있는 컴포넌트</h2>
+    <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+      <div class="flex items-center space-x-6 w-full">
+        <div class="relative flex-shrink-0">
+          <!-- 큰 숫자 - 시각적 순위 표시 -->
+          <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">1</div>
+          <!-- 이미지 -->
+          <img
+            src="../../assets/images/section-02-01-xl.webp"
+            alt="율의 시선 도서 표지"
+            class="w-20 h-28 rounded-sm flex-shrink-0"
+            aria-describedby="book-rank-1"
+          />
+          <span id="book-rank-1" class="sr-only">랭킹 1위</span>
+        </div>
+        <!-- 텍스트 정보 -->
+        <div class="flex-1 max-w-1/2">
+          <h2 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+          <p class="text-sm text-(--light-text-03) truncate">
+            <span class="sr-only">저자:</span>
+            김민서
+          </p>
+          <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_215_6)">
+                <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                  <path d="M0 0H12V12H0V0Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_215_6)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.45 0.164835L0.45 3.45584C0.311594 3.54698 0.19801 3.6711 0.119461 3.81703C0.0409126 3.96295 -0.00013805 4.12611 3.48789e-07 4.29184V10.8018C3.48789e-07 11.0671 0.105357 11.3214 0.292894 11.5089C0.48043 11.6965 0.734784 11.8018 1 11.8018H11C11.2652 11.8018 11.5196 11.6965 11.7071 11.5089C11.8946 11.3214 12 11.0671 12 10.8018V4.29184C12.0001 4.12611 11.9591 3.96295 11.8805 3.81703C11.802 3.6711 11.6884 3.54698 11.55 3.45584L6.55 0.164835C6.38672 0.0573077 6.19551 0 6 0C5.8045 0 5.61328 0.0573077 5.45 0.164835ZM6.75 3.74984C6.75007 3.88057 6.71596 4.00906 6.65106 4.12255C6.58616 4.23604 6.49272 4.33059 6.38 4.39684L7.915 5.93184L8.902 5.22684C8.8209 5.08748 8.78687 4.92571 8.80495 4.76549C8.82303 4.60528 8.89226 4.45515 9.00238 4.33738C9.11249 4.2196 9.25763 4.14045 9.41627 4.11166C9.57491 4.08286 9.73861 4.10595 9.88309 4.17751C10.0276 4.24907 10.1451 4.36528 10.2184 4.50892C10.2916 4.65256 10.3166 4.81598 10.2897 4.97494C10.2627 5.13391 10.1853 5.27996 10.0688 5.39144C9.9523 5.50292 9.80299 5.57389 9.643 5.59384L9.268 7.46484V9.72083C9.268 9.81366 9.23113 9.90269 9.16549 9.96832C9.09985 10.034 9.01083 10.0708 8.918 10.0708H3.086C2.99317 10.0708 2.90415 10.034 2.83851 9.96832C2.77288 9.90269 2.736 9.81366 2.736 9.72083V8.48684V7.46484L2.362 5.59484C2.20182 5.57583 2.05204 5.5057 1.93487 5.39483C1.81771 5.28397 1.73941 5.13829 1.71159 4.9794C1.68377 4.82052 1.70792 4.6569 1.78045 4.51282C1.85298 4.36875 1.97002 4.25189 2.11422 4.1796C2.25841 4.10731 2.42207 4.08343 2.58091 4.11151C2.73975 4.13959 2.8853 4.21813 2.99597 4.33547C3.10664 4.45282 3.17653 4.60272 3.19527 4.76293C3.21401 4.92313 3.1806 5.08512 3.1 5.22484L4.09 5.93184L5.624 4.39784C5.5101 4.33184 5.41557 4.23702 5.34992 4.12292C5.28427 4.00881 5.24981 3.87944 5.25 3.74779C5.2502 3.61615 5.28504 3.48688 5.35102 3.37296C5.41701 3.25905 5.51181 3.16451 5.62591 3.09885C5.74001 3.03319 5.86938 2.99872 6.00102 2.9989C6.13267 2.99907 6.26194 3.0339 6.37586 3.09987C6.48978 3.16585 6.58433 3.26064 6.65 3.37473C6.71568 3.48882 6.75017 3.61819 6.75 3.74984ZM3.435 8.82183H8.57V9.37183H3.435V8.82183ZM8.568 8.12183V7.42984C8.56804 7.40666 8.57039 7.38355 8.575 7.36084L8.818 6.14584L8.08 6.67284C8.0127 6.72079 7.9306 6.74337 7.84824 6.7366C7.76588 6.72983 7.68857 6.69413 7.63 6.63584L6.001 5.00884L4.374 6.63684C4.31543 6.69513 4.23812 6.73083 4.15576 6.7376C4.0734 6.74437 3.9913 6.72178 3.924 6.67384L3.185 6.14684L3.428 7.36184C3.43261 7.38455 3.43496 7.40766 3.435 7.43084V8.12084L8.568 8.12183Z"
+                    fill="#555555"
+                  />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_215_6">
+                  <rect width="12" height="12" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="text-xs text-(--light-text-03) font-bold truncate">서점 베스트셀러 10위</span>
+          </div>
+        </div>
+      </div>
+      <!-- 랭킹 변동 -->
+      <p class="text-sm text-(--blue-08) flex items-center flex-shrink-0" aria-live="polite">
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path
+            d="M5.43538 9.7475L1.83838 4.95075C1.41388 4.38638 1.75888 3.5 2.40313 3.5H9.59713C9.74131 3.49986 9.88248 3.5482 10.0037 3.63925C10.125 3.73029 10.2211 3.86018 10.2807 4.01336C10.3403 4.16653 10.3608 4.3365 10.3397 4.50291C10.3186 4.66931 10.2569 4.8251 10.1619 4.95163L6.56488 9.74663C6.49448 9.84061 6.40767 9.91593 6.31026 9.96754C6.21286 10.0192 6.10711 10.0459 6.00013 10.0459C5.89315 10.0459 5.78741 10.0192 5.69 9.96754C5.59259 9.91593 5.50578 9.84061 5.43538 9.74663V9.7475Z"
+            fill="#0073cb"
+          />
+        </svg>
+        <span class="ml-1">1</span>
+        <span class="sr-only">순위 하락</span>
+      </p>
+    </a>
+
+    <h2 class="text-2xl my-5">밀리 랭킹 섹션 완성</h2>
+    <section class="w-full mx-auto">
+      <div class="scrollbar-none grid grid-cols-1 md:grid-cols-2 lg:grid-flow-col lg:grid-rows-3 max-h-[31.25rem] md:max-h-none overflow-y-auto md:overflow-visible">
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                1
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-01-xl.webp"
+                alt="율의 시선 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-1"
+              />
+              <span id="book-rank-1" class="sr-only">랭킹 1위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                김민서
+              </p>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--blue-08) flex items-center flex-shrink-0" aria-live="polite">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path
+                d="M5.43538 9.7475L1.83838 4.95075C1.41388 4.38638 1.75888 3.5 2.40313 3.5H9.59713C9.74131 3.49986 9.88248 3.5482 10.0037 3.63925C10.125 3.73029 10.2211 3.86018 10.2807 4.01336C10.3403 4.16653 10.3608 4.3365 10.3397 4.50291C10.3186 4.66931 10.2569 4.8251 10.1619 4.95163L6.56488 9.74663C6.49448 9.84061 6.40767 9.91593 6.31026 9.96754C6.21286 10.0192 6.10711 10.0459 6.00013 10.0459C5.89315 10.0459 5.78741 10.0192 5.69 9.96754C5.59259 9.91593 5.50578 9.84061 5.43538 9.74663V9.7475Z"
+                fill="#0073cb"
+              />
+            </svg>
+            <span class="ml-1">1</span>
+            <span class="sr-only">순위 하락</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                2
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-02-xl.webp"
+                alt="애 같은 말투 10분 안에 바꿔 드립니다 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-2"
+              />
+              <span id="book-rank-2" class="sr-only">랭킹 2위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-2" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">애 같은 말투 10분 안에 바꿔 드립니다</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                김채린
+              </p>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--light-danger) flex items-center flex-shrink-0" aria-live="polite">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path
+                d="M5.43538 4.25246L1.83838 9.04833C1.41388 9.61446 1.75888 10.5 2.40313 10.5H9.59713C9.74131 10.5001 9.88248 10.4518 10.0037 10.3607C10.125 10.2697 10.2211 10.1398 10.2807 9.9866C10.3403 9.83343 10.3608 9.66346 10.3397 9.49705C10.3186 9.33065 10.2569 9.17485 10.1619 9.04833L6.56488 4.25333C6.49448 4.15935 6.40767 4.08402 6.31026 4.03241C6.21286 3.9808 6.10711 3.9541 6.00013 3.9541C5.89315 3.9541 5.78741 3.9808 5.69 4.03241C5.59259 4.08402 5.50578 4.15848 5.43538 4.25246Z"
+                fill="#df1d1d"
+              />
+            </svg>
+            <span class="ml-1">2</span>
+            <span class="sr-only">순위 상승</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                3
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-03-xl.webp"
+                alt="싯다르타 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-3"
+              />
+              <span id="book-rank-3" class="sr-only">랭킹 3위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">싯다르타</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                헤르만 헤세 지음/박병덕 옮김
+              </p>
+              <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_215_6)">
+                    <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                      <path d="M0 0H12V12H0V0Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_215_6)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.45 0.164835L0.45 3.45584C0.311594 3.54698 0.19801 3.6711 0.119461 3.81703C0.0409126 3.96295 -0.00013805 4.12611 3.48789e-07 4.29184V10.8018C3.48789e-07 11.0671 0.105357 11.3214 0.292894 11.5089C0.48043 11.6965 0.734784 11.8018 1 11.8018H11C11.2652 11.8018 11.5196 11.6965 11.7071 11.5089C11.8946 11.3214 12 11.0671 12 10.8018V4.29184C12.0001 4.12611 11.9591 3.96295 11.8805 3.81703C11.802 3.6711 11.6884 3.54698 11.55 3.45584L6.55 0.164835C6.38672 0.0573077 6.19551 0 6 0C5.8045 0 5.61328 0.0573077 5.45 0.164835ZM6.75 3.74984C6.75007 3.88057 6.71596 4.00906 6.65106 4.12255C6.58616 4.23604 6.49272 4.33059 6.38 4.39684L7.915 5.93184L8.902 5.22684C8.8209 5.08748 8.78687 4.92571 8.80495 4.76549C8.82303 4.60528 8.89226 4.45515 9.00238 4.33738C9.11249 4.2196 9.25763 4.14045 9.41627 4.11166C9.57491 4.08286 9.73861 4.10595 9.88309 4.17751C10.0276 4.24907 10.1451 4.36528 10.2184 4.50892C10.2916 4.65256 10.3166 4.81598 10.2897 4.97494C10.2627 5.13391 10.1853 5.27996 10.0688 5.39144C9.9523 5.50292 9.80299 5.57389 9.643 5.59384L9.268 7.46484V9.72083C9.268 9.81366 9.23113 9.90269 9.16549 9.96832C9.09985 10.034 9.01083 10.0708 8.918 10.0708H3.086C2.99317 10.0708 2.90415 10.034 2.83851 9.96832C2.77288 9.90269 2.736 9.81366 2.736 9.72083V8.48684V7.46484L2.362 5.59484C2.20182 5.57583 2.05204 5.5057 1.93487 5.39483C1.81771 5.28397 1.73941 5.13829 1.71159 4.9794C1.68377 4.82052 1.70792 4.6569 1.78045 4.51282C1.85298 4.36875 1.97002 4.25189 2.11422 4.1796C2.25841 4.10731 2.42207 4.08343 2.58091 4.11151C2.73975 4.13959 2.8853 4.21813 2.99597 4.33547C3.10664 4.45282 3.17653 4.60272 3.19527 4.76293C3.21401 4.92313 3.1806 5.08512 3.1 5.22484L4.09 5.93184L5.624 4.39784C5.5101 4.33184 5.41557 4.23702 5.34992 4.12292C5.28427 4.00881 5.24981 3.87944 5.25 3.74779C5.2502 3.61615 5.28504 3.48688 5.35102 3.37296C5.41701 3.25905 5.51181 3.16451 5.62591 3.09885C5.74001 3.03319 5.86938 2.99872 6.00102 2.9989C6.13267 2.99907 6.26194 3.0339 6.37586 3.09987C6.48978 3.16585 6.58433 3.26064 6.65 3.37473C6.71568 3.48882 6.75017 3.61819 6.75 3.74984ZM3.435 8.82183H8.57V9.37183H3.435V8.82183ZM8.568 8.12183V7.42984C8.56804 7.40666 8.57039 7.38355 8.575 7.36084L8.818 6.14584L8.08 6.67284C8.0127 6.72079 7.9306 6.74337 7.84824 6.7366C7.76588 6.72983 7.68857 6.69413 7.63 6.63584L6.001 5.00884L4.374 6.63684C4.31543 6.69513 4.23812 6.73083 4.15576 6.7376C4.0734 6.74437 3.9913 6.72178 3.924 6.67384L3.185 6.14684L3.428 7.36184C3.43261 7.38455 3.43496 7.40766 3.435 7.43084V8.12084L8.568 8.12183Z"
+                        fill="#555555"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_215_6">
+                      <rect width="12" height="12" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="text-xs text-(--light-text-03) font-bold truncate">서점 베스트셀러 10위</span>
+              </div>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--blue-08) flex items-center flex-shrink-0" aria-live="polite">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path
+                d="M5.43538 9.7475L1.83838 4.95075C1.41388 4.38638 1.75888 3.5 2.40313 3.5H9.59713C9.74131 3.49986 9.88248 3.5482 10.0037 3.63925C10.125 3.73029 10.2211 3.86018 10.2807 4.01336C10.3403 4.16653 10.3608 4.3365 10.3397 4.50291C10.3186 4.66931 10.2569 4.8251 10.1619 4.95163L6.56488 9.74663C6.49448 9.84061 6.40767 9.91593 6.31026 9.96754C6.21286 10.0192 6.10711 10.0459 6.00013 10.0459C5.89315 10.0459 5.78741 10.0192 5.69 9.96754C5.59259 9.91593 5.50578 9.84061 5.43538 9.74663V9.7475Z"
+                fill="#0073cb"
+              />
+            </svg>
+            <span class="ml-1">1</span>
+            <span class="sr-only">순위 하락</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-3" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                4
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-04-xl.webp"
+                alt="결국 잘 되는 사람들의 태도 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-4"
+              />
+              <span id="book-rank-4" class="sr-only">랭킹 4위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">결국 잘 되는 사람들의 태도</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                앤드루 매코널 지음/안종설 옮김
+              </p>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+            <span>-</span>
+            <span class="sr-only">순위 변동 없음</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-3" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                5
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-05-xl.webp"
+                alt="결국 잘 되는 사람들의 태도 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-5"
+              />
+              <span id="book-rank-5" class="sr-only">랭킹 5위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">단어가 품은 세계</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                황선엽
+              </p>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+            <span>-</span>
+            <span class="sr-only">순위 변동 없음</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                6
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-06-xl.webp"
+                alt="스토너 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-6"
+              />
+              <span id="book-rank-6" class="sr-only">랭킹 6위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">스토너</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                존 윌리엄스 지음, 김승욱 옮김
+              </p>
+              <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_215_6)">
+                    <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                      <path d="M0 0H12V12H0V0Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_215_6)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.45 0.164835L0.45 3.45584C0.311594 3.54698 0.19801 3.6711 0.119461 3.81703C0.0409126 3.96295 -0.00013805 4.12611 3.48789e-07 4.29184V10.8018C3.48789e-07 11.0671 0.105357 11.3214 0.292894 11.5089C0.48043 11.6965 0.734784 11.8018 1 11.8018H11C11.2652 11.8018 11.5196 11.6965 11.7071 11.5089C11.8946 11.3214 12 11.0671 12 10.8018V4.29184C12.0001 4.12611 11.9591 3.96295 11.8805 3.81703C11.802 3.6711 11.6884 3.54698 11.55 3.45584L6.55 0.164835C6.38672 0.0573077 6.19551 0 6 0C5.8045 0 5.61328 0.0573077 5.45 0.164835ZM6.75 3.74984C6.75007 3.88057 6.71596 4.00906 6.65106 4.12255C6.58616 4.23604 6.49272 4.33059 6.38 4.39684L7.915 5.93184L8.902 5.22684C8.8209 5.08748 8.78687 4.92571 8.80495 4.76549C8.82303 4.60528 8.89226 4.45515 9.00238 4.33738C9.11249 4.2196 9.25763 4.14045 9.41627 4.11166C9.57491 4.08286 9.73861 4.10595 9.88309 4.17751C10.0276 4.24907 10.1451 4.36528 10.2184 4.50892C10.2916 4.65256 10.3166 4.81598 10.2897 4.97494C10.2627 5.13391 10.1853 5.27996 10.0688 5.39144C9.9523 5.50292 9.80299 5.57389 9.643 5.59384L9.268 7.46484V9.72083C9.268 9.81366 9.23113 9.90269 9.16549 9.96832C9.09985 10.034 9.01083 10.0708 8.918 10.0708H3.086C2.99317 10.0708 2.90415 10.034 2.83851 9.96832C2.77288 9.90269 2.736 9.81366 2.736 9.72083V8.48684V7.46484L2.362 5.59484C2.20182 5.57583 2.05204 5.5057 1.93487 5.39483C1.81771 5.28397 1.73941 5.13829 1.71159 4.9794C1.68377 4.82052 1.70792 4.6569 1.78045 4.51282C1.85298 4.36875 1.97002 4.25189 2.11422 4.1796C2.25841 4.10731 2.42207 4.08343 2.58091 4.11151C2.73975 4.13959 2.8853 4.21813 2.99597 4.33547C3.10664 4.45282 3.17653 4.60272 3.19527 4.76293C3.21401 4.92313 3.1806 5.08512 3.1 5.22484L4.09 5.93184L5.624 4.39784C5.5101 4.33184 5.41557 4.23702 5.34992 4.12292C5.28427 4.00881 5.24981 3.87944 5.25 3.74779C5.2502 3.61615 5.28504 3.48688 5.35102 3.37296C5.41701 3.25905 5.51181 3.16451 5.62591 3.09885C5.74001 3.03319 5.86938 2.99872 6.00102 2.9989C6.13267 2.99907 6.26194 3.0339 6.37586 3.09987C6.48978 3.16585 6.58433 3.26064 6.65 3.37473C6.71568 3.48882 6.75017 3.61819 6.75 3.74984ZM3.435 8.82183H8.57V9.37183H3.435V8.82183ZM8.568 8.12183V7.42984C8.56804 7.40666 8.57039 7.38355 8.575 7.36084L8.818 6.14584L8.08 6.67284C8.0127 6.72079 7.9306 6.74337 7.84824 6.7366C7.76588 6.72983 7.68857 6.69413 7.63 6.63584L6.001 5.00884L4.374 6.63684C4.31543 6.69513 4.23812 6.73083 4.15576 6.7376C4.0734 6.74437 3.9913 6.72178 3.924 6.67384L3.185 6.14684L3.428 7.36184C3.43261 7.38455 3.43496 7.40766 3.435 7.43084V8.12084L8.568 8.12183Z"
+                        fill="#555555"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_215_6">
+                      <rect width="12" height="12" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="text-xs text-(--light-text-03) font-bold truncate">서점 베스트셀러 2위</span>
+              </div>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+            <span>-</span>
+            <span class="sr-only">순위 변동 없음</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-7" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                7
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-07-xl.webp"
+                alt="퇴마록 국내편 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-7"
+              />
+              <span id="book-rank-7" class="sr-only">랭킹 7위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-7" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">퇴마록 국내편</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                이우혁
+              </p>
+              <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_215_6)">
+                    <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                      <path d="M0 0H12V12H0V0Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_215_6)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.45 0.164835L0.45 3.45584C0.311594 3.54698 0.19801 3.6711 0.119461 3.81703C0.0409126 3.96295 -0.00013805 4.12611 3.48789e-07 4.29184V10.8018C3.48789e-07 11.0671 0.105357 11.3214 0.292894 11.5089C0.48043 11.6965 0.734784 11.8018 1 11.8018H11C11.2652 11.8018 11.5196 11.6965 11.7071 11.5089C11.8946 11.3214 12 11.0671 12 10.8018V4.29184C12.0001 4.12611 11.9591 3.96295 11.8805 3.81703C11.802 3.6711 11.6884 3.54698 11.55 3.45584L6.55 0.164835C6.38672 0.0573077 6.19551 0 6 0C5.8045 0 5.61328 0.0573077 5.45 0.164835ZM6.75 3.74984C6.75007 3.88057 6.71596 4.00906 6.65106 4.12255C6.58616 4.23604 6.49272 4.33059 6.38 4.39684L7.915 5.93184L8.902 5.22684C8.8209 5.08748 8.78687 4.92571 8.80495 4.76549C8.82303 4.60528 8.89226 4.45515 9.00238 4.33738C9.11249 4.2196 9.25763 4.14045 9.41627 4.11166C9.57491 4.08286 9.73861 4.10595 9.88309 4.17751C10.0276 4.24907 10.1451 4.36528 10.2184 4.50892C10.2916 4.65256 10.3166 4.81598 10.2897 4.97494C10.2627 5.13391 10.1853 5.27996 10.0688 5.39144C9.9523 5.50292 9.80299 5.57389 9.643 5.59384L9.268 7.46484V9.72083C9.268 9.81366 9.23113 9.90269 9.16549 9.96832C9.09985 10.034 9.01083 10.0708 8.918 10.0708H3.086C2.99317 10.0708 2.90415 10.034 2.83851 9.96832C2.77288 9.90269 2.736 9.81366 2.736 9.72083V8.48684V7.46484L2.362 5.59484C2.20182 5.57583 2.05204 5.5057 1.93487 5.39483C1.81771 5.28397 1.73941 5.13829 1.71159 4.9794C1.68377 4.82052 1.70792 4.6569 1.78045 4.51282C1.85298 4.36875 1.97002 4.25189 2.11422 4.1796C2.25841 4.10731 2.42207 4.08343 2.58091 4.11151C2.73975 4.13959 2.8853 4.21813 2.99597 4.33547C3.10664 4.45282 3.17653 4.60272 3.19527 4.76293C3.21401 4.92313 3.1806 5.08512 3.1 5.22484L4.09 5.93184L5.624 4.39784C5.5101 4.33184 5.41557 4.23702 5.34992 4.12292C5.28427 4.00881 5.24981 3.87944 5.25 3.74779C5.2502 3.61615 5.28504 3.48688 5.35102 3.37296C5.41701 3.25905 5.51181 3.16451 5.62591 3.09885C5.74001 3.03319 5.86938 2.99872 6.00102 2.9989C6.13267 2.99907 6.26194 3.0339 6.37586 3.09987C6.48978 3.16585 6.58433 3.26064 6.65 3.37473C6.71568 3.48882 6.75017 3.61819 6.75 3.74984ZM3.435 8.82183H8.57V9.37183H3.435V8.82183Z"
+                        fill="#555555"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_215_6">
+                      <rect width="12" height="12" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="text-xs text-(--light-text-03) font-bold truncate">서점 베스트셀러 14위</span>
+              </div>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+            <span>-</span>
+            <span class="sr-only">순위 변동 없음</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-8" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                8
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-08-xl.webp"
+                alt="콘클라베 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-8"
+              />
+              <span id="book-rank-8" class="sr-only">랭킹 8위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-8" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">콘클라베</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                로버트 해리스 지음, 조영학 옮김
+              </p>
+            </div>
+          </div>
+          <!-- 랭킹 변동 -->
+          <p class="text-sm text-(--light-danger) flex items-center flex-shrink-0" aria-live="polite">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path
+                d="M5.43538 4.25246L1.83838 9.04833C1.41388 9.61446 1.75888 10.5 2.40313 10.5H9.59713C9.74131 10.5001 9.88248 10.4518 10.0037 10.3607C10.125 10.2697 10.2211 10.1398 10.2807 9.9866C10.3403 9.83343 10.3608 9.66346 10.3397 9.49705C10.3186 9.33065 10.2569 9.17485 10.1619 9.04833L6.56488 4.25333C6.49448 4.15935 6.40767 4.08402 6.31026 4.03241C6.21286 3.9808 6.10711 3.9541 6.00013 3.9541C5.89315 3.9541 5.78741 3.9808 5.69 4.03241C5.59259 4.08402 5.50578 4.15848 5.43538 4.25246Z"
+                fill="#df1d1d"
+              />
+            </svg>
+            <span class="ml-1">4</span>
+            <span class="sr-only">순위 상승 4단계</span>
+          </p>
+        </a>
+
+        <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-9" role="article">
+          <div class="flex items-center space-x-6 w-full">
+            <div class="relative flex-shrink-0">
+              <!-- 큰 숫자 - 시각적 순위 표시 -->
+              <div class="text-outline absolute -left-3 -bottom-1.5 text-6xl font-bold text-white drop-shadow-lg stroke-black" aria-hidden="true">
+                9
+              </div>
+              <!-- 이미지 -->
+              <img
+                src="../../assets/images/section-02-09-xl.webp"
+                alt="그렇게 나는 다시 삶을 선택했다 도서 표지"
+                class="w-20 h-28 rounded-sm flex-shrink-0"
+                aria-describedby="book-rank-9"
+              />
+              <span id="book-rank-9" class="sr-only">랭킹 9위</span>
+            </div>
+            <!-- 텍스트 정보 -->
+            <div class="flex-1 max-w-1/2">
+              <h2 id="book-title-9" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">그렇게 나는 다시 삶을 선택했다</h2>
+              <p class="text-sm text-(--light-text-03) truncate">
+                <span class="sr-only">저자:</span>
+                최지은
+              </p>
+            </div>
+          </div>
+          <!-- 랭킹 변동 (변경 없음) -->
+          <p class="text-sm text-(--light-text-03) flex items-center flex-shrink-0" aria-live="polite">
+            <span>-</span>
+            <span class="sr-only">순위 변동 없음</span>
+          </p>
+        </a>
+      </div>
+    </section>
   </body>
 </html>
