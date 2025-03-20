@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>윌리의 서재를 소개합니다!</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-pretendard bg-gray-100 text-gray-800 leading-relaxed">
+    <!-- 헤더 -->
+    <header class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center text-xl font-bold text-gray-800">
+          <img src="../../assets/" alt="윌리의 서재 로고" class="h-10 mr-2" />
+          윌리의 서재
+        </a>
+        <div>
+          <a
+            href="https://github.com/9lo-digital/willy-library"
+            target="_blank"
+            class="inline-flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-gray-200 transition-colors"
+          >
+            <i class="fab fa-github mr-1"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 메인 내비게이션 -->
+    <nav class="bg-gray-200">
+      <div class="max-w-7xl mx-auto px-4 py-2 flex justify-center">
+        <a href="#components" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">컴포넌트</a>
+        <a href="#team" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">팀 소개</a>
+        <a href="#service" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">서비스</a>
+        <a href="#guide" class="px-3 py-2 mx-2 rounded-md text-gray-700 hover:bg-gray-300 transition-colors">가이드</a>
+      </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+      <!-- 팀 소개 섹션 -->
+      <section id="team" class="bg-white rounded-lg shadow p-8 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">9로 디지털</h2>
+        <p class="text-gray-600 text-center mb-4">
+          안녕하세요! 9로 디지털 팀은 디지털 시대에 맞춰 책과 독서 문화를 디지털화하는 '윌리의 서재' 프로젝트를 진행하고 있습니다.
+        </p>
+        <p class="text-gray-600 text-center">사용자 중심의 UI 개발과 최신 웹 기술을 활용하여 독서 경험을 새롭게 디자인하고 있습니다.</p>
+      </section>
+
+      <!-- 컴포넌트 섹션 -->
+      <section id="components" class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">컴포넌트</h2>
+
+        <!-- UI 요소 아코디언 -->
+        <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
+          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+            <span class="font-medium">UI 요소</span>
+            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+          </div>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 버튼 컴포넌트 -->
+              <a
+                href="components/button.html"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300"
+              >
+                <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
+                  <i class="fas fa-square text-gray-500 text-4xl"></i>
+                </div>
+                <div class="p-4">
+                  <h3 class="text-lg font-medium text-gray-800">버튼</h3>
+                  <p class="text-gray-600 mt-1">다양한 스타일과 크기의 버튼 컴포넌트</p>
+                  <div class="mt-3">
+                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">UI 요소</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- 폼 컴포넌트 -->
+              <a href="components/form.html" class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300">
+                <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
+                  <i class="fas fa-keyboard text-gray-500 text-4xl"></i>
+                </div>
+                <div class="p-4">
+                  <h3 class="text-lg font-medium text-gray-800">폼</h3>
+                  <p class="text-gray-600 mt-1">사용자 입력을 위한 폼 컴포넌트</p>
+                  <div class="mt-3">
+                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">UI 요소</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- 모달 컴포넌트 -->
+              <a href="components/modal.html" class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300">
+                <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
+                  <i class="fas fa-window-maximize text-gray-500 text-4xl"></i>
+                </div>
+                <div class="p-4">
+                  <h3 class="text-lg font-medium text-gray-800">모달</h3>
+                  <p class="text-gray-600 mt-1">팝업 형태의 모달 컴포넌트</p>
+                  <div class="mt-3">
+                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">UI 요소</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 레이아웃 아코디언 -->
+        <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
+          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+            <span class="font-medium">레이아웃</span>
+            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+          </div>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 카드 컴포넌트 -->
+              <a href="components/card.html" class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300">
+                <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
+                  <i class="fas fa-credit-card text-gray-500 text-4xl"></i>
+                </div>
+                <div class="p-4">
+                  <h3 class="text-lg font-medium text-gray-800">카드</h3>
+                  <p class="text-gray-600 mt-1">도서 정보를 표시하는 카드 컴포넌트</p>
+                  <div class="mt-3">
+                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">레이아웃</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 네비게이션 아코디언 -->
+        <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
+          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+            <span class="font-medium">네비게이션</span>
+            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+          </div>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 내비게이션 컴포넌트 -->
+              <a
+                href="components/navigation.html"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300"
+              >
+                <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
+                  <i class="fas fa-bars text-gray-500 text-4xl"></i>
+                </div>
+                <div class="p-4">
+                  <h3 class="text-lg font-medium text-gray-800">내비게이션</h3>
+                  <p class="text-gray-600 mt-1">상단 및 사이드 내비게이션 컴포넌트</p>
+                  <div class="mt-3">
+                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">네비게이션</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 데이터 표시 아코디언 -->
+        <div class="mb-4 bg-white rounded-lg shadow overflow-hidden">
+          <div class="bg-gray-100 p-4 flex justify-between items-center cursor-pointer border-b border-gray-200" data-accordion="header">
+            <span class="font-medium">데이터 표시</span>
+            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+          </div>
+          <div class="max-h-0 overflow-hidden transition-all duration-300 ease-out">
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 도서 목록 컴포넌트 -->
+              <a
+                href="components/book-list.html"
+                class="block bg-white rounded-lg shadow border border-gray-200 hover:shadow-md transition duration-300"
+              >
+                <div class="p-6 bg-gray-100 flex items-center justify-center h-48">
+                  <i class="fas fa-list text-gray-500 text-4xl"></i>
+                </div>
+                <div class="p-4">
+                  <h3 class="text-lg font-medium text-gray-800">도서 목록</h3>
+                  <p class="text-gray-600 mt-1">도서 목록을 보여주는 리스트 컴포넌트</p>
+                  <div class="mt-3">
+                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">데이터 표시</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 서비스 링크 섹션 -->
+      <section id="service" class="text-center my-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">서비스 바로가기</h2>
+        <a
+          href="https://willy-library.example.com"
+          class="inline-block bg-gray-800 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-700 transition-colors"
+          target="_blank"
+        >
+          윌리의 서재 서비스 이용하기 <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </section>
+
+      <!-- 가이드 섹션 -->
+      <section id="guide" class="bg-white rounded-lg shadow p-8 mb-8">
+        <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">가이드</h2>
+        <p class="text-gray-600 text-center mb-4">윌리의 서재 UI 컴포넌트는 재사용성과 확장성을 고려하여 개발되었습니다.</p>
+        <p class="text-gray-600 text-center">각 컴포넌트 페이지에서 사용 방법과 예시 코드를 확인하실 수 있습니다.</p>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="flex justify-center mb-4">
+          <a href="#" class="mx-4 text-gray-300 hover:text-white transition-colors">소개</a>
+          <a href="#" class="mx-4 text-gray-300 hover:text-white transition-colors">연락처</a>
+          <a href="#" class="mx-4 text-gray-300 hover:text-white transition-colors">GitHub</a>
+        </div>
+        <p class="text-gray-400 text-sm">© 2025 9로 디지털. 모든 권리 보유.</p>
+      </div>
+    </footer>
+  </body>
+</html>
