@@ -3,264 +3,242 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>따끈따끈, 새로 들어온 책| 윌리의 서재</title>
+    <title>따끈따끈, 새로 들어온 책 | 윌리의 서재</title>
     <link rel="icon" href="/favicon.svg" />
     <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <section class="overflow-hidden">
-      <div class="overflow-x-hidden max-w-screen min-w-[50%]">
-        <div class="flex justify-start items-center overflow-x-scroll gap-2" role="list" aria-label="도서 슬라이드">
-          <div role="listitem" aria-label="암행">
+    <div class="overflow-hidden mx-auto">
+      <section class="overflow-x-auto relative" aria-label="인기 도서로 시작 섹션">
+        <div class="flex gap-6 w-max my-2">
+          <!-- 암행영역 -->
+          <div class="flex" role="listitem" aria-label="암행">
             <a
               href="#void"
-              class="flex flex-col w-[20.4375rem] h-[307px] rounded-md bg-[#EBE6E5] shadow-lg"
-              aria-labelledby="book-title-1"
-              aria-describedby="book-desc-1-1 book-desc-1-2"
+              class="relative block min-w-[328px] min-h-[260px] rounded-md shadow-lg overflow-hidden"
+              aria-labelledby="book-desc-4-1"
+              aria-describedby="book-desc-4-1"
             >
-              <div class="flex relative overflow-hidden p-4 h-[60%]">
-                <div class="p-4">
+              <!-- 책 타이틀 -->
+              <aside class="flex justify-between items-start overflow-hidden px-4 pt-7 pb-0 bg-[#EBE6E5]">
+                <div>
                   <h4 id="book-title-1" class="font-bold"><span class="sr-only">책 제목</span> 암행</h4>
                   <p class="text-(--light-text-03)"><span class="sr-only">책 작가</span> 정명섭</p>
                 </div>
-                <div class="book-rounded absolute top-8 right-3 w-[8.5rem]">
+                <div class="w-[6.25rem]">
                   <img
                     srcset="../../assets/images/section-04-01-sm.webp 1x, ../../assets/images/section-04-01-xl.webp 2x"
                     src="../../assets/images/section-04-01-sm.webp"
-                    alt="암행 책 표지 이미지"
+                    alt=""
                     class="book-rounded"
                   />
                 </div>
-              </div>
-              <div class="bg-white z-1 p-4 flex-1 rounded-b-md">
-                <h4 class="new-book-title font-bold">밀리의 발견</h4>
-                <p id="book-desc-1-1" class="text-(--light-text-03) mt-2">기이한 힘이 그를 다시 살렸다</p>
-                <p id="book-desc-1-2" class="text-(--light-text-03)">조선판 오컬트 판타지의 탄생</p>
+              </aside>
+              <!-- 책 설명 -->
+              <div class="absolute bottom-0 left-[50%] transform translate-x-[-50%] bg-white h-[40%] w-full p-4">
+                <h5 class="new-book-title font-bold">밀리의 발견</h5>
+                <p id="book-desc-4-1" class="text-(--light-text-03) mt-2">
+                  <span class="block">기이한 힘이 그를 다시 살렸다</span>
+                  <span class="block">조선판 오컬트 판타지의 탄생</span>
+                </p>
               </div>
             </a>
           </div>
-          <ul class="flex items-end gap-4" role="list" aria-label="다른 추천 도서">
-            <li class="w-[150px]" aria-label="관계의 뇌 과학">
-              <a href="#void" aria-labelledby="book-title-2" aria-describedby="book-desc-2">
-                <div>
-                  <div>
-                    <p class="inline-block shadow-sm book-rounded overflow-hidden">
-                      <img
-                        srcset="../../assets/images/section-04-02-sm.webp 1x, ../../assets/images/section-04-02-xl.webp 2x"
-                        src="../../assets/images/section-04-02-sm.webp"
-                        alt="관계의 뇌 과학 책 표지"
-                        class="rounded-[0 4px 4px 0]"
-                      />
-                    </p>
-                  </div>
+          <!-- 옆으로 넘어갈 부분 -->
+          <div class="overflow-hidden flex">
+            <ul class="flex items-end gap-6 flex-nowrap w-max" role="list" aria-label="다른 추천 도서">
+              <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="관계의 뇌 과학">
+                <a href="#void" aria-labelledby="book-title-4-2" aria-describedby="book-desc-4-2">
                   <div>
                     <div>
-                      <h4 id="book-title-2" class="font-bold text-(--dark-ui-01) truncate">관계의 뇌 과학</h4>
-                      <p id="book-desc-2" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">
-                        니콜 르페라 지음 / 이현 옮김
+                      <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                        <img
+                          srcset="../../assets/images/section-04-02-sm.webp 1x, ../../assets/images/section-04-02-xl.webp 2x"
+                          src="../../assets/images/section-04-02-sm.webp"
+                          alt=""
+                          class="rounded-[0 4px 4px 0]"
+                        />
                       </p>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>48%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>54분</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="w-[150px] hidden sm:block" aria-label="좋은 것만 오직 좋은 것만">
-              <a href="#void" aria-labelledby="book-title-3" aria-describedby="book-desc-3">
-                <div>
-                  <div>
-                    <p class="inline-block shadow-sm book-rounded overflow-hidden">
-                      <img
-                        srcset="../../assets/images/section-04-03-sm.webp 1x, ../../assets/images/section-04-03-xl.webp 2x"
-                        src="../../assets/images/section-04-03-sm.webp"
-                        alt="좋은 것만 오직 좋은 것만  책 표지"
-                        class="book-rounded"
-                      />
-                    </p>
-                  </div>
+                    <div>
+                      <div>
+                        <h4 id="book-title-4-2" class="font-bold text-(--dark-ui-01) truncate">관계의 뇌 과학</h4>
+                        <p id="book-desc-4-2" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">
+                          니콜 르페라 지음 / 이현 옮김
+                        </p>
+                      </div>
+                      <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+                        <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                        <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>48%</span></li>
+                        <li><span aria-hidden="true"> | </span></li>
+                        <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>54분</span></li>
+                      </ul>
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="좋은 것만 오직 좋은 것만">
+                <a href="#void" aria-labelledby="book-title-4-3" aria-describedby="book-desc-4-3">
                   <div>
                     <div>
-                      <h4 id="book-title-3" class="font-bold text-(--dark-ui-01) truncate">좋은 것만 오직 좋은 것만</h4>
-                      <p id="book-desc-3" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">최대호</p>
+                      <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                        <img
+                          srcset="../../assets/images/section-04-03-sm.webp 1x, ../../assets/images/section-04-03-xl.webp 2x"
+                          src="../../assets/images/section-04-03-sm.webp"
+                          alt=""
+                          class="book-rounded"
+                        />
+                      </p>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>34%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>56분</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="w-[150px] hidden sm:block" aria-label="경비병이 겁나 셈">
-              <a href="#void" aria-labelledby="book-title-4" aria-describedby="book-desc-4">
-                <div>
-                  <div class="badge">
-                    <!-- 책 영역 -->
-                    <div class="inline-block book-rounded shadow-sm badge-img">
-                      <img
-                        srcset="../../assets/images/section-04-04-sm.webp 1x, ../../assets/images/section-04-04-xl.webp 2x"
-                        src="../../assets/images/section-04-04-sm.webp"
-                        alt="경비병이 겁나 셈 책 표지"
-                        class="book-rounded"
-                      />
-                      <div class="badge-text flex flex-col">
-                        <div class="badge-bg">
-                          <span class="text-xs p-1">10권</span>
-                        </div>
-                        <div class="badge-bg">
-                          <span class="text-xs p-1">무료</span>
+                    <div>
+                      <div>
+                        <h4 id="book-title-4-3" class="font-bold text-(--dark-ui-01) truncate">좋은 것만 오직 좋은 것만</h4>
+                        <p id="book-desc-4-3" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">최대호</p>
+                      </div>
+                      <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+                        <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                        <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>34%</span></li>
+                        <li><span aria-hidden="true"> | </span></li>
+                        <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>56분</span></li>
+                      </ul>
+                    </div>
+                  </div></a
+                >
+              </li>
+              <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="경비병이 겁나 셈">
+                <a href="#void" aria-labelledby="book-title-4-4" aria-describedby="book-desc-4-4">
+                  <div>
+                    <div class="badge">
+                      <!-- 책 영역 -->
+                      <div class="inline-block book-rounded shadow-sm badge-img">
+                        <img
+                          srcset="../../assets/images/section-04-04-sm.webp 1x, ../../assets/images/section-04-04-xl.webp 2x"
+                          src="../../assets/images/section-04-04-sm.webp"
+                          alt=""
+                          class="book-rounded"
+                        />
+                        <div class="badge-text flex flex-col">
+                          <div class="badge-bg">
+                            <span class="text-xs p-1">10권</span>
+                          </div>
+                          <div class="badge-bg">
+                            <span class="text-xs p-1">무료</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
                     <div>
-                      <h4 id="book-title-4" class="font-bold text-(--dark-ui-01) truncate">경비병이 겁나 셈</h4>
-                      <p id="book-desc-4" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">협행마</p>
+                      <div>
+                        <h4 id="book-title-4-4" class="font-bold text-(--dark-ui-01) truncate">경비병이 겁나 셈</h4>
+                        <p id="book-desc-4-4" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">협행마</p>
+                      </div>
+                      <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+                        <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                        <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>69%</span></li>
+                        <li><span aria-hidden="true"> | </span></li>
+                        <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>165분</span></li>
+                      </ul>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>69%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>165분</span></li>
-                    </ul>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="w-[150px] hidden md:block" aria-label="시네21 No.1497 : 2025.03.18">
-              <a href="#void" aria-labelledby="book-title-5" aria-describedby="book-desc-5">
-                <div>
-                  <div class="badge">
-                    <!-- 책 영역 -->
-                    <div class="inline-block book-rounded shadow-sm badge-img">
-                      <img
-                        srcset="../../assets/images/section-04-05-sm.webp 1x, ../../assets/images/section-04-05-xl.webp 2x"
-                        src="../../assets/images/section-04-05-sm.webp"
-                        alt="시네21 No.1497 : 2025.03.18책 표지"
-                        class="rounded-[0 4px 4px 0]"
-                      />
-                      <div class="badge-text flex flex-col">
-                        <div class="badge-bg">
-                          <span class="text-xs p-1">PDF</span>
+                </a>
+              </li>
+              <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="시네21 No.1497 : 2025.03.18">
+                <a href="#void" aria-label="시네21 No.1497 : 2025.03.18">
+                  <div>
+                    <div class="badge">
+                      <!-- 책 영역 -->
+                      <div class="inline-block book-rounded shadow-sm badge-img">
+                        <img
+                          srcset="../../assets/images/section-04-05-sm.webp 1x, ../../assets/images/section-04-05-xl.webp 2x"
+                          src="../../assets/images/section-04-05-sm.webp"
+                          alt=""
+                          class="rounded-[0 4px 4px 0]"
+                        />
+                        <div class="badge-text flex flex-col">
+                          <div class="badge-bg">
+                            <span class="text-xs p-1">PDF</span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
                     <div>
-                      <h4 id="book-title-5" class="font-bold text-(--dark-ui-01) truncate">시네21 No.1497 : 2025.03.18</h4>
-                      <p id="book-desc-5" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">시네21 편집부</p>
+                      <div>
+                        <h4 id="book-title-4-5" class="font-bold text-(--dark-ui-01) truncate">시네21 No.1497 : 2025.03.18</h4>
+                        <p id="book-desc-4-5" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">시네21 편집부</p>
+                      </div>
+                      <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+                        <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                        <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>66%</span></li>
+                        <li><span aria-hidden="true"> | </span></li>
+                        <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>24분</span></li>
+                      </ul>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>66%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>24분</span></li>
-                    </ul>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="w-[150px] hidden lg:block" aria-label="AI 시대 생존 전략">
-              <a href="#void" aria-labelledby="book-title-6" aria-describedby="book-desc-6">
-                <div>
-                  <div>
-                    <p class="inline-block shadow-sm book-rounded overflow-hidden">
-                      <img
-                        srcset="../../assets/images/section-04-06-sm.webp 1x, ../../assets/images/section-04-06-xl.webp 2x"
-                        src="../../assets/images/ssection-04-06-sm.webp"
-                        alt="AI 시대 생존 전략 책 표지"
-                        class="rounded-[0 4px 4px 0]"
-                      />
-                    </p>
-                  </div>
+                </a>
+              </li>
+              <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="AI 시대 생존 전략">
+                <a href="#void" aria-labelledby="book-title-4-6" aria-describedby="book-desc-4-6">
                   <div>
                     <div>
-                      <h4 id="book-title-6" class="font-bold text-(--dark-ui-01) truncate">AI 시대 생존 전략</h4>
-                      <p id="book-desc-6" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">
-                        세가 쳉 지음 / 홍민경 옮김 / 샤오위핀 인터뷰
+                      <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                        <img
+                          srcset="../../assets/images/section-04-06-sm.webp 1x, ../../assets/images/section-04-06-xl.webp 2x"
+                          src="../../assets/images/ssection-04-06-sm.webp"
+                          alt=""
+                          class="rounded-[0 4px 4px 0]"
+                        />
                       </p>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>42%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>161분</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="w-[150px] hidden xl:block" aria-label="부모의 질문력">
-              <a href="#void" aria-labelledby="book-title-7" aria-describedby="book-desc-7">
-                <div>
-                  <div>
-                    <p class="inline-block shadow-sm book-rounded overflow-hidden">
-                      <img
-                        srcset="../../assets/images/section-04-07-sm.webp 1x, ../../assets/images/section-04-07-xl.webp 2x"
-                        src="../../assets/images/section-04-07-sm.webp"
-                        alt="부모의 질문력 책 표지"
-                        class="rounded-[0 4px 4px 0]"
-                      />
-                    </p>
-                  </div>
-                  <div>
                     <div>
-                      <h4 id="book-title-7" class="font-bold text-(--dark-ui-01) truncate">부모의 질문력</h4>
-                      <p id="book-desc-7" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">김종원</p>
+                      <div>
+                        <h4 id="book-title-4-6" class="font-bold text-(--dark-ui-01) truncate">AI 시대 생존 전략</h4>
+                        <p id="book-desc-4-6" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">
+                          세가 쳉 지음 / 홍민경 옮김 / 샤오위핀 인터뷰
+                        </p>
+                      </div>
+                      <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+                        <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                        <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>42%</span></li>
+                        <li><span aria-hidden="true"> | </span></li>
+                        <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>161분</span></li>
+                      </ul>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>29%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>122분</span></li>
-                    </ul>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li class="w-[150px] hidden 2xl:block" aria-label="관계의 뇌 과학">
-              <a href="#void" aria-labelledby="book-title-8" aria-describedby="book-desc-8">
-                <div>
-                  <div>
-                    <p class="inline-block shadow-sm book-rounded overflow-hidden">
-                      <img
-                        srcset="../../assets/images/section-04-02-sm.webp 1x, ../../assets/images/section-04-02-xl.webp 2x"
-                        src="../../assets/images/section-04-02-sm.webp"
-                        alt="관계의 뇌 과학 책 표지"
-                        class="rounded-[0 4px 4px 0]"
-                      />
-                    </p>
-                  </div>
+                </a>
+              </li>
+              <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="부모의 질문력">
+                <a href="#void">
                   <div>
                     <div>
-                      <h4 id="book-title-8" class="font-bold text-(--dark-ui-01) truncate">관계의 뇌 과학</h4>
-                      <p id="book-desc-8" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">
-                        니콜 르페라 지음 / 이현 옮김
+                      <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                        <img
+                          srcset="../../assets/images/section-04-07-sm.webp 1x, ../../assets/images/section-04-07-xl.webp 2x"
+                          src="../../assets/images/section-04-07-sm.webp"
+                          alt=""
+                          class="rounded-[0 4px 4px 0]"
+                        />
                       </p>
                     </div>
-                    <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
-                      <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
-                      <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>48%</span></li>
-                      <li><span aria-hidden="true"> | </span></li>
-                      <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>54분</span></li>
-                    </ul>
+                    <div>
+                      <div>
+                        <h4 id="book-title-4-7" class="font-bold text-(--dark-ui-01) truncate">부모의 질문력</h4>
+                        <p id="book-desc-4-7" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">김종원</p>
+                      </div>
+                      <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+                        <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                        <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>29%</span></li>
+                        <li><span aria-hidden="true"> | </span></li>
+                        <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>122분</span></li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
