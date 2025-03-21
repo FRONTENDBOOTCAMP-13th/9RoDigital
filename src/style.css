@@ -368,3 +368,9 @@
     margin-right: 8px;
   }
 }
+
+.list-remove {
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
