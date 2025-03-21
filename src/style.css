@@ -1,6 +1,356 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-@theme{
-  --font-sans: "Pretendard Variable", sans-serif;
+@theme {
+  --font-sans: 'Spoqa Han Sans Neo', sans-serif;
+  --font-NotoSerifKR: 'Noto Serif KR', serif;
+  --font-pretendard: 'Pretendard Variable', sans-serif;
 
+  /* Light Theme */
+  --light-ui-background: #ffffff;
+  --light-ui-01: #fafaf6;
+  --light-ui-02: #f7f7f7;
+  --light-ui-03: #f5f4f3;
+  --light-ui-04: #f6f4ee;
+  --light-ui-05: #ececec;
+  --light-ui-06: #dfdfdf;
+  --light-ui-07: #a7a39a;
+  --light-ui-08: #555555;
+  --light-ui-09: #333333;
+  --light-ui-10: #242424;
+  --light-primary: #ffeb60;
+  --light-primary-press: #ffe04b;
+  --light-secondary: #333333;
+  --light-secondary-press: #242424;
+  --light-tertiary: #ffffff;
+  --light-tertiary-press: #f7f7f7;
+  --light-danger: #df1d1d;
+  --light-danger-press: #bc1a1a;
+  --light-cancel: #c1c1c1;
+  --light-cancel-press: #a5a5a5;
+  --light-success: #0073cb;
+  --light-error: #f05c2e;
+  --light-text-strong: #000000;
+  --light-text-01: #242424;
+  --light-text-02: #555555;
+  --light-text-03: #6f6f6f;
+  --light-text-04: #8b8b8b;
+
+  /* Dark Theme */
+  --dark-ui-background: #171717;
+  --dark-ui-01: #242424;
+  --dark-ui-02: #333333;
+  --dark-ui-03: #3d3d3d;
+  --dark-ui-04: #555555;
+  --dark-ui-05: #6f6f6f;
+  --dark-ui-06: #8b8b8b;
+  --dark-ui-07: #a5a5a5;
+  --dark-ui-08: #c1c1c1;
+  --dark-ui-09: #ececec;
+  --dark-ui-10: #f5f4f3;
+  --dark-primary: #fef08c;
+  --dark-primary-press: #fff7bf;
+  --dark-secondary: #fbfbfb;
+  --dark-secondary-press: #ffffff;
+  --dark-tertiary: #171717;
+  --dark-tertiary-press: #333333;
+  --dark-danger: #f5511d;
+  --dark-danger-press: #eb683f;
+  --dark-cancel: #6f6f6f;
+  --dark-cancel-press: #8b8b8b;
+  --dark-success: #6ab6f0;
+  --dark-error: #ff784d;
+  --dark-text-strong: #ffffff;
+  --dark-text-01: #fbfbfb;
+  --dark-text-02: #dfdfdf;
+  --dark-text-03: #c1c1c1;
+  --dark-text-04: #a5a5a5;
+
+  /* Gray Shades */
+  --gray-01: #fbfbfb;
+  --gray-02: #f7f7f7;
+  --gray-03: #f5f4f3;
+  --gray-04: #efefef;
+  --gray-05: #ececec;
+  --gray-06: #dfdfdf;
+  --gray-07: #c1c1c1;
+  --gray-08: #a5a5a5;
+  --gray-09: #8b8b8b;
+  --gray-10: #6f6f6f;
+  --gray-11: #555555;
+  --gray-12: #3d3d3d;
+  --gray-13: #333333;
+  --gray-14: #242424;
+  --gray-15: #171717;
+
+  /* Yellow Shades */
+  --yellow-01: #fffbe1;
+  --yellow-02: #fff7bf;
+  --yellow-03: #fef08c;
+  --yellow-04: #ffef7b;
+  --yellow-05: #ffeb60;
+  --yellow-06: #ffe04b;
+  --yellow-07: #ffd334;
+  --yellow-08: #ffc71e;
+  --yellow-09: #ffb904;
+  --yellow-10: #e7aa0e;
+  --yellow-11: #d09c16;
+  --yellow-12: #aa8525;
+
+  /* Red Shades */
+  --red-01: #ffc2af;
+  --red-02: #ff9d7e;
+  --red-03: #ff784d;
+  --red-04: #f57046;
+  --red-05: #eb683f;
+  --red-06: #f05c2e;
+  --red-07: #f5511d;
+  --red-08: #e9462b;
+  --red-09: #e7301d;
+  --red-10: #df1d1d;
+  --red-11: #d21c1c;
+  --red-12: #bc1a1a;
+
+  /* Blue Shades */
+  --blue-01: #d2e7f8;
+  --blue-02: #b5d8f4;
+  --blue-03: #98c9ef;
+  --blue-04: #81bfef;
+  --blue-05: #6ab6f0;
+  --blue-06: #469fe3;
+  --blue-07: #2087d6;
+  --blue-08: #0073cb;
+  --blue-09: #0166b3;
+  --blue-10: #01599d;
+  --blue-11: #014d88;
+  --blue-12: #014274;
+
+  /* text */
+  /* Font Weights */
+  --font-weight-bold: bold;
+  --font-weight-regular: normal;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 40px;
+
+  /* Line Heights */
+  --line-height-5xl: 52px;
+  --line-height-4xl: 46px;
+  --line-height-3xl: 42px;
+  --line-height-2xl: 38px;
+  --line-height-xl: 34px;
+  --line-height-lg: 28px;
+  --line-height-md: 24px;
+  --line-height-sm: 22px;
+  --line-height-xs: 20px;
+  --line-height-xxs: 18px;
+
+  /* Letter Spacing */
+  --letter-spacing-default: -0.6px;
+
+  /* Paragraph Spacing */
+  --paragraph-spacing-default: 0px;
+}
+
+/* custom style */
+@layer components {
+  .list-style li:not(:first-child):before {
+    content: '|';
+    margin: 0 12px;
+    color: var(--gray-09);
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1px gray;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+/* button component */
+
+.button-inactive {
+  @apply text-(color:--light-text-03) border border-(color:--light-ui-05) font-(--font-weight-regular);
+}
+.button-active {
+  @apply text-(color:--light-ui-10) border border-(--light-ui-10) font-(--font-weight-bold);
+}
+
+.button-style::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'><path d='M7 11L10 8L7 5' stroke='%238B8B8B' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}
+
+.tap-menu > .border-underline {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.daily-quote {
+  background: url('./assets/images/section-08-01.webp') no-repeat center/cover;
+  width: 100%;
+
+  article {
+    background-color: #fff;
+    padding: 50px 20px;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+    }
+    &::after {
+      background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+      top: 20px;
+      left: 20px;
+    }
+    &::before {
+      background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+      transform: rotate(180deg);
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.today-must-read {
+  background: linear-gradient(to bottom, #e0dedc, #c0bebc);
+  .today-must-read-img {
+    position: relative;
+    figure {
+      img {
+        z-index: 1;
+      }
+    }
+    span {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url('./assets/images/section-02-03-sm.webp');
+      filter: blur(20px);
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        left: -22px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('./assets/icon/check.svg') no-repeat center center/cover;
+      }
+    }
+  }
+  .daily-quote-read {
+    blockquote {
+      padding: 50px 20px;
+      position: relative;
+
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        opacity: 0.2;
+      }
+      &::after {
+        background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+        top: 5px;
+        left: 20px;
+      }
+      &::before {
+        background: url('./assets/icon/highlight.svg') no-repeat center/cover;
+        transform: rotate(180deg);
+        bottom: 5px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.book-rounded {
+  @apply rounded-tl-none rounded-tr-md rounded-bl-none rounded-br-md;
+}
+
+.badge {
+  .badge-img {
+    position: relative;
+  }
+  .badge-text {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+  }
+
+  /* 배경을 span이 아닌 div에 적용 */
+  .badge-bg {
+    background: url('./assets/icon/badge.svg') no-repeat center/cover;
+    display: inline-block;
+    padding: 4px; /* 배경 크기 조절 */
+  }
+
+  /* 텍스트만 아래로 내리기 */
+  .badge-bg span {
+    display: inline-block;
+    position: relative;
+    top: 4px; /* 텍스트만 내리기 */
+  }
+}
+
+.new-book-title {
+  margin-left: 1.6rem;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 24px;
+    background: url('./assets/icon/twinkle.png') no-repeat center/cover;
+    left: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
