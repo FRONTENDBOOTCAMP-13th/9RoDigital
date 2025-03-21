@@ -14,6 +14,7 @@
   </head>
   <body class="font-sans">
     <!-- 해더 시작 -->
+    <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
     <header class="py-2 px-4 xl:px-0 lg:border-b border-(--dark-text-02)">
       <div class="flex justify-between items-center max-w-[81.25rem] mx-auto lg:my-2">
         <div class="flex justify-start">
@@ -283,7 +284,7 @@
       </section>
     </main>
     <!-- 메인 컴포넌트 -->
-    <div class="main-container max-w-[81.25rem] mx-auto py-2 px-4 xl:px-0">
+    <div id="main-content" class="main-container max-w-[81.25rem] mx-auto py-2 px-4 xl:px-0">
       <div class="mb-5" data-group="example">
         <button
           type="button"
@@ -1598,7 +1599,7 @@
         <section class="flex items-center">
           <div class="flex w-full flex-col md:flex-row gap-3">
             <div class="w-full lg:w-[50%] rounded-xl overflow-hidden">
-              <a href="#void" class="flex items-center justify-between p-2 bg-[#395ace]">
+              <a href="#void" class="flex items-center justify-between p-3 bg-[#395ace]">
                 <p class="text-white">
                   <span class="block font-bold">공개 예정 도서</span>
                   <span class="block font-bold">보러가기</span>
@@ -1608,7 +1609,7 @@
               </a>
             </div>
             <div class="w-full lg:w-[50%] rounded-xl overflow-hidden">
-              <a href="#void" class="flex items-center justify-between p-2 bg-[#80b777]">
+              <a href="#void" class="flex items-center justify-between p-3 bg-[#80b777]">
                 <p class="text-white">
                   <span class="block font-bold">변화한 독서</span>
                   <span class="block font-bold">이제 이렇게 즐기세요</span>
@@ -1838,7 +1839,7 @@
         </ul>
       </div>
 
-      <details class="block group text-xs text-gray-500 mb-6 mt-2">
+      <details class="block group text-xs text-gray-500 mb-6 mt-2 list-remove">
         <summary class="flex items-center gap-1 cursor-pointer select-none justify-start">
           사업자 정보 펼쳐보기
           <span class="transition-transform group-open:rotate-180">&#9660;</span>
