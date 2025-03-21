@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>책 컴포넌트 | 윌리의 서재</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <!-- 책 띠지 없는 컴포넌트 -->
+    <fieldset class="border">
+      <legend class="mx-6">책 영역</legend>
+      <div>
+        <!-- 책 영역 -->
+        <p class="inline-block shadow-sm book-rounded overflow-hidden">
+          <img
+            srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
+            src="../../assets/images/section-01-02-sm.webp"
+            alt="책 이름"
+            class="rounded-[0 4px 4px 0]"
+          />
+        </p>
+      </div>
+    </fieldset>
+    <!-- 책 띠지 컴포넌트-->
+    <fieldset class="border">
+      <legend class="mx-6">책 옆에 띠지</legend>
+      <div class="badge">
+        <!-- 책 영역 -->
+        <div class="inline-block book-rounded shadow-sm badge-img">
+          <img
+            srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
+            src="../../assets/images/section-01-02-sm.webp"
+            alt="책 이름"
+            class="book-rounded"
+          />
+          <div class="badge-text flex flex-col">
+            <div class="badge-bg">
+              <span class="text-xs p-1">텍스트</span>
+            </div>
+            <div class="badge-bg">
+              <span class="text-xs p-1">텍스트</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- 타이틀 컴포넌트 -->
+    <fieldset class="border">
+      <legend class="mx-6">타이틀 영역</legend>
+      <div>
+        <div>
+          <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
+          <p class="truncate text-(--light-text-03) text-(length:--font-size-sm)">이름</p>
+        </div>
+        <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm)">
+          <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+          <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>n%</span></li>
+          <li><span aria-hidden="true"> | </span></li>
+          <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>n분</span></li>
+        </ul>
+      </div>
+    </fieldset>
+
+    <!-- 책 띠지 없고 합친 컴포넌트 -->
+    <fieldset class="border">
+      <legend class="mx-6">책에 띠 없는것</legend>
+      <div>
+        <div>
+          <p class="inline-block shadow-sm book-rounded overflow-hidden">
+            <img
+              srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
+              src="../../assets/images/section-01-02-sm.webp"
+              alt="책 이름"
+              class="rounded-[0 4px 4px 0]"
+            />
+          </p>
+        </div>
+        <div>
+          <div>
+            <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
+            <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
+          </div>
+          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+            <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
+            <li><span class="sr-only">진행사항</span><span>n%</span></li>
+            <li><span aria-hidden="true"> | </span></li>
+            <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
+          </ul>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- 책 띠지 있고 합친 컴포넌트 -->
+    <fieldset class="border">
+      <legend class="mx-6">책에 띠 있는것</legend>
+      <div>
+        <div class="badge">
+          <!-- 책 영역 -->
+          <div class="inline-block book-rounded shadow-sm badge-img">
+            <img
+              srcset="../../assets/images/section-01-02-sm.webp 1x, ../../assets/images/section-01-02-xl.webp 2x"
+              src="../../assets/images/section-01-02-sm.webp"
+              alt="책 이름"
+              class="book-rounded"
+            />
+            <div class="badge-text flex flex-col">
+              <div class="badge-bg">
+                <span class="text-xs p-1">텍스트</span>
+              </div>
+              <div class="badge-bg">
+                <span class="text-xs p-1">텍스트</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h4 class="font-bold text-(--dark-ui-01)">타이틀</h4>
+            <p class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">이름</p>
+          </div>
+          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+            <li><img src="../../assets/icon/library-add.svg" alt="진행 사항" /></li>
+            <li><span class="sr-only">진행사항</span><span>n%</span></li>
+            <li><span aria-hidden="true"> | </span></li>
+            <li><span class="sr-only">총 진행 타임</span><span>n분</span></li>
+          </ul>
+        </div>
+      </div>
+    </fieldset>
+  </body>
+</html>
