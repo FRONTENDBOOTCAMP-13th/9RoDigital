@@ -7,16 +7,18 @@
     <link rel="icon" href="/favicon.svg" />
     <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
     <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="m-0 p-0 box-border">
-    <!--헤더-->
+  <body class="font-sans">
+    <!--메인 -->
+    <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
     <header class="py-2 px-4 xl:px-0 lg:border-b border-(--dark-text-02)">
       <div class="flex justify-between items-center max-w-[81.25rem] mx-auto lg:my-2">
         <div class="flex justify-start">
           <div class="flex items-center">
             <div class="hidden w-[3.75rem] lg:block">
               <h1 class="sr-only">윌리의 서제</h1>
-              <a href="#"
+              <a href="../../pages/home/home.html"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" viewBox="0 0 513 181" version="1.1">
                   <path
                     d="M 118.081 1.368 C 115.101 1.997, 112.503 2.992, 112.307 3.579 C 111.359 6.422, 116.234 8.205, 132.651 11.021 C 152.671 14.455, 160.354 16.899, 165.808 21.567 C 175.721 30.053, 173.274 43.484, 160.757 49.284 C 154.250 52.299, 146.268 54.263, 129.524 56.969 C 116.556 59.065, 112 60.763, 112 63.500 C 112 66.368, 116.971 68.086, 133.606 70.968 C 158.371 75.259, 166.149 78.545, 169.904 86.302 C 173.489 93.706, 172.121 100.053, 165.731 105.663 C 160.520 110.238, 152.704 112.760, 133.740 115.987 C 117.189 118.803, 112 120.596, 112 123.500 C 112 126.296, 116.618 127.907, 132 130.480 C 157.591 134.760, 167.372 138.857, 170.116 146.445 C 170.823 148.400, 171.937 150, 172.591 150 C 173.245 150, 176.552 147.959, 179.940 145.465 C 202.416 128.920, 214.098 104.352, 212.710 76.552 C 212.058 63.507, 210.316 56.366, 205.132 45.500 C 191.785 17.522, 162.861 -0.323, 131.566 0.112 C 127.130 0.174, 121.062 0.739, 118.081 1.368 M 86.322 14.910 C 72.826 24.388, 62.453 38.338, 56.682 54.771 C 53.952 62.544, 53.571 65.045, 53.201 77.606 C 52.847 89.599, 53.103 92.969, 54.904 100.092 C 64.856 139.447, 103.107 165.487, 142.380 159.643 C 152.760 158.098, 157 156.150, 157 152.926 C 157 149.923, 151.771 148.161, 136.124 145.894 C 111.697 142.355, 100.488 138.130, 96.002 130.771 C 92.446 124.939, 93.758 117.281, 99.155 112.363 C 105.094 106.950, 114.284 104.103, 136.111 100.916 C 152.286 98.554, 157 97.039, 157 94.206 C 157 92.070, 154.495 89.534, 151.500 88.639 C 150.400 88.310, 143.235 87.124, 135.578 86.003 C 114.243 82.881, 105.053 80.013, 99.155 74.637 C 93.758 69.719, 92.446 62.061, 96.002 56.229 C 100.523 48.814, 111.415 44.752, 137 40.940 C 152.597 38.616, 157 37.088, 157 33.997 C 157 30.522, 152.547 28.893, 136.290 26.419 C 114.558 23.112, 105.581 20.227, 99.214 14.502 C 96.460 12.026, 94.005 10, 93.760 10 C 93.514 10, 90.168 12.209, 86.322 14.910 M 264.655 22.829 C 263.153 24.489, 263 30.336, 263 86.174 C 263 144.500, 263.095 147.776, 264.829 149.345 C 267.453 151.720, 273.258 151.477, 275.595 148.895 C 277.424 146.873, 277.500 144.376, 277.500 86 C 277.500 27.624, 277.424 25.126, 275.595 23.105 C 273.141 20.394, 266.999 20.239, 264.655 22.829 M 302 23 C 300.044 24.956, 300 26.333, 300 86 C 300 145.667, 300.044 147.044, 302 149 C 304.978 151.978, 310.330 151.667, 312.927 148.365 C 314.972 145.766, 315 144.913, 315 86 C 315 27.087, 314.972 26.234, 312.927 23.635 C 310.330 20.333, 304.978 20.022, 302 23 M 227.343 30.566 C 225.273 32.636, 224.895 33.748, 225.391 36.316 C 226.618 42.670, 233.642 45.138, 237.826 40.686 C 240.902 37.411, 240.698 32.694, 237.365 30.073 C 233.833 27.294, 230.448 27.461, 227.343 30.566 M 339.455 30.455 C 338.105 31.805, 337 34.075, 337 35.500 C 337 38.758, 341.140 43, 344.320 43 C 348.229 43, 352 39.367, 352 35.602 C 352 28.840, 344.249 25.660, 339.455 30.455 M 227.861 59.911 L 225.500 61.822 225.219 103.737 C 224.942 145.039, 224.969 145.690, 227.041 148.326 C 229.670 151.667, 235.005 151.995, 238 149 C 239.937 147.063, 240 145.667, 240 104.674 L 240 62.349 237.686 60.174 C 234.829 57.491, 230.978 57.388, 227.861 59.911 M 339.861 59.911 L 337.500 61.822 337.219 103.737 C 336.942 145.039, 336.969 145.690, 339.041 148.326 C 341.670 151.667, 347.005 151.995, 350 149 C 351.937 147.063, 352 145.667, 352 104.573 L 352 62.145 349.365 60.073 C 346.080 57.489, 342.919 57.435, 339.861 59.911 M 397.286 76.386 C 386.546 79.908, 377.727 87.985, 373.846 97.853 C 370.638 106.008, 370.698 120.137, 373.975 128.493 C 376.805 135.708, 385.045 144.410, 392.500 148.055 C 396.957 150.235, 398.802 150.500, 409.500 150.500 C 420.584 150.500, 421.971 150.282, 427.670 147.649 C 435.688 143.945, 438.240 141.233, 437.822 136.866 C 437.362 132.073, 433.304 130.161, 428.731 132.585 C 426.954 133.527, 423.743 135.212, 421.596 136.329 C 416.830 138.810, 408.889 139.586, 403.398 138.107 C 394.948 135.832, 386.767 128.086, 385.355 121.023 L 384.750 118 412.220 118 C 438.363 118, 439.777 117.904, 441.489 116.012 C 442.986 114.358, 443.179 112.988, 442.642 107.848 C 441.358 95.568, 433.293 83.916, 422.376 78.571 C 415.483 75.196, 403.971 74.193, 397.286 76.386 M 400.340 88.386 C 398.052 89.129, 394.821 90.703, 393.160 91.886 C 387.254 96.091, 383.844 104.959, 387.582 106.393 C 388.452 106.727, 397.622 107, 407.959 107 C 428.420 107, 429.873 106.615, 428.597 101.531 C 427.721 98.040, 422.385 92.237, 417.990 89.995 C 412.937 87.417, 405.433 86.733, 400.340 88.386"
@@ -28,7 +30,7 @@
             </div>
             <div class="w-[3.75rem] lg:hidden">
               <h1 class="sr-only">윌리의 서제</h1>
-              <a href="#"
+              <a href="../../pages/home/home.html"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" viewBox="0 0 513 181" version="1.1">
                   <path
                     d="M 118.081 1.368 C 115.101 1.997, 112.503 2.992, 112.307 3.579 C 111.359 6.422, 116.234 8.205, 132.651 11.021 C 152.671 14.455, 160.354 16.899, 165.808 21.567 C 175.721 30.053, 173.274 43.484, 160.757 49.284 C 154.250 52.299, 146.268 54.263, 129.524 56.969 C 116.556 59.065, 112 60.763, 112 63.500 C 112 66.368, 116.971 68.086, 133.606 70.968 C 158.371 75.259, 166.149 78.545, 169.904 86.302 C 173.489 93.706, 172.121 100.053, 165.731 105.663 C 160.520 110.238, 152.704 112.760, 133.740 115.987 C 117.189 118.803, 112 120.596, 112 123.500 C 112 126.296, 116.618 127.907, 132 130.480 C 157.591 134.760, 167.372 138.857, 170.116 146.445 C 170.823 148.400, 171.937 150, 172.591 150 C 173.245 150, 176.552 147.959, 179.940 145.465 C 202.416 128.920, 214.098 104.352, 212.710 76.552 C 212.058 63.507, 210.316 56.366, 205.132 45.500 C 191.785 17.522, 162.861 -0.323, 131.566 0.112 C 127.130 0.174, 121.062 0.739, 118.081 1.368 M 86.322 14.910 C 72.826 24.388, 62.453 38.338, 56.682 54.771 C 53.952 62.544, 53.571 65.045, 53.201 77.606 C 52.847 89.599, 53.103 92.969, 54.904 100.092 C 64.856 139.447, 103.107 165.487, 142.380 159.643 C 152.760 158.098, 157 156.150, 157 152.926 C 157 149.923, 151.771 148.161, 136.124 145.894 C 111.697 142.355, 100.488 138.130, 96.002 130.771 C 92.446 124.939, 93.758 117.281, 99.155 112.363 C 105.094 106.950, 114.284 104.103, 136.111 100.916 C 152.286 98.554, 157 97.039, 157 94.206 C 157 92.070, 154.495 89.534, 151.500 88.639 C 150.400 88.310, 143.235 87.124, 135.578 86.003 C 114.243 82.881, 105.053 80.013, 99.155 74.637 C 93.758 69.719, 92.446 62.061, 96.002 56.229 C 100.523 48.814, 111.415 44.752, 137 40.940 C 152.597 38.616, 157 37.088, 157 33.997 C 157 30.522, 152.547 28.893, 136.290 26.419 C 114.558 23.112, 105.581 20.227, 99.214 14.502 C 96.460 12.026, 94.005 10, 93.760 10 C 93.514 10, 90.168 12.209, 86.322 14.910 M 264.655 22.829 C 263.153 24.489, 263 30.336, 263 86.174 C 263 144.500, 263.095 147.776, 264.829 149.345 C 267.453 151.720, 273.258 151.477, 275.595 148.895 C 277.424 146.873, 277.500 144.376, 277.500 86 C 277.500 27.624, 277.424 25.126, 275.595 23.105 C 273.141 20.394, 266.999 20.239, 264.655 22.829 M 302 23 C 300.044 24.956, 300 26.333, 300 86 C 300 145.667, 300.044 147.044, 302 149 C 304.978 151.978, 310.330 151.667, 312.927 148.365 C 314.972 145.766, 315 144.913, 315 86 C 315 27.087, 314.972 26.234, 312.927 23.635 C 310.330 20.333, 304.978 20.022, 302 23 M 227.343 30.566 C 225.273 32.636, 224.895 33.748, 225.391 36.316 C 226.618 42.670, 233.642 45.138, 237.826 40.686 C 240.902 37.411, 240.698 32.694, 237.365 30.073 C 233.833 27.294, 230.448 27.461, 227.343 30.566 M 339.455 30.455 C 338.105 31.805, 337 34.075, 337 35.500 C 337 38.758, 341.140 43, 344.320 43 C 348.229 43, 352 39.367, 352 35.602 C 352 28.840, 344.249 25.660, 339.455 30.455 M 227.861 59.911 L 225.500 61.822 225.219 103.737 C 224.942 145.039, 224.969 145.690, 227.041 148.326 C 229.670 151.667, 235.005 151.995, 238 149 C 239.937 147.063, 240 145.667, 240 104.674 L 240 62.349 237.686 60.174 C 234.829 57.491, 230.978 57.388, 227.861 59.911 M 339.861 59.911 L 337.500 61.822 337.219 103.737 C 336.942 145.039, 336.969 145.690, 339.041 148.326 C 341.670 151.667, 347.005 151.995, 350 149 C 351.937 147.063, 352 145.667, 352 104.573 L 352 62.145 349.365 60.073 C 346.080 57.489, 342.919 57.435, 339.861 59.911 M 397.286 76.386 C 386.546 79.908, 377.727 87.985, 373.846 97.853 C 370.638 106.008, 370.698 120.137, 373.975 128.493 C 376.805 135.708, 385.045 144.410, 392.500 148.055 C 396.957 150.235, 398.802 150.500, 409.500 150.500 C 420.584 150.500, 421.971 150.282, 427.670 147.649 C 435.688 143.945, 438.240 141.233, 437.822 136.866 C 437.362 132.073, 433.304 130.161, 428.731 132.585 C 426.954 133.527, 423.743 135.212, 421.596 136.329 C 416.830 138.810, 408.889 139.586, 403.398 138.107 C 394.948 135.832, 386.767 128.086, 385.355 121.023 L 384.750 118 412.220 118 C 438.363 118, 439.777 117.904, 441.489 116.012 C 442.986 114.358, 443.179 112.988, 442.642 107.848 C 441.358 95.568, 433.293 83.916, 422.376 78.571 C 415.483 75.196, 403.971 74.193, 397.286 76.386 M 400.340 88.386 C 398.052 89.129, 394.821 90.703, 393.160 91.886 C 387.254 96.091, 383.844 104.959, 387.582 106.393 C 388.452 106.727, 397.622 107, 407.959 107 C 428.420 107, 429.873 106.615, 428.597 101.531 C 427.721 98.040, 422.385 92.237, 417.990 89.995 C 412.937 87.417, 405.433 86.733, 400.340 88.386"
@@ -42,14 +44,14 @@
           <nav class="sm:hidden md:block">
             <ul class="hidden lg:flex">
               <li>
-                <a href="#void" class="block px-6 font-bold text-(length:--font-size-lg)" aria-label="투데이">투데이</a>
+                <a href="../../pages/home/home.html" class="block px-6 font-bold text-(length:--font-size-lg)" aria-label="투데이">투데이</a>
               </li>
-              <li><a href="#void" class="block px-6 text-(length:--font-size-lg)" aria-label="피드">피드</a></li>
-              <li><a href="#void" class="block px-6 text-(length:--font-size-lg)" aria-label="검색">검색</a></li>
+              <li><a href="../../components/feed/feed.html" class="block px-6 text-(length:--font-size-lg)" aria-label="피드">피드</a></li>
+              <li><a href="../../search/search.html" class="block px-6 text-(length:--font-size-lg)" aria-label="검색">검색</a></li>
               <li>
-                <a href="#void" class="block px-6 text-(length:--font-size-lg)" aria-label="내서재">내서재</a>
+                <a href="../../components/mypage/mypage.html" class="block px-6 text-(length:--font-size-lg)" aria-label="내서재">내서재</a>
               </li>
-              <li><a href="#void" class="block px-6 text-(length:--font-size-lg)" aria-label="관리">관리</a></li>
+              <li><a href="../../components/member/member.html" class="block px-6 text-(length:--font-size-lg)" aria-label="관리">관리</a></li>
             </ul>
           </nav>
         </div>
@@ -67,6 +69,7 @@
               <path d="M12 22C13.6569 22 15 20.6569 15 19H9C9 20.6569 10.3431 22 12 22Z" fill="#000" />
             </svg>
           </p>
+          <!-- 알람 아이콘 -->
           <p class="block lg:hidden">
             <a href="#void" aria-label="알림 열기">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,44 +80,25 @@
             </a>
           </p>
           <p class="hidden bg-(--light-ui-09) rounded-sm lg:block">
-            <a href="#void" class="block text-white px-4 py-2">로그인</a>
+            <a href="../../components/login/login.html" class="block text-white px-4 py-2">로그아웃</a>
           </p>
         </div>
       </div>
     </header>
-    <ul class="flex justify-start max-w-[81.25rem] mx-auto tap-menu z-10">
-      <li class="hidden lg:block">
-        <a href="#void" class="block px-(--font-size-xs) py-2" aria-label="메뉴 열기">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <title>메뉴 열기</title>
-            <rect x="4" y="5" width="16" height="2" rx="1" fill="#000000" />
-            <rect x="4" y="11" width="16" height="2" rx="1" fill="#000000" />
-            <rect x="4" y="17" width="16" height="2" rx="1" fill="#000000" />
-          </svg>
-        </a>
-      </li>
-      <li class="border-underline">
-        <a href="#void" class="inline-block font-bold px-(--font-size-xs) py-2" aria-current="page">NOW</a>
-      </li>
-      <li><a href="#void" class="inline-block px-(--font-size-xs) py-2">밀리로드</a></li>
-      <li><a href="#void" class="inline-block px-(--font-size-xs) py-2">스토리</a></li>
-      <li><a href="#void" class="inline-block px-(--font-size-xs) py-2">오디오북</a></li>
-    </ul>
-    <div class="fixed inset-x-0 bottom-0 bg-white border-t border-(--dark-text-02) lg:hidden z-10">
+    <!-- 모바일 nav -->
+    <div class="fixed inset-x-0 bottom-0 bg-white border-t border-(--dark-text-02) lg:hidden z-2">
       <ul class="flex justify-around items-center py-2">
         <li>
-          <a href="#void" class="flex flex-col items-center" aria-current="page">
+          <a href="../../pages/home/home.html" class="flex flex-col items-center" aria-current="page">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12 22C6.47723 22 2.00003 17.5228 2.00003 12C2.00003 8.24134 4.07373 4.967 7.13943 3.25867C7.40133 5.04942 9.84543 5.43219 12.3748 5.82831C12.6371 5.86939 12.901 5.91071 13.1628 5.95367C14.175 6.11975 14.5582 6.29331 14.5582 6.65135C14.5582 7.00938 14.175 7.18294 13.1628 7.34902C12.9008 7.39201 12.6374 7.43326 12.3749 7.47437C9.69793 7.89361 7.11633 8.29791 7.11633 10.3723C7.11633 12.4466 9.69783 12.8509 12.3748 13.2702C12.6373 13.3113 12.9008 13.3525 13.1628 13.3955C14.175 13.5616 14.5582 13.7352 14.5582 14.0932C14.5582 14.4512 14.175 14.6248 13.1628 14.7909C12.9008 14.8339 12.6373 14.8751 12.3748 14.9162C9.69783 15.3355 7.11633 15.7398 7.11633 17.8141C7.11633 19.8885 9.69783 20.2928 12.3748 20.712C12.6373 20.7531 12.9008 20.7944 13.1628 20.8374C14.175 21.0035 14.5582 21.177 14.5582 21.5351C14.5582 21.6511 14.5206 21.6803 14.4107 21.7075C13.6386 21.8986 12.8311 22 12 22Z"
                   fill="#6F6F6F"
-                  class="fill-(--yellow-09)"
                 />
                 <path
                   d="M12 2C11.6369 2 11.0672 2.01511 10.544 2.1053C9.5595 2.27501 8.9767 2.47055 8.9767 2.93041C8.9767 3.39026 9.6395 3.57154 10.9233 3.74759C11.1606 3.78373 11.4125 3.81819 11.6739 3.85396C12.6265 3.98429 13.7065 4.13204 14.6672 4.44146C15.872 4.84654 16.8837 5.51236 16.8837 6.65134C16.8837 7.79031 15.872 8.45613 14.6672 8.86121C13.7065 9.17063 12.6271 9.31831 11.6744 9.44864C11.4128 9.48443 11.1607 9.51892 10.9233 9.55509C9.6395 9.73113 8.9767 9.91241 8.9767 10.3723C8.9767 10.8321 9.6395 11.0134 10.9233 11.1894C11.1607 11.2256 11.4128 11.2601 11.6744 11.2959C12.6271 11.4262 13.7065 11.5739 14.6672 11.8833C15.872 12.2884 16.8837 12.9542 16.8837 14.0932C16.8837 15.2322 15.872 15.898 14.6672 16.3031C13.7065 16.6125 12.6271 16.7602 11.6744 16.8905C11.4128 16.9263 11.1607 16.9608 10.9233 16.9969C9.6395 17.173 8.9767 17.3543 8.9767 17.8141C8.9767 18.274 9.6395 18.4553 10.9233 18.6313C11.1607 18.6675 11.4128 18.702 11.6744 18.7378C12.6271 18.8681 13.7065 19.0158 14.6672 19.3252C15.5913 19.6359 16.4017 20.0999 16.7293 20.8132C19.8669 19.126 22 15.8121 22 12C22 6.47715 17.5229 2 12 2Z"
                   fill="#6F6F6F"
-                  class="fill-(--yellow-09)"
                 />
               </svg>
             </p>
@@ -122,7 +106,7 @@
           </a>
         </li>
         <li>
-          <a href="#void" class="flex flex-col items-center">
+          <a href="../../components/feed/feed.html" class="flex flex-col items-center">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -146,7 +130,7 @@
           </a>
         </li>
         <li>
-          <a href="#void" class="flex flex-col items-center">
+          <a href="../../search/search.html" class="flex flex-col items-center">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10" cy="10" r="7" transform="rotate(90 10 10)" stroke="#6F6F6F" stroke-width="2" />
@@ -157,7 +141,7 @@
           </a>
         </li>
         <li>
-          <a href="#void" class="flex flex-col items-center">
+          <a href="../../components/mypage/mypage.html" class="flex flex-col items-center">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -166,20 +150,30 @@
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
+                  class="stroke-(--yellow-09)"
                 />
-                <path d="M3 13L21 13" stroke="#6F6F6F" stroke-width="2" />
-                <rect x="6" y="6" width="3" height="6" rx="0.5" fill="#6F6F6F" />
-                <rect x="10.5" y="6" width="3" height="6" rx="0.5" fill="#6F6F6F" />
-                <rect x="13.7009" y="7.15234" width="3" height="6" rx="0.5" transform="rotate(-30 13.7009 7.15234)" fill="#6F6F6F" />
-                <rect x="6" y="16" width="3" height="6" rx="0.5" fill="#6F6F6F" />
-                <rect x="10.5" y="16" width="3" height="6" rx="0.5" fill="#6F6F6F" />
+                <path d="M3 13L21 13" stroke="#6F6F6F" stroke-width="2" class="stroke-(--yellow-09)" />
+                <rect x="6" y="6" width="3" height="6" rx="0.5" fill="#6F6F6F" class="fill-(--yellow-09)" />
+                <rect x="10.5" y="6" width="3" height="6" rx="0.5" fill="#6F6F6F" class="fill-(--yellow-09)" />
+                <rect
+                  x="13.7009"
+                  y="7.15234"
+                  width="3"
+                  height="6"
+                  rx="0.5"
+                  transform="rotate(-30 13.7009 7.15234)"
+                  fill="#6F6F6F"
+                  class="fill-(--yellow-09)"
+                />
+                <rect x="6" y="16" width="3" height="6" rx="0.5" fill="#6F6F6F" class="fill-(--yellow-09)" />
+                <rect x="10.5" y="16" width="3" height="6" rx="0.5" fill="#6F6F6F" class="fill-(--yellow-09)" />
               </svg>
             </p>
             <span class="mt-1">내서재</span>
           </a>
         </li>
         <li>
-          <a href="#void" class="flex flex-col items-center">
+          <a href="../../components/member/member.html" class="flex flex-col items-center">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="12" cy="10" r="3" fill="#6F6F6F" />
@@ -195,8 +189,14 @@
         </li>
       </ul>
     </div>
+    <p class="top-button shadow-md z-2 fixed md:right-[50px] right-1/2 bottom-[90px] translate-x-1/2 bg-white p-2 rounded-[3.125rem]">
+      <a href="#" aria-label="클릭하시면 위로 올라갑니다">
+        <span aria-hidden="true"><img src="../../assets/icon/arrow_top.svg" alt="" /></span>
+        <span class="text-(le)">top</span>
+      </a>
+    </p>
     <!--메인-->
-    <main class="w-full h-full">
+    <main id="main-content" class="w-full h-full">
       <!--서브헤더-->
       <div class="z-100 bg-white">
         <div class="w-full h-9.5 items-end">
@@ -212,22 +212,22 @@
       <div class="flex flex-col w-full px-5 overflow-hidden xl:flex-row xl:px-6">
         <!--메인-왼쪽-->
         <div class="w-full px-0 xl:w-1/4 xl:px-5">
-          <section class="pb-6">
+          <section>
             <!--프로필-->
-            <div class="flex w-full flex-col gap-5">
+            <div class="flex w-full flex-col gap-5 justify-center items-center">
               <div class="flex w-full flex-row items-center gap-4">
                 <div class="inline-block w-20">
-                  <img src="../../assets/icon/profile.png" alt="프로필 이미지" class="h-20 w-20 object-cover" />
+                  <img src="../../assets/icon/profile.png" alt="프로필 이미지" />
                 </div>
                 <div class="flex flex-col">
-                  <span class="items-center font-bold text-xl whitespace-nowrap">꿈을 꾸는 해적왕_18312</span>
+                  <span class="justify-center items-center font-bold text-xl whitespace-nowrap">코딩하는 사자_1101</span>
                   <div class="flex">
                     <a href="" class="flex gap-1">
                       <span class="text-sm">팔로워</span>
                       <span class="text-sm font-bold">0</span>
                     </a>
-                    <a href="">
-                      <span class="items-center ml-1 font-bold">&#183;</span>
+                    <a href="" class="flex gap-1">
+                      <span class="font-bold">&#183;</span>
                       <span class="text-sm">팔로잉</span>
                       <span class="text-sm font-bold">0</span>
                     </a>
@@ -263,34 +263,21 @@
               </a>
             </div>
             <!--글쓰기 버튼-->
-            <div class="flex gap-3">
+            <div class="flex gap-3 justify-between items-center">
               <button class="h-10 flex items-center justify-center w-full text-base bg-black text-white rounded-full">글쓰기</button>
               <button class="h-10 flex items-center justify-center w-full text-base bg-white text-black rounded-full border-1">도서 담기</button>
-            </div>
-            <!--광고-->
-            <div class="relative mt-4">
-              <a href="">
-                <img class="object-cover w-full h-15.5 opacity-0 xl:opacity-100" src="../../assets/icon/subscribe.png" alt="구독 광고 포스터" />
-              </a>
-              <a href="https://www.millie.co.kr/v3/product">
-                <img
-                  class="absolute bottom-0 inset-x-0 w-full h-15.5 opacity-100 xl:opacity-0"
-                  src="../../assets/icon/subscribe2.png"
-                  alt="구독 관고 포스터2"
-                />
-              </a>
             </div>
           </section>
         </div>
         <!--메인 오른쪽-->
         <div class="w-full pl-0 xl:w-3/4 xl:pl-11">
           <!--추천 도서-->
-          <section class="flex w-full flex-col py-6 gap-3 overflow-hidden">
-            <div class="flex relative flex-col gap-0.5">
-              <h4 class="flex font-bold text-xl w-full">추천 도서</h4>
+          <section class="flex w-full flex-col py-6 gap-3">
+            <div class="relative">
+              <h4 class="font-bold text-xl w-full">추천 도서</h4>
             </div>
-            <div class="overflow-x-auto list-none p-0">
-              <div class="flex top-0 left-0 grid-cols-6">
+            <div class="overflow-x-auto list-none">
+              <div class="flex top-0 left-0">
                 <div class="w-25 flex flex-col mr-3 cursor-pointer">
                   <div class="w-25 flex items-end">
                     <div class="flex flex-col gap-2">
@@ -444,8 +431,57 @@
             <div class="flex relative flex-col gap-0.5">
               <h4 class="flex font-bold text-xl w-full">3월 독서 캘린더</h4>
             </div>
-            <div>
-              <img class="w-full h-94" src="../../assets/icon/calendar.png" alt="3월 달력 이미지" />
+            <div class="w-full bg-white rounded-2xl">
+              <div class="">
+                <ul class="flex flex-wrap text-center leading-12 bg-gray-300">
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">일</li>
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">월</li>
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">화</li>
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">수</li>
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">목</li>
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">금</li>
+                  <li class="relative w-[calc(100%/7)] h-12 font-bold">토</li>
+                </ul>
+                <ul class="flex flex-wrap leading-12 text-center">
+                  <li class="relative w-[calc(100%/7)] h-12"></li>
+                  <li class="relative w-[calc(100%/7)] h-12"></li>
+                  <li class="relative w-[calc(100%/7)] h-12"></li>
+                  <li class="relative w-[calc(100%/7)] h-12"></li>
+                  <li class="relative w-[calc(100%/7)] h-12"></li>
+                  <li class="relative w-[calc(100%/7)] h-12"></li>
+                  <li class="relative w-[calc(100%/7)] h-12">1</li>
+                  <li class="relative w-[calc(100%/7)] h-12">2</li>
+                  <li class="relative w-[calc(100%/7)] h-12">3</li>
+                  <li class="relative w-[calc(100%/7)] h-12">4</li>
+                  <li class="relative w-[calc(100%/7)] h-12">5</li>
+                  <li class="relative w-[calc(100%/7)] h-12">6</li>
+                  <li class="relative w-[calc(100%/7)] h-12">7</li>
+                  <li class="relative w-[calc(100%/7)] h-12">8</li>
+                  <li class="relative w-[calc(100%/7)] h-12">9</li>
+                  <li class="relative w-[calc(100%/7)] h-12">10</li>
+                  <li class="relative w-[calc(100%/7)] h-12">11</li>
+                  <li class="relative w-[calc(100%/7)] h-12">12</li>
+                  <li class="relative w-[calc(100%/7)] h-12">13</li>
+                  <li class="relative w-[calc(100%/7)] h-12">14</li>
+                  <li class="relative w-[calc(100%/7)] h-12">15</li>
+                  <li class="relative w-[calc(100%/7)] h-12">16</li>
+                  <li class="relative w-[calc(100%/7)] h-12">17</li>
+                  <li class="relative w-[calc(100%/7)] h-12">18</li>
+                  <li class="relative w-[calc(100%/7)] h-12">19</li>
+                  <li class="relative w-[calc(100%/7)] h-12">20</li>
+                  <li class="relative w-[calc(100%/7)] h-12">21</li>
+                  <li class="relative w-[calc(100%/7)] h-12">22</li>
+                  <li class="relative w-[calc(100%/7)] h-12">23</li>
+                  <li class="relative w-[calc(100%/7)] h-12">24</li>
+                  <li class="relative w-[calc(100%/7)] h-12">25</li>
+                  <li class="relative w-[calc(100%/7)] h-12">26</li>
+                  <li class="relative w-[calc(100%/7)] h-12">27</li>
+                  <li class="relative w-[calc(100%/7)] h-12">28</li>
+                  <li class="relative w-[calc(100%/7)] h-12">29</li>
+                  <li class="relative w-[calc(100%/7)] h-12">30</li>
+                  <li class="relative w-[calc(100%/7)] h-12">31</li>
+                </ul>
+              </div>
             </div>
           </section>
           <!--독서 리포트-->
@@ -455,18 +491,18 @@
               <p class="text-sm">밀리 회원들은 한 달 평균 2권 읽어요</p>
             </div>
             <div>
-              <ul class="flex flex-col gap-1 xl:flex-row xl:gap-6">
-                <li class="w-full h-5">
-                  <span class="table-cell pr-2 whitespace-nowrap text-sm">나&emsp;</span>
-                  <div class="table-cell relative w-full h-full bg-gray-100"></div>
-                  <span class="table-cell pl-2 whitespace-nowrap font-bold text-sm text-violet-600">0권</span>
+              <ul class="flex flex-col justify-center gap-1 xl:flex-row xl:gap-6">
+                <li class="flex items-center justify-between w-full h-5">
+                  <span class="pr-2 whitespace-nowrap text-sm w-8">나</span>
+                  <div class="relative w-full h-full bg-gray-100"></div>
+                  <span class="pl-2 whitespace-nowrap font-bold text-sm text-violet-600">0권</span>
                 </li>
-                <li class="w-full h-5">
-                  <span class="table-cell pr-2 whitespace-nowrap text-sm">밀리</span>
-                  <div class="table-cell relative w-full h-full bg-gray-100">
-                    <div class="w-2/5 h-5 bg-gray-300"></div>
+                <li class="flex items-center justify-between w-full h-5">
+                  <span class="whitespace-nowrap text-sm w-8">밀리</span>
+                  <div class="relative w-full h-full bg-gray-100">
+                    <div class="absolute w-2/5 h-5 bg-gray-300"></div>
                   </div>
-                  <span class="table-cell pl-2 whitespace-nowrap font-bold text-sm">2권</span>
+                  <span class="pl-2 whitespace-nowrap font-bold text-sm">2권</span>
                 </li>
               </ul>
             </div>
