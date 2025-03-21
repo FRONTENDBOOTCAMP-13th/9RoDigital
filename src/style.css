@@ -3,6 +3,7 @@
 @theme {
   --font-sans: 'Spoqa Han Sans Neo', sans-serif;
   --font-NotoSerifKR: 'Noto Serif KR', serif;
+  --font-pretendard: 'Pretendard Variable', sans-serif;
 
   /* Light Theme */
   --light-ui-background: #ffffff;
@@ -266,7 +267,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background: url('./assets/images/section-02-03-sm.webp');
+      background: url('./assets/images/section-02-03-sm.webp') no-repeat center/cover;
       filter: blur(20px);
     }
   }
@@ -313,4 +314,85 @@
       }
     }
   }
+}
+
+.book-rounded {
+  @apply rounded-tl-none rounded-tr-md rounded-bl-none rounded-br-md;
+}
+
+.badge {
+  .badge-img {
+    position: relative;
+  }
+  .badge-text {
+    position: absolute;
+    top: 5px;
+    right: -5px;
+  }
+
+  /* 배경을 span이 아닌 div에 적용 */
+  .badge-bg {
+    background: url('./assets/icon/badge.svg') no-repeat center/cover;
+    display: inline-block;
+    padding: 4px; /* 배경 크기 조절 */
+  }
+
+  /* 텍스트만 아래로 내리기 */
+  .badge-bg span {
+    display: inline-block;
+    position: relative;
+    top: 4px; /* 텍스트만 내리기 */
+  }
+}
+
+.new-book-title {
+  margin-left: 1.6rem;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 24px;
+    background: url('./assets/icon/twinkle.png') no-repeat center/cover;
+    left: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.main-container {
+  > section {
+    padding: 32px 0;
+    > section {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.mb-5 {
+  button {
+    margin-right: 8px;
+  }
+}
+
+.list-remove {
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
 }
