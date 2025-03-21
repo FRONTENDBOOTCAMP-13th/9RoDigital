@@ -181,6 +181,12 @@
   .text-last-center {
     text-align-last: center;
   }
+
+  .ranking-text::after {
+  content: " |";
+  color: #6f6f6f;
+  margin-left: 8px;
+}
 }
 
 /* button component */

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>랭킹 컴포넌트 | 윌리의 서재</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <h1 class="text-2xl m-4 font-bold">랭킹 컴포넌트</h1>
+      <!-- 랭킹 컴포넌트 -->
+      <!-- 랭킹 타이틀 -->
+      <section class="ranking max-w-[1440px] mx-auto">
+        <div class="ranking-title flex items-center justify-between p-4 cursor-pointer" id="ranking-toggle">
+          <p class="ranking-text text-xs font-medium text-[var(--gray-10)]">인기검색어</p>
+          <span class="text-xs text-[var(--gray-10)] mr-auto ml-4">2025.03.21 12:00 기준</span>
+          <svg
+            id="chevron-icon"
+            class="w-5 h-5 text-gray-600 transition-transform"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <!-- 랭킹 리스트 -->
+        <ol id="rank-list" class="rank-list hidden">
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">1</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">2</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">3</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">4</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">5</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">6</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">7</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const toggleButton = document.getElementById('ranking-toggle');
+          const rankList = document.getElementById('rank-list');
+          const chevronIcon = document.getElementById('chevron-icon');
+
+          // Set initial state
+          let isOpen = false;
+
+          // First image shows collapsed state, so rankList should start hidden
+          rankList.classList.add('hidden');
+
+          toggleButton.addEventListener('click', function () {
+            isOpen = !isOpen;
+
+            if (isOpen) {
+              // Show the rank list
+              rankList.classList.remove('hidden');
+              // Rotate chevron up
+              chevronIcon.classList.add('rotate-180');
+            } else {
+              // Hide the rank list
+              rankList.classList.add('hidden');
+              // Rotate chevron back
+              chevronIcon.classList.remove('rotate-180');
+            }
+          });
+        });
+      </script>
+    </body>
+</html>
