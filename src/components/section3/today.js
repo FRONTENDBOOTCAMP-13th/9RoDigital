@@ -1,4 +1,4 @@
-export function updateDate() {
+function updateDate() {
   const date = new Date();
   const weekDays = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
 
@@ -7,8 +7,13 @@ export function updateDate() {
   const weekDay = weekDays[date.getDay()];
 
   const formattedDate = `${month}월 ${day}일 ${weekDay} 업데이트`;
-  document.getElementById('update-day').textContent = formattedDate;
+  const updateElement = document.getElementById('update-day');
+  if (updateElement) {
+    updateElement.textContent = formattedDate;
+  }
 }
 
 // 페이지 로드 시 실행
-updateDate();
+document.addEventListener('DOMContentLoaded', function () {
+  updateDate();
+});
