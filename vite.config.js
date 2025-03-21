@@ -34,7 +34,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: path.resolve(__dirname, 'index.html'),
-        home: path.resolve(__dirname, 'home.html'), // 루트 위치의 home.html 추가
         ...findAllHtmlFiles(path.resolve(__dirname, 'src')),
       },
     },
