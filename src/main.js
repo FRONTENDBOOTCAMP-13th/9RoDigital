@@ -4,7 +4,7 @@ import './style.css';
 const currentPath = window.location.pathname;
 
 // accentButtonHandler.js는 버튼 컴포넌트 페이지와 홈 페이지에서만 로드
-if (currentPath.includes('/src/components/button/button.html') || currentPath.includes('/src/pages/home.html')) {
+if (currentPath.includes('/src/components/button/button.html') || currentPath.includes('/src/pages/home/home.html')) {
   import('/src/components/button/accentButtonHandler.js').then((module) => {
     const initAccentButtons = module.default;
     initAccentButtons();
