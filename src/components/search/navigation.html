@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>네비게이션 컴포넌트 | 윌리의 서재</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <!-- 네비게이션 컴포넌트 -->
+    <div class="nav p-4">
+      <ul class="nav-list flex space-x-6 text-[var(--gray-14)]">
+        <li><a href="#category" data-id="category" class="nav-link">카테고리</a></li>
+        <li><a href="#audio" data-id="audio" class="nav-link">오디오</a></li>
+        <li><a href="#author" data-id="author" class="nav-link">작가</a></li>
+        <li><a href="#collection" data-id="collection" class="nav-link">컬렉션</a></li>
+      </ul>
+    </div>
+
+    <!-- JS Test -->
+    <div id="category" class="p-8">
+      <h2 class="text-2xl font-bold mb-4">카테고리 섹션</h2>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+      <p>카테고리 관련 내용입니다.</p>
+    </div>
+    <div id="audio" class="p-8">
+      <h2 class="text-2xl font-bold mb-4">오디오 섹션</h2>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+      <p>오디오 관련 내용입니다.</p>
+    </div>
+    <div id="author" class="p-8">
+      <h2 class="text-2xl font-bold mb-4">작가 섹션</h2>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+      <p>작가 관련 내용입니다.</p>
+    </div>
+    <div id="collection" class="p-8">
+      <h2 class="text-2xl font-bold mb-4">컬렉션 섹션</h2>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+      <p>컬렉션 관련 내용입니다.</p>
+    </div>
+
+    <script>
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.p-8');
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          navLinks.forEach((item) => item.classList.remove('font-bold', 'border-b-2', 'border-gray-700'));
+          link.classList.add('font-bold', 'border-b-2', 'border-gray-700');
+
+          const targetId = link.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
+  </body>
+</html>

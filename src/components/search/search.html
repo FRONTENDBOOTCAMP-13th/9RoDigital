@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>검색 | 윌리의 서재</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/components/search/search.js"></script>
+  </head>
+  <body class="font-sans">
+    <div class="px-6 pb-6 max-w-[1400px] mx-auto">
+      <!-- 검색창 -->
+      <div class="sticky top-0 bg-white z-40 px-6 pt-4">
+        <form action="/">
+          <fieldset>
+            <legend class="sr-only">검색 폼</legend>
+            <div class="flex items-center gap-2 py-2">
+              <div class="flex-1">
+                <label for="searchInput" class="sr-only">검색어</label>
+                <input
+                  id="searchInput"
+                  type="search"
+                  name="keyword"
+                  required
+                  class="w-full bg-[var(--gray-02)] rounded-3xl py-3 px-5 pl-12 pr-4 text-sm text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--gray-06)]"
+                  placeholder="검색어를 입력하세요"
+                />
+              </div>
+              <button type="button" id="searchButton" class="p-2 left-4 text-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20px" height="20px">
+                  <path
+                    d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                    role="img"
+                    aria-label="검색"
+                  />
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!-- 랭킹 -->
+      <!-- 랭킹 타이틀 -->
+      <section class="ranking max-w-[1440px] mx-auto mb-6 mt-4">
+        <div class="ranking-title flex items-center justify-between pb-4 pt-4 cursor-pointer" id="ranking-toggle">
+          <p class="ranking-text text-xs font-medium text-[var(--gray-10)]">인기검색어</p>
+          <span class="text-xs text-[var(--gray-10)] mr-auto ml-4">2025.03.21 12:00 기준</span>
+          <svg
+            id="chevron-icon"
+            class="w-5 h-5 text-gray-600 transition-transform"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <!-- 랭킹 리스트 -->
+        <ol id="rank-list" class="rank-list hidden">
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">1</em>
+              <p class="text-sm mr-3">한강</p>
+              <img src="../../assets/icon/rank-up.png" alt="한강 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">2</em>
+              <p class="text-sm mr-3">로맨스</p>
+              <img src="../../assets/icon/rank-down.png" alt="로맨스 검색어 랭크다운" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">3</em>
+              <p class="text-sm mr-3">민음사 세계문학전집</p>
+              <img src="../../assets/icon/rank-up.png" alt="민음사 세계문학전집 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">4</em>
+              <p class="text-sm mr-3">히가시노 게이고</p>
+              <img src="../../assets/icon/rank-down.png" alt="히가시노 게이고 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">5</em>
+              <p class="text-sm mr-3">퇴마록</p>
+              <img src="../../assets/icon/rank-down.png" alt="퇴마록 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">6</em>
+              <p class="text-sm mr-3">민음사</p>
+              <img src="../../assets/icon/rank-up.png" alt="민음사 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">7</em>
+              <p class="text-sm mr-3">멋사</p>
+              <img src="../../assets/icon/rank-up.png" alt="멋사 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">8</em>
+              <p class="text-sm mr-3">구디역</p>
+              <img src="../../assets/icon/rank-up.png" alt="구디역 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">9</em>
+              <p class="text-sm mr-3">구로디지털역</p>
+              <img src="../../assets/icon/rank-up.png" alt="구로디지털역 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+          <li class="py-3 px-4">
+            <a href="/" class="flex items-center w-full">
+              <em class="not-italic font-medium text-sm mr-4 w-5">10</em>
+              <p class="text-sm mr-3">멋쟁이사자처럼</p>
+              <img src="../../assets/icon/rank-up.png" alt="멋쟁이사자처럼 검색어 랭크업" class="w-3" />
+            </a>
+          </li>
+        </ol>
+      </section>
+      <!-- 밀리 추천 검색어 -->
+      <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">밀리 추천 검색어</h3>
+      <!-- 추천 검색어 컴포넌트 -->
+      <div class="w-full max-w-[1440px] overflow-x-auto">
+        <ul class="flex flex-wrap pb-6 pt-3 gap-2">
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              김태리 오디오북
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              민음사 세계문학전집
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              콘클라베
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              삼국지
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              큰별 작은별
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              세계문학전집
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              한국사
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              세계사
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              공포
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              영어
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              일본어
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              취향 플레이리스트
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              부동산
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              이달의 밀크
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              장류진 신간
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-flex justify-center items-center h-8 px-3 border border-[var(--gray-05)] rounded-[1.125rem] text-[var(--gray-10)] text-(length:--font-size-sm) leading-(--line-height-xs) bg-(--light-ui-background) cursor-pointer whitespace-nowrap"
+            >
+              도파민 인류를 위한 대화의 감각
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 바로가기 -->
+      <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">바로가기</h3>
+      <!-- 바로가기 컴포넌트 -->
+      <div class="pt-3 pb-2">
+        <ul class="grid grid-cols-2 lg:grid-cols-4">
+          <li class="flex items-center justify-between p-3 bg-white lg:max-w-[200px]">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img class="w-10" src="../../assets/icon/best-i.png" alt="밀리 랭킹 바로가기" />
+              <span class="text-[var(--gray-14)]">밀리 랭킹</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 bg-white lg:max-w-[200px]">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img class="w-10" src="../../assets/icon/update-i.png" alt="새로 들어온 책 바로가기" />
+              <span class="text-[var(--gray-14)]">새로 들어온 책</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 bg-white lg:max-w-[200px]">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img class="w-10" src="../../assets/icon/coming-i.png" alt="공개 예정 바로가기" />
+              <span class="text-[var(--gray-14)]">공개 예정</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 bg-white lg:max-w-[200px]">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img class="w-10" src="../../assets/icon/best-i.png" alt="책-잇 아티클 바로가기" />
+              <span class="text-[var(--gray-14)]">밀리 랭킹</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 bg-white lg:max-w-[200px]">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img class="w-10" src="../../assets/icon/end-i.png" alt="종료 예정 바로가기" />
+              <span class="text-[var(--gray-14)]">종료 예정</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 bg-white">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img class="w-10" src="../../assets/icon/family-i.png" alt="패밀리 라운지 바로가기" />
+              <span class="text-[var(--gray-14)]">패밀리 라운지</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- 프로모션 카드 -->
+      <ul class="my-6">
+        <li
+          class="lg:h-[100px] relative flex items-start px-4 py-[19px] rounded-lg bg-white text-[var(--gray-14)] lg:p-5 shadow-[0_0_20px_1px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex flex-col z-10">
+            <p class="font-bold text-[20px] mb-1">김태리 목소리로 듣는</p>
+            <p class="text-xs text-[var(--gray-09)] text-[14px]">김애란 단편집 ⟪바깥은 여름⟫</p>
+          </div>
+          <img
+            class="absolute -right-0.5 top-2/5 transform -translate-y-1/2"
+            src="../../assets/images/promotion-taeri.webp"
+            alt="리딩 케미스트리 이미지"
+          />
+          <a href="/" class="absolute inset-0 w-full h-full"></a>
+        </li>
+      </ul>
+      <!-- 영역분리(hr) -->
+      <hr class="p-1.5 -mx-6 border-0 bg-[var(--gray-02)]" />
+      <!-- 네비게이션 컴포넌트 -->
+      <div class="nav sticky top-[60px] bg-white py-3 z-20 px-6">
+        <ul class="nav-list flex text-[var(--gray-14)] pt-1.5">
+          <li><a href="#category" data-id="category" class="nav-link pb-3 mr-3 mt-3">카테고리</a></li>
+          <li><a href="#audio" data-id="audio" class="nav-link pb-3 mx-3 mt-3">오디오</a></li>
+          <li><a href="#author" data-id="author" class="nav-link pb-3 mx-3 mt-3">작가</a></li>
+          <li><a href="#collection" data-id="collection" class="nav-link pb-3 mx-3 mt-3">컬렉션</a></li>
+        </ul>
+      </div>
+      <!-- 카테고리 -->
+      <section class="category-wrap py-6" id="category">
+        <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">카테고리</h3>
+        <ul class="grid lg:grid-cols-2 gap-3 mt-3">
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">도슨트북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">스토리 요약부터 해설까지, 도슨트와 함께 읽는 책</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-04-sm.webp"
+              alt="도슨트북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">오브제북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">활자를 넘어 아름다운 그림과 음악을 함께 감상하는 책</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-02-sm.webp"
+              alt="도슨트북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">오디오북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">소설, 인문, 경제경영, 자기계발, 에세이, 과학, 사회, 역사 등</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-08-sm.webp"
+              alt="오디오북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">챗북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">
+                백발백중! 별자리 운세, 쇼트 클래식, 인터뷰 시리즈, 인문, 사회, 경제・경영, 소설 등
+              </p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-07-sm.webp"
+              alt="챗북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">밀리 오리지널</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">밀리가 기획하고 발굴한, 밀리만의 책</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-06-sm.webp"
+              alt="밀리 오리지널 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">독립출판</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">기획부터 출판까지, 내 손으로 직접 만든 개성 있는 책</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-04-sm.webp"
+              alt="독립출판 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">디즈니</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">디즈니, 픽사, 마블의 책이 보이는 영어 오디오북 ⓒDisney</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-03-sm.webp"
+              alt="디즈니 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">빨간펜 동화</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">아이도, 어른도 함께 즐기는 동화의 시간!</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-02-sm.webp"
+              alt="빨간펜 동화 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">매거진</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">경제・경영, 패션・트렌드, 대중문화, 인문・예술, 리빙・라이프스타일 등</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-08-sm.webp"
+              alt="매거진 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">만화</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">인문・교양, 일상・드라마, 어린이・청소년, 그래픽노블</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-07-sm.webp"
+              alt="만화 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">소설</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">추리・스릴러, 킬러 스파이, 법의학 스릴러, SF, 판타지 등</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-06-sm.webp"
+              alt="소설 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">세계문학전집</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">열린책들, 민음사, 현대지성, 을유문화사, 살림, 휴머니스트, 문예출판사 등</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-05-sm.webp"
+              alt="세계문학전집 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">경제경영</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">
+                4차 산업혁명, IT, 마케팅, 세계 경제, 한국 경제, 경제학, 기업&CEO, 경영, 부자, 재테크 등
+              </p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-04-sm.webp"
+              alt="경제경영 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">자기계발</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">성공, 말하기・협상, 프레젠테이션, 시간 관리, 습관, 글쓰기, 독서 등</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-01-03-sm.webp"
+              alt="자기계발 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+        </ul>
+      </section>
+      <!-- 오디오 -->
+      <section class="audio-wrap py-6" id="audio">
+        <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">오디오</h3>
+        <ul class="grid lg:grid-cols-2 gap-3 mt-3">
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-[#D06686] border text-white border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">밀리캐스트</p>
+              <p class="text-xs lg:text-[14px]">리딩 케미스트리</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 max-w-[80px] lg:max-w-none"
+              src="../../assets/images/audiobook-1.webp"
+              alt="리딩 케미스트리 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-[#2C9285] border text-white border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">밀리캐스트</p>
+              <p class="text-xs lg:text-[14px]">취향 플레이리스트</p>
+            </div>
+            <img class="ml-auto absolute right-2 top-0 max-w-[80px] lg:max-w-none" src="../../assets/images/audiobook-2.webp" alt="도슨트북 이미지" />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+        </ul>
+        <ul class="grid lg:grid-cols-2 gap-3 mt-3">
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">셀럽 낭독 오디오북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">유명 셀럽의 목소리로 듣는 특별한 오디오북</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-02-02-xl.webp"
+              alt="오브제북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">저자 낭독 오디오북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">저자의 감성을 온전히 느낄 수 있는 오디오북</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-02-01-xl.webp"
+              alt="도슨트북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">성우 낭독 오디오북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">전문 성우가 실감나게 읽어주는 오디오북</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-02-03-xl.webp"
+              alt="도슨트북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+          <li
+            class="lg:h-[128px] relative flex items-center px-4 py-[19px] rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5 overflow-hidden"
+          >
+            <div class="flex flex-col z-10">
+              <p class="font-bold mb-0.5 lg:text-[20px] lg:mb-[10px]">AI 낭독 오디오북</p>
+              <p class="text-xs text-[var(--gray-09)] lg:text-[14px]">보다 자연스러운 AI의 목소리로 오디오북을 만나보세요!</p>
+            </div>
+            <img
+              class="ml-auto absolute right-2 top-0 rotate-12 max-w-[100px] lg:max-w-none"
+              src="../../assets/images/section-02-04-xl.webp"
+              alt="도슨트북 이미지"
+            />
+            <a href="/" class="absolute inset-0 w-full h-full"></a>
+          </li>
+        </ul>
+      </section>
+      <!-- 작가의 책 모아보기 -->
+      <section class="author-wrap py-6" id="author">
+        <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">작가의 책 모아보기</h3>
+        <ul class="grid grid-cols-2 gap-3 mt-3">
+          <li class="flex items-center justify-between p-3 rounded-lg bg-[#EF5D5E] border text-white border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#이희영</span>
+              <img class="ml-auto w-[16px]" src="../../assets/icon/new-icon 1.svg" alt="이희영 작가의 책 모아보기 신규소식" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-[#946CEA] border text-white border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#김애란</span>
+              <img class="ml-auto w-[16px]" src="../../assets/icon/new-icon 1.svg" alt="김애란 작가의 책 모아보기 신규소식" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#다카노 가즈아키</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#세스 고딘</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#클레어 키건</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#보도 섀퍼</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#미야베 미유키</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#정은궐</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#정유정</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#박경리</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#김미경</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#사이토 다카시</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#유발 하라리</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#히가시노 게이고</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#김초엽</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#이꽃님</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#기욤 뮈소</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <span class="font-bold">#박완서</span>
+              <img class="hidden" src="" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- 컬렉션 -->
+      <section class="collection-wrap py-6" id="collection">
+        <h3 class="text-(length:--font-size-lg) font-(--font-weight-bold) text-(--light-ui-10)">컬렉션</h3>
+        <h4 class="text-(length:--font-size-sm) font-(--font-weight-norma) text-(--dark-ui-05)">밀리가 만드는 다양한 아티클을 확인해보세요!</h4>
+        <ul class="grid grid-cols-2 gap-3 mt-3">
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/">
+              <img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-9.svg"
+                alt="책-잇 아티클 바로가기"
+              />
+              <span class="font-bold">책-잇</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-1.svg"
+                alt="밀리봐봐 아티클 바로가기"
+              />
+              <span class="font-bold">밀리봐봐</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-2.svg"
+                alt="에디터의 선택 아티클 바로가기"
+              />
+              <span class="font-bold">에디터의 선택</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-3.svg"
+                alt="밀리 시리즈 아티클 바로가기"
+              />
+              <span class="font-bold">밀리 시리즈</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-4.svg"
+                alt="챗북 아티클 바로가기"
+              />
+              <span class="font-bold">챗북 소식</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-5.svg"
+                alt="독서연구소 소식 아티클 바로가기"
+              />
+              <span class="font-bold">독서연구소</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-6.svg"
+                alt="추천 작가 아티클 바로가기"
+              />
+              <span class="font-bold">추천 작가</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-7.svg"
+                alt="밀리의 발견 아티클 바로가기"
+              />
+              <span class="font-bold">밀리의 발견</span></a
+            >
+          </li>
+          <li class="flex items-center justify-between p-3 rounded-lg bg-white border text-[var(--gray-14)] border-[var(--gray-06)] lg:p-5">
+            <a class="flex items-center gap-2 w-full" href="/"
+              ><img
+                class="border rounded-full border-[var(--gray-05)] shadow-2xs max-w-[30px] lg:max-w-none"
+                src="../../assets/icon/collection-Image-8.svg"
+                alt="북러닝 아티클 바로가기"
+              />
+              <span class="font-bold">북러닝</span></a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

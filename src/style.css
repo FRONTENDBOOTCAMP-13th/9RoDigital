@@ -175,6 +175,12 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
+
+  .ranking-text::after {
+  content: " |";
+  color: #6f6f6f;
+  margin-left: 8px;
+}
 }
 
 /* button component */
