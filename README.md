@@ -110,7 +110,7 @@
 git clone https://github.com/FRONTENDBOOTCAMP-13th/9RoDigital.git
 
 # 디렉토리 이동
-cd willys-library
+cd 9RoDigital
 
 # 의존성 설치
 npm install
