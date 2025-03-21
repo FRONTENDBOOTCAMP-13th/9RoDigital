@@ -260,7 +260,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background: url('./assets/images/section-02-03-sm.webp');
+      background: url('./assets/images/section-02-03-sm.webp') no-repeat center/cover;
       filter: blur(20px);
     }
   }
@@ -351,5 +351,20 @@
     left: -1.5rem;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.main-container {
+  > section {
+    padding: 32px 0;
+    > section {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.mb-5 {
+  button {
+    margin-right: 8px;
   }
 }
