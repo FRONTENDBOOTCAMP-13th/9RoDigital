@@ -54,14 +54,9 @@
     <!-- 메인 내비게이션 -->
     <nav class="bg-gray-100 shadow-sm">
       <ul class="max-w-7xl mx-auto flex justify-center gap-6 py-4">
-        <a href="#team" class="focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2 scroll-smooth"
-          >팀 소개</a
-        >
+        <a href="#intro" class="focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2 scroll-smooth">소개</a>
         <a href="#components" class="focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2 scroll-smooth"
           >컴포넌트</a
-        >
-        <a href="#service" class="focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2 scroll-smooth"
-          >서비스</a
         >
         <a href="#guide" class="focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2 scroll-smooth"
           >가이드</a
@@ -72,19 +67,31 @@
     <!-- 메인 콘텐츠 -->
     <main class="max-w-7xl mx-auto px-4 py-8">
       <!-- 팀 소개 섹션 -->
-      <section id="team" class="bg-white rounded-lg shadow p-8 mb-8">
-        <h2 class="text-3xl font-bold text-center mb-8">9로디지털</h2>
-
-        <h3 class="text-2xl font-semibold text-center mb-8">프로젝트 소개</h3>
+      <section id="intro" class="bg-white rounded-lg shadow p-8 mb-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">프로젝트 소개</h2>
 
         <img src="./src/assets/logo/willie_purple_korean_logo.svg" alt="윌리의 서재" class="w-3xs md:w-2xs lg:w-xs mx-auto mb-8" />
-        <p class="text-center mb-8">
-          안녕하세요! 9로디지털 팀은 국내 최대 전자책 구독 서비스 '밀리의 서재'의 디자인을 참고하여 '윌리의 서재' 프로젝트를 진행했습니다.<br />
-          사용자 중심의 UI 디자인과 직관적인 인터페이스를 만들기 위해 노력했습니다.<br />
-          팀원 각자의 강점을 살린 효율적인 협업 과정을 통해 아이디어를 발전시키고, 함께 문제를 해결하며 성장하는 값진 경험을 얻었습니다.
+        <p class="text-justify px-[2%] sm:px-[5.5%] lg:px-[15%] text-last-center">
+          안녕하세요! 9로디지털 팀은 국내 최대 전자책 구독 서비스 '밀리의 서재'의 디자인을 참고하여 '윌리의 서재' 프로젝트를 진행했습니다. 사용자
+          중심의 UI 디자인과 직관적인 인터페이스를 만들기 위해 노력했습니다. 팀원 각자의 강점을 살린 효율적인 협업 과정을 통해 아이디어를 발전시키고,
+          함께 문제를 해결하며 모두가 한 단계 성장할 수 있는 소중한 경험이었습니다.
         </p>
 
-        <h3 class="text-2xl font-semibold text-center mb-8">팀원 소개</h3>
+        <!-- 서비스 링크 -->
+        <div class="flex justify-center">
+          <a
+            href="./src/pages/home/home.html"
+            class="inline-flex flex-row items-center justify-center gap-2 bg-[#FFEF6D] text-[#000] text-center mt-12 mb-16 px-6 py-3 rounded-full font-medium hover:bg-[#FFE84A] transition-colors focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="윌리의 서재 서비스 이용하기 (새 창에서 열림)"
+          >
+            윌리의 서재 서비스 이용하기
+            <img src="./src/assets/icon/arrow_right.svg" alt="오른쪽 화살표" class="w-[1.125rem]" width="18" height="18" aria-hidden="true" />
+          </a>
+        </div>
+
+        <h3 class="text-3xl font-bold text-center">9로디지털 팀원 소개</h3>
         <!-- 팀원 소개 섹션 -->
         <section class="w-full px-4 py-8 md:px-6 lg:px-8">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -772,21 +779,6 @@
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- 서비스 링크 섹션 -->
-      <section id="service" class="text-center my-12 p-8" aria-labelledby="service-heading">
-        <h2 id="service-heading" class="text-2xl font-bold mb-6">서비스 바로가기</h2>
-        <a
-          href="https://9rodigital-willie.netlify.app"
-          class="inline-flex flex-row items-center justify-center gap-2 bg-[#FFEF6D] text-[#000] px-6 py-3 rounded-full font-medium hover:bg-[#FFE84A] transition-colors focus:outline-none focus-visible:ring focus-visible:ring-[#A451F7] focus-visible:ring-offset-2"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="윌리의 서재 서비스 이용하기 (새 창에서 열림)"
-        >
-          윌리의 서재 서비스 이용하기
-          <img src="./src/assets/icon/arrow_right.svg" alt="오른쪽 화살표" class="w-[1.125rem]" width="18" height="18" aria-hidden="true" />
-        </a>
       </section>
 
       <!-- 가이드 섹션 -->
