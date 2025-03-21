@@ -157,6 +157,8 @@
 
   /* Paragraph Spacing */
   --paragraph-spacing-default: 0px;
+
+  --landing-image: url('./assets/images/landing-thumbnail-xl-01.webp');
 }
 
 /* custom style */
@@ -174,6 +176,10 @@
   .scrollbar-none {
     scrollbar-width: none;
     -ms-overflow-style: none;
+  }
+
+  .text-last-center {
+    text-align-last: center;
   }
 
   .ranking-text::after {
@@ -202,6 +208,8 @@
   background-size: contain;
   display: block;
 }
+
+
 
 .tap-menu > .border-underline {
   position: relative;

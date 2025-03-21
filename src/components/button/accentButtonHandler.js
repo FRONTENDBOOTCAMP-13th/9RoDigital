@@ -58,7 +58,4 @@ function setupButtonGroups() {
   });
 }
 
-// 모듈이 로드되면 자동으로 초기화 함수 호출
-initAccentButtons();
-
 export default initAccentButtons;
