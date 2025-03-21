@@ -6,7 +6,7 @@ const smoothScroll = function () {
 
   navLinks.forEach((link) => {
     link.addEventListener('click', function (e) {
-      e.preventㅋDefault();
+      e.preventDefault();
 
       const targetId = this.getAttribute('href');
       const targetElement = document.querySelector(targetId);
