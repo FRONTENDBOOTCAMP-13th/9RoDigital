@@ -20,7 +20,7 @@
     <!-- 해더 시작 -->
     <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
     <header class="py-2 px-4 xl:px-0 lg:border-b border-(--dark-text-02)">
-      <div class="flex justify-between items-center max-w-[81.25rem] mx-auto lg:my-2">
+      <div class="flex justify-between items-center max-w-[1400px] mx-auto lg:my-2">
         <div class="flex justify-start">
           <div class="flex items-center">
             <div class="hidden w-[3.75rem] lg:block">
@@ -54,7 +54,7 @@
                 <a href="./home.html" class="block px-6 font-bold text-(length:--font-size-lg)" aria-label="투데이">투데이</a>
               </li>
               <li><a href="../../components/feed/feed.html" class="block px-6 text-(length:--font-size-lg)" aria-label="피드">피드</a></li>
-              <li><a href="../../search/search.html" class="block px-6 text-(length:--font-size-lg)" aria-label="검색">검색</a></li>
+              <li><a href="../../components/search/search.html" class="block px-6 text-(length:--font-size-lg)" aria-label="검색">검색</a></li>
               <li>
                 <a href="../../components/mypage/mypage.html" class="block px-6 text-(length:--font-size-lg)" aria-label="내서재">내서재</a>
               </li>
@@ -93,7 +93,7 @@
       </div>
     </header>
     <!-- 두번째 nav  -->
-    <ul class="flex justify-start max-w-[81.25rem] mx-auto tap-menu">
+    <ul class="flex justify-start max-w-[1400px] mx-auto tap-menu">
       <li class="hidden lg:block">
         <a href="#void" class="block px-(--font-size-xs) py-2" aria-label="메뉴 열기">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +158,7 @@
           </a>
         </li>
         <li>
-          <a href="../../search/search.html" class="flex flex-col items-center">
+          <a href="../../components/search/search.html" class="flex flex-col items-center">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10" cy="10" r="7" transform="rotate(90 10 10)" stroke="#6F6F6F" stroke-width="2" />
@@ -216,31 +216,29 @@
     <!-- 비쥬얼 영역 -->
     <main>
       <section
-        class="w-screen h-[17.75rem] flex flex-row gap-8 justify-center items-center bg-gradient-to-b from-[#67AFBF] to-[#2D94A9] relative"
+        class="h-[30rem] flex flex-row gap-8 justify-center items-end md:items-center mb-10 md:mb-20 md:h-[17.75rem] bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--landing-image)] bg-center bg-no-repeat bg-cover md:bg-gradient-to-b from-[#67AFBF] to-[#2D94A9] relative"
         aria-labelledby="section-title"
       >
         <!-- 네비게이션 버튼 - 이전 -->
-        <button class="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer" aria-label="이전 슬라이드">
+        <button class="hidden lg:flex w-10 h-10 rounded-full items-center justify-center cursor-pointer" aria-label="이전 슬라이드">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 18L9 12L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
 
         <!-- 메인 콘텐츠 영역 -->
-        <div class="flex flex-row justify-center items-start gap-8 mt-[5rem]">
+        <div class="flex justify-between items-start gap-8 md:pt-20">
           <!-- 책 표지 이미지 -->
-          <img
-            src="../../assets/images/landing-thumbnail-xl-01.webp"
-            alt="우리가 반짝이는 계절 - 장유진 에세이 책 표지"
-            class="w-full max-w-[31.5rem] h-auto rounded-2xl"
-          />
+          <div
+            class="bg-[image:var(--landing-image)] bg-center bg-no-repeat bg-cover hidden w-[12.5rem] h-[17.75rem] transition-all duration-500 linear md:block md:w-[20rem] lg:block lg:w-[31.5rem] rounded-2xl"
+          ></div>
 
           <!-- 책 정보 및 오디오 컨트롤 -->
           <div>
-            <h1 id="section-title" class="text-(length:--font-size-lg) font-bold mb-2 pt-10">
+            <h3 id="section-title" class="text-(length:--font-size-lg) font-bold text-white md:text-black mb-2 pt-10">
               핀란드의 감성을 더하는<br />장류진 작가의 특별 멘트 수록
-            </h1>
-            <p class="text-(length:--font-size-sm)">《우리가 반짝이는 계절》 오디오북</p>
+            </h3>
+            <p class="text-(length:--font-size-sm) text-white md:text-black">《우리가 반짝이는 계절》 오디오북</p>
 
             <!-- 오디오북 컨트롤러 -->
             <div class="flex items-center gap-4 w-full max-w-md py-2 mt-15 rounded-lg" role="group" aria-label="오디오북 재생 컨트롤">
@@ -280,7 +278,7 @@
         </div>
 
         <!-- 네비게이션 버튼 - 다음 -->
-        <button class="w-10 h-10 rounded-full flex items-center justify-center cursor-pointer" aria-label="다음 슬라이드">
+        <button class="hidden lg:flex w-10 h-10 rounded-full items-center justify-center cursor-pointer" aria-label="다음 슬라이드">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 18L15 12L9 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -288,8 +286,8 @@
       </section>
     </main>
     <!-- 메인 컴포넌트 -->
-    <div id="main-content" class="main-container max-w-[81.25rem] mx-auto py-2 px-4 xl:px-0">
-      <div class="mb-5" data-group="example">
+    <div id="main-content" class="main-container max-w-[1400px] mx-auto py-2 px-4 xl:px-0">
+      <div class="flex gap-1 flex-wrap mb-5" data-group="example">
         <button
           type="button"
           role="tab"
@@ -665,7 +663,7 @@
           </a>
         </div>
         <!-- 아래 버튼 들 -->
-        <div class="mb-5" data-group="example">
+        <div class="flex gap-1 flex-wrap my-5" data-group="example">
           <button
             type="button"
             role="tab"
