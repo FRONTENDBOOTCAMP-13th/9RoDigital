@@ -183,10 +183,20 @@
   }
 
   .ranking-text::after {
-  content: " |";
-  color: #6f6f6f;
-  margin-left: 8px;
-}
+    content: ' |';
+    color: #6f6f6f;
+    margin-left: 8px;
+  }
+
+  .search-bar {
+    .search-bar:-webkit-autofill,
+    .search-bar:-webkit-autofill:hover,
+    .search-bar:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px theme('colors.white') inset;
+      /* 또는 theme('colors.gray.100') 등 원하는 Tailwind 색상 */
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  }
 }
 
 /* button component */
@@ -208,8 +218,6 @@
   background-size: contain;
   display: block;
 }
-
-
 
 .tap-menu > .border-underline {
   position: relative;

@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //네비게이션 - 누르면 이동합니다
 const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('.p-8');
+
+// 첫 번째 링크 기본 선택
+navLinks[0].classList.add('font-bold', 'border-b-2', 'border-gray-700');
 
 navLinks.forEach((link) => {
   link.addEventListener('click', (e) => {

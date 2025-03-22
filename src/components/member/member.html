@@ -189,7 +189,7 @@
         <div class="mb-6 px-4 pt-6 bg-white rounded-sm">
           <!-- 프로필타이틀 : 아이콘 + 아이디계정회원-->
           <div class="flex items-center mb-2">
-            <svg class="rotate-90 mr-2 flex-shrink-0" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="rotate-90 mr-2" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_13065_77710)">
                 <mask id="mask0_13065_77710" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                   <path
@@ -223,37 +223,36 @@
             <p class="text-[var(--gray-10)]">아이디 계정 회원</p>
           </div>
           <!-- 프로필타이틀 : 닉네임 -->
-          <p class="mb-5 text-(length:--font-size-lg) font-bold text-[var(--gray-14)] truncate">코딩하는 사자_1101</p>
+          <p class="mb-[20px] text-(length:--font-size-lg) font-bold text-[var(--gray-14)]">겨울에 태어난 베이글_34888</p>
           <!-- 프로필: 나의 정기구독 -->
           <div class="border border-[var(--gray-05)] rounded-sm">
             <!-- 더보기 -->
-            <div class="flex items-center px-4 h-12 bg-[var(--gray-02)] border-b border-[var(--gray-05)]">
-              <a href="#void" class="text-[var(--gray-14)] font-semibold flex w-full items-center" aria-label="구독관리 페이지 이동">
-                <span>나의 정기구독</span>
-                <img
-                  class="rotate-180 ml-auto flex-shrink-0"
-                  width="24"
-                  height="24"
-                  src="../../assets/icon/left-chevron.png"
-                  alt="이동 버튼 이미지"
-                />
-              </a>
+            <div class="flex justify-between items-center px-4 h-12 bg-[var(--gray-02)] border-b border-[var(--gray-05)]">
+              <a href="/" class="text-[var(--gray-14)] font-semibold flex w-full" aria-label="구독관리 페이지 이동"
+                ><span>나의 정기구독</span>
+                <img 
+                     class="rotate-180 ml-auto" 
+                     width="24px" 
+                     height="24px" 
+                     src="../../assets/icon/left-chevron.png" 
+                     alt="이동 버튼 이미지"
+              /></a>
             </div>
             <!-- 정기구독 요약 -->
             <div class="p-4">
-              <div class="flex flex-wrap items-center mb-2">
+              <div class="flex items-center mb-2">
                 <p class="text-[var(--gray-14)]">전자책 월 정기구독 무료 이용</p>
-                <span class="text-white bg-[var(--gray-13)] ml-2 px-1 text-[10px] rounded-sm h-5 flex items-center">전자책 구독</span>
+                <span class="text-white bg-[var(--gray-13)] ml-2 px-1 text-[10px] rounded-sm h-5 content-center">전자책 구독</span>
               </div>
               <!-- 기간 + 다음결제일 -->
               <ul>
-                <li class="flex flex-wrap">
-                  <p class="pr-3 text-[var(--gray-10)] text-(length:--font-size-sm) h-5 w-[95px] flex-shrink-0">구독 기간</p>
-                  <span class="text-(length:--font-size-sm) text-[var(--gray-14)] break-all">2025.03.14 ~ 2025.04.14</span>
+                <li class="flex">
+                  <p class="pr-3 text-[var(--gray-10)] text-(length:--font-size-sm) h-[20px] w-[95px]">구독 기간</p>
+                  <span class="text-(length:--font-size-sm) text-[var(--gray-14)]">2025.03.14 ~ 2025.04.14</span>
                 </li>
-                <li class="flex flex-wrap pt-1">
-                  <p class="pr-3 text-[var(--gray-10)] text-(length:--font-size-sm) h-5 w-[95px] flex-shrink-0">다음 결제일</p>
-                  <span class="text-(length:--font-size-sm) text-[var(--gray-14)] break-all">2025.04.14</span>
+                <li class="flex pt-1">
+                  <p class="pr-3 text-[var(--gray-10)] text-(length:--font-size-sm) h-[20px] w-[95px]">다음 결제일</p>
+                  <span class="text-(length:--font-size-sm) text-[var(--gray-14)]">2025.04.14</span>
                 </li>
               </ul>
             </div>
@@ -261,88 +260,89 @@
         </div>
       </div>
       <!-- 메뉴 컨테이너 -->
-      <div class="w-full max-w-[600px] mx-auto">
+      <div class="menu-container min-w-[600px] max-w-[600px]">
         <!-- 메뉴 타이틀 : 서비스 설정 -->
-        <h2 class="px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 설정</h2>
+        <h2 class="menu-title px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 설정</h2>
         <!-- 메뉴 리스트 : 서비스 설정-->
+        <!-- 테일윈드 border-b-[var(--color)] 가 작동하지 않아 내부 스타일을 직접 부여함 -->
         <ul>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="내 정보 관리 페이지 이동">
               <span>내 정보 관리</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="알림 설정 페이지 이동">
               <span>알림 설정</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="19세미만 설정 관리 페이지 이동">
               <span>19세미만 설정 관리</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="관심 정보 설정 페이지 이동">
               <span>관심 정보 설정</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
         </ul>
         <!-- 메뉴 타이틀 : 서비스 관리 -->
-        <h2 class="px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 관리</h2>
+        <h2 class="menu-title px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 관리</h2>
         <!-- 메뉴 리스트 : 서비스 관리-->
         <ul>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="밀 / 마일리지 관리 페이지 이동">
               <span>밀 / 마일리지 관리</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="PC뷰어 / E-ink 뷰어 관리 페이지 이동">
               <span>PC뷰어 / E-ink 뷰어 관리</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="내 기기 관리 페이지 이동">
               <span>내 기기 관리</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
         </ul>
         <!-- 메뉴 타이틀 : 서비스 안내 -->
-        <h2 class="px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 안내</h2>
+        <h2 class="menu-title px-4 py-2 text-[var(--gray-09)] bg-[var(--gray-02)] text-(length:--font-size-sm)">서비스 안내</h2>
         <!-- 메뉴 리스트 : 서비스 안내-->
         <ul>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="공지사항 페이지 이동">
               <span>공지사항</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="이용약관 및 정책 페이지 이동">
               <span>이용약관 및 정책</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
             <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="고객센터 페이지 이동">
               <span>고객센터</span>
-              <img class="rotate-180 ml-auto flex-shrink-0" width="24" height="24" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
+              <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
         </ul>
       </div>
       <!-- 로그아웃 버튼 -->
-      <div class="w-full max-w-[600px] mx-auto bg-[var(--gray-02)] px-4 pt-4 pb-[66px]">
+      <div class="w-full min-w-[600px] max-w-[600px] bg-[var(--gray-02)] px-4 pt-4 pb-[66px]">
         <button
           type="button"
-          class="bg-[var(--gray-08)] text-white w-full rounded-sm px-6 py-4 flex justify-center items-center text-(length:--font-size-md) cursor-pointer"
+          class="bg-[var(--gray-08)] text-white w-full justify-center rounded-sm px-6 py-4 items-center flex text-(length:--font-size-md) cursor-pointer"
         >
           로그아웃
         </button>
