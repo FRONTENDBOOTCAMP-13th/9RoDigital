@@ -11,7 +11,7 @@
   <body class="font-sans">
     <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
     <header class="py-2 px-4 xl:px-0 lg:border-b border-(--dark-text-02)">
-      <div class="flex justify-between items-center max-w-[81.25rem] mx-auto lg:my-2">
+      <div class="flex justify-between items-center max-w-[87.5rem] mx-auto lg:my-2">
         <div class="flex justify-start">
           <div class="flex items-center">
             <div class="hidden w-[3.75rem] lg:block">
@@ -45,7 +45,7 @@
                 <a href="../../pages/home/home.html" class="block px-6 font-bold text-(length:--font-size-lg)" aria-label="투데이">투데이</a>
               </li>
               <li><a href="../../components/feed/feed.html" class="block px-6 text-(length:--font-size-lg)" aria-label="피드">피드</a></li>
-              <li><a href="../../search/search.html" class="block px-6 text-(length:--font-size-lg)" aria-label="검색">검색</a></li>
+              <li><a href="../../components/search/search.html" class="block px-6 text-(length:--font-size-lg)" aria-label="검색">검색</a></li>
               <li>
                 <a href="../../components/mypage/mypage.html" class="block px-6 text-(length:--font-size-lg)" aria-label="내서재">내서재</a>
               </li>
@@ -128,7 +128,7 @@
           </a>
         </li>
         <li>
-          <a href="../../search/search.html" class="flex flex-col items-center">
+          <a href="../../components/search/search.html" class="flex flex-col items-center">
             <p>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="10" cy="10" r="7" transform="rotate(90 10 10)" stroke="#6F6F6F" stroke-width="2" />
@@ -184,10 +184,8 @@
         <span class="text-(le)">top</span>
       </a>
     </p>
-    <div class="flex flex-col justify-center items-center">
+    <div id="main-content" class="flex flex-col justify-center items-center">
       <div class="min-w-[600px] max-w-[600px] w-full">
-    <div class="flex flex-col justify-center items-center w-full">
-      <div class="w-full max-w-[600px]">
         <div class="mb-6 px-4 pt-6 bg-white rounded-sm">
           <!-- 프로필타이틀 : 아이콘 + 아이디계정회원-->
           <div class="flex items-center mb-2">
@@ -232,7 +230,12 @@
             <div class="flex justify-between items-center px-4 h-12 bg-[var(--gray-02)] border-b border-[var(--gray-05)]">
               <a href="/" class="text-[var(--gray-14)] font-semibold flex w-full" aria-label="구독관리 페이지 이동"
                 ><span>나의 정기구독</span>
-                <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지"
+                <img 
+                     class="rotate-180 ml-auto" 
+                     width="24px" 
+                     height="24px" 
+                     src="../../assets/icon/left-chevron.png" 
+                     alt="이동 버튼 이미지"
               /></a>
             </div>
             <!-- 정기구독 요약 -->
@@ -264,25 +267,25 @@
         <!-- 테일윈드 border-b-[var(--color)] 가 작동하지 않아 내부 스타일을 직접 부여함 -->
         <ul>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="내 정보 관리 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="내 정보 관리 페이지 이동">
               <span>내 정보 관리</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="알림 설정 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="알림 설정 페이지 이동">
               <span>알림 설정</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="19세미만 설정 관리 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="19세미만 설정 관리 페이지 이동">
               <span>19세미만 설정 관리</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="관심 정보 설정 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="관심 정보 설정 페이지 이동">
               <span>관심 정보 설정</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
@@ -293,19 +296,19 @@
         <!-- 메뉴 리스트 : 서비스 관리-->
         <ul>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="밀 / 마일리지 관리 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="밀 / 마일리지 관리 페이지 이동">
               <span>밀 / 마일리지 관리</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="PC뷰어 / E-ink 뷰어 관리 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="PC뷰어 / E-ink 뷰어 관리 페이지 이동">
               <span>PC뷰어 / E-ink 뷰어 관리</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="내 기기 관리 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="내 기기 관리 페이지 이동">
               <span>내 기기 관리</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
@@ -316,19 +319,19 @@
         <!-- 메뉴 리스트 : 서비스 안내-->
         <ul>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="공지사항 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="공지사항 페이지 이동">
               <span>공지사항</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="이용약관 및 정책 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="이용약관 및 정책 페이지 이동">
               <span>이용약관 및 정책</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
           </li>
           <li class="border-b px-4 py-2" style="border-bottom-color: var(--gray-02)">
-            <a href="/" class="text-[var(--gray-14)] flex w-full" aria-label="고객센터 페이지 이동">
+            <a href="#void" class="text-[var(--gray-14)] flex w-full items-center" aria-label="고객센터 페이지 이동">
               <span>고객센터</span>
               <img class="rotate-180 ml-auto" width="24px" height="24px" src="../../assets/icon/left-chevron.png" alt="이동 버튼 이미지" />
             </a>
