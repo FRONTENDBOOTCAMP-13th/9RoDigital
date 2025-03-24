@@ -9,23 +9,23 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <div class="relative w-full h-dvh">
+    <main class="relative w-full h-dvh">
       <!-- 모바일에서만 보이는 뒤로가기 버튼 -->
-      <div class="lg:hidden absolute top-2 left-4">
+      <nav class="lg:hidden absolute top-2 left-4 mt-5">
         <a href="../../pages/home/home.html" class="text-[var(--gray-14)]">
           <img src="../../assets/icon/left-chevron.png" alt="뒤로가기 버튼" width="24" height="24" />
         </a>
-      </div>
+      </nav>
       <!-- 데스크탑에서만 보이는 배경 이미지 -->
       <div class="lg:flex w-full h-full">
         <div
-          class="hidden lg:block lg:flex-grow lg:w-4/6 h-full"
+          class="hidden lg:block lg:w-4/6 h-full"
           style="background-image: url('../../assets/images/promotion_intro_bg_2024.jpg'); background-size: cover; background-position: center"
         ></div>
         <!-- 로그인 폼 컨테이너 -->
-        <div class="px-4 lg:w-2/6 lg:px-10 lg:py-20">
+        <section class="px-4 pt-20 lg:w-2/6 lg:px-10 lg:py-20">
           <div class="lg:max-w-[520px] lg:mx-auto w-full">
-            <h2 class="title font-bold mb-1 mt-8 lg:mt-0 text-[24px]">독서와 무제한 친해지리</h2>
+            <h2 class="title font-bold mb-1 text-[24px]">독서와 무제한 친해지리</h2>
             <p class="sub-title text-[var(--gray-10)] text-[16px] mb-6">20만 권 속에서 인생책을 찾아보세요</p>
             <form action="../../pages/home/home.html" method="post">
               <fieldset>
@@ -93,8 +93,8 @@
             <!-- 페이스북 로그인 계정전환 안내문 link -->
             <a href="/" class="mt-10 mb-6 underline flex items-center justify-center text-[var(--gray-09)]">페이스북 로그인 계정 전환 안내</a>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   </body>
 </html>
