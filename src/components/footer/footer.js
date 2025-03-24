@@ -1,3 +1,5 @@
+import ismsIcon from '../../assets/icon/isms.png';
+
 class MillieFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -164,7 +166,7 @@ class MillieFooter extends HTMLElement {
           <p class="mt-4 mb-6">Copyright &copy; 2025 밀리의 서재 All Rights Reserved.</p>
           <ul class="list-style flex flex-wrap items-center">
             <li class="inline-flex items-center">
-              <img src="../../assets/icon/isms.png" alt="ISMS 인증 로고" class="w-16" />
+              <img src="${ismsIcon}" alt="ISMS 인증 로고" class="w-16" />
               <span>정보보호관리체계 ISMS 인증획득</span>
             </li>
             <li>인증범위 : 밀리의 서재 대고객 서비스</li>
