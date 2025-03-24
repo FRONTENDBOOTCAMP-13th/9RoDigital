@@ -10,13 +10,14 @@
 
 - [🎓 프로젝트 개요](#-프로젝트-개요)
 - [📝 프로젝트 소개](#-프로젝트-소개)
+- [📅 프로젝트 기간](#-프로젝트-기간)
+- [🔗 배포 링크](#-배포-링크)
 - [🛠️ 기술 스택 및 협업 툴](#️-기술-스택--협업-툴)
 - [🧑‍🤝‍🧑 팀 소개](#-팀을-소개합니다)
 - [💻 주요 기능](#-주요-기능)
 - [📂 프로젝트 구조](#-프로젝트-구조)
 - [🚀 실행 방법](#-실행-방법)
 - [📷 프로젝트 스크린샷](#-프로젝트-스크린샷)
-- [🔗 배포 링크](#-배포-링크)
 - [📝 회고 및 느낀점](#-회고-및-느낀점)
 - [📚 깃허브 위키](#깃허브-위키)
 
@@ -28,17 +29,22 @@
 
 윌리의 서재 UI 프로젝트를 구현합니다. (밀리의 서재 디자인을 참고하여)
 
-### 📅 프로젝트 기간
+## 📅 프로젝트 기간
 
 2025.03.14 ~ 2025.03.25
 
-### 🛠️ 기술 스택 / 협업 툴
+## 🔗 배포 링크
+
+[윌리의 서재 바로가기](https://9rodigital-willie.netlify.app)
+
+## 🛠️ 기술 스택 / 협업 툴
 
 | 분류          | 툴                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **언어**      | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
 | **개발 환경** | ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)                                                                                                                                                                                                        |
 | **협업**      | ![Git](https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Discord](https://img.shields.io/badge/discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)                   |
+| **디자인**    | ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)                                                                                                                                                                                                                                                                                                                                                              |
 | **배포**      | ![Netlify](https://img.shields.io/badge/netlify-%2300C7B7.svg?style=for-the-badge&logo=netlify&logoColor=white)                                                                                                                                                                                                                                                                                                                                                 |
 
 ## 🧑‍🤝‍🧑 팀을 소개합니다!
@@ -129,6 +135,7 @@ npm run dev
 ## 📷 프로젝트 스크린샷
 
 ### 메인 홈 화면 헤더 및 랜딩
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/6e9fa48e-c06c-42c5-94f8-274b7f9e3047" />
 
 <br/>
@@ -136,6 +143,7 @@ npm run dev
 <br/>
 
 ### 메인 홈 화면 윌리 랭킹
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/2e54d23a-00a6-4df5-8992-23585ea92cf7" />
 
 <br/>
@@ -143,6 +151,7 @@ npm run dev
 <br/>
 
 ### 메인 홈 화면 오늘 읽어야 할 단 한권
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/8af1f2b9-5aee-438d-a7d4-f833e6b607c0" />
 
 <br/>
@@ -150,6 +159,7 @@ npm run dev
 <br/>
 
 ### 메인 홈 화면 따끈따끈 새로 들어온 책, 믿고 보는 '윌리 오리지널'
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/c191f725-11cd-45a5-ac2e-863c5c9f503b" />
 
 <br/>
@@ -157,6 +167,7 @@ npm run dev
 <br/>
 
 ### 메인 홈 화면 놓치기 아쉬운 소식!, 이럴 땐 이런 책
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/51bd0b47-56ac-4c04-9b7f-c8bca38becc3" />
 
 <br/>
@@ -164,6 +175,7 @@ npm run dev
 <br/>
 
 ### 메인 홈 화면 오늘의 한 문장 및 푸터
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/f96257d6-99b9-4a2c-8533-9b97f53db90c" />
 
 <br/>
@@ -171,14 +183,15 @@ npm run dev
 <br/>
 
 ### 피드 페이지
-<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/57d19dea-4006-47fe-b0bc-75fd1331d1c8" />
 
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/57d19dea-4006-47fe-b0bc-75fd1331d1c8" />
 
 <br/>
 <br/>
 <br/>
 
 ### 검색 페이지
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/655741de-401d-4245-b720-1b9de0e2dbad" />
 
 <br/>
@@ -186,6 +199,7 @@ npm run dev
 <br/>
 
 ### 내 서재 페이지
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/5a6922a9-ccf4-48e0-af9d-8dd6f0db7c44" />
 
 <br/>
@@ -193,6 +207,7 @@ npm run dev
 <br/>
 
 ### 마이 페이지
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/4d8eb300-0490-4cec-ba08-47eaa9fa4b4d" />
 
 <br/>
@@ -200,6 +215,7 @@ npm run dev
 <br/>
 
 ### 로그인 페이지
+
 <img width="1425" alt="Image" src="https://github.com/user-attachments/assets/c6c8b0cd-3f89-4ef2-85d3-1786cb8e96e0" />
 
 <br/>
@@ -207,10 +223,9 @@ npm run dev
 <br/>
 
 ### 반응형 구현
-![Image](https://github.com/user-attachments/assets/4baa0058-a46e-4874-bb49-f61e1532b275)
-## 🔗 배포 링크
 
-[윌리의 서재 바로가기](https://9rodigital-willie.netlify.app)
+![Image](https://github.com/user-attachments/assets/4baa0058-a46e-4874-bb49-f61e1532b275)
+
 
 ## 📝 회고 및 느낀점
 
