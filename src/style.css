@@ -157,6 +157,8 @@
 
   /* Paragraph Spacing */
   --paragraph-spacing-default: 0px;
+
+  --landing-image: url('./assets/images/landing-thumbnail-xl-01.webp');
 }
 
 /* custom style */
@@ -174,6 +176,26 @@
   .scrollbar-none {
     scrollbar-width: none;
     -ms-overflow-style: none;
+  }
+
+  .text-last-center {
+    text-align-last: center;
+  }
+
+  .ranking-text::after {
+    content: ' |';
+    color: #6f6f6f;
+    margin-left: 8px;
+  }
+
+  .search-bar {
+    .search-bar:-webkit-autofill,
+    .search-bar:-webkit-autofill:hover,
+    .search-bar:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px theme('colors.white') inset;
+      /* 또는 theme('colors.gray.100') 등 원하는 Tailwind 색상 */
+      transition: background-color 5000s ease-in-out 0s;
+    }
   }
 }
 
