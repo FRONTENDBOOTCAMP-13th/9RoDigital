@@ -2,7 +2,7 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>검색 | 윌리의 서재</title>
     <link rel="icon" href="/favicon.svg" />
     <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
@@ -177,8 +177,8 @@
     </div>
     <div id="main-content" class="px-6 pb-6 max-w-[1400px] mx-auto">
       <!-- 검색창 -->
-      <div class="sticky top-0 bg-white z-40 px-6 pt-4">
-        <form action="/">
+      <div class="sticky top-0 bg-white z-40 px-1 lg:px-6 lg:pt-4">
+        <form action="#void">
           <fieldset>
             <legend class="sr-only">검색 폼</legend>
             <div class="flex items-center gap-2 py-2">
@@ -189,7 +189,7 @@
                   type="search"
                   name="keyword"
                   required
-                  class="search-bar w-full bg-[var(--gray-02)] rounded-3xl py-3 px-5 pl-12 pr-4 text-sm text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--gray-06)]"
+                  class="search-bar w-full bg-[var(--gray-02)] rounded-3xl py-3 px-5 pl-4 lg:pl-12 pr-4 text-sm text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[var(--gray-06)]"
                   placeholder="검색어를 입력하세요"
                 />
               </div>
