@@ -22,15 +22,15 @@
 
 ## 🎓 프로젝트 개요
 
-"윌리의 서재 UI 프로젝트"
+윌리의 서재 UI 프로젝트
 
 ## 📝 프로젝트 소개
 
-"윌리의 서재 UI 프로젝트를 구현합니다. (밀리의 서재 디자인을 참고하여)"
+윌리의 서재 UI 프로젝트를 구현합니다. (밀리의 서재 디자인을 참고하여)
 
 ### 📅 프로젝트 기간
 
-"2025.03.14 ~ 2025.03.25"
+2025.03.14 ~ 2025.03.25
 
 ### 🛠️ 기술 스택 / 협업 툴
 
@@ -47,11 +47,11 @@
 
 ### 📍 팀명
 
-"9로디지털"
+9로디지털
 
 ## 🔥 팀 목표
 
-"애자일하게 달려봅시다!"
+애자일하게 달려봅시다!
 
 ## 👥 팀원 소개
 
@@ -76,31 +76,38 @@
 ## 📂 프로젝트 구조
 
 ```
-9RoDigital/
-├── public/
-│   ├── favicon.svg
-│   └── font/
-├── src/
-│   ├── main.js
-│   ├── style.css
-│   ├── assets/
-│   │   ├── icon/
-│   │   ├── images/
-│   │   └── logo/
-│   ├── components/
-│   ├── pages/
-│   │   └── home/
-│   │       └── home.html
-│   └── scripts/
-│       ├── accordionHandler.js
-│       └── smoothScroll.js
-├── .prettierrc.cjs
-├── index.html
-├── package.json
-├── package-lock.json
-├── labels.json
-├── README.md
-└── vite.config.js
+9RoDigital
+├─ .prettierrc.cjs
+├─ README.md
+├─ index.html
+├─ labels.json
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.svg
+│  └─ font
+├─ src
+│  ├─ assets
+│  │  ├─ icon
+│  │  ├─ images
+│  │  └─ logo
+│  ├─ components
+│  │  └─ CompFolders -> 각 컴포넌트 HTML 파일들
+│  ├─ main.js
+│  ├─ pages
+│  │  ├─ home
+│  │  │  └─ home.html
+│  │  └─ page
+│  │     ├─ feed.html
+│  │     ├─ member.html
+│  │     ├─ mypage.html
+│  │     └─ search.html
+│  ├─ scripts
+│  │  ├─ accordionHandler.js
+│  │  ├─ popup.js
+│  │  └─ smoothScroll.js
+│  └─ style.css
+└─ vite.config.js
 ```
 
 ## 🚀 실행 방법
@@ -110,7 +117,7 @@
 git clone https://github.com/FRONTENDBOOTCAMP-13th/9RoDigital.git
 
 # 디렉토리 이동
-cd willys-library
+cd 9RoDigital
 
 # 의존성 설치
 npm install
@@ -121,8 +128,86 @@ npm run dev
 
 ## 📷 프로젝트 스크린샷
 
-(스크린샷 이미지 추가할 예정)
+### 메인 홈 화면 헤더 및 랜딩
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/6e9fa48e-c06c-42c5-94f8-274b7f9e3047" />
 
+<br/>
+<br/>
+<br/>
+
+### 메인 홈 화면 윌리 랭킹
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/2e54d23a-00a6-4df5-8992-23585ea92cf7" />
+
+<br/>
+<br/>
+<br/>
+
+### 메인 홈 화면 오늘 읽어야 할 단 한권
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/8af1f2b9-5aee-438d-a7d4-f833e6b607c0" />
+
+<br/>
+<br/>
+<br/>
+
+### 메인 홈 화면 따끈따끈 새로 들어온 책, 믿고 보는 '윌리 오리지널'
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/c191f725-11cd-45a5-ac2e-863c5c9f503b" />
+
+<br/>
+<br/>
+<br/>
+
+### 메인 홈 화면 놓치기 아쉬운 소식!, 이럴 땐 이런 책
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/51bd0b47-56ac-4c04-9b7f-c8bca38becc3" />
+
+<br/>
+<br/>
+<br/>
+
+### 메인 홈 화면 오늘의 한 문장 및 푸터
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/f96257d6-99b9-4a2c-8533-9b97f53db90c" />
+
+<br/>
+<br/>
+<br/>
+
+### 피드 페이지
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/57d19dea-4006-47fe-b0bc-75fd1331d1c8" />
+
+
+<br/>
+<br/>
+<br/>
+
+### 검색 페이지
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/655741de-401d-4245-b720-1b9de0e2dbad" />
+
+<br/>
+<br/>
+<br/>
+
+### 내 서재 페이지
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/5a6922a9-ccf4-48e0-af9d-8dd6f0db7c44" />
+
+<br/>
+<br/>
+<br/>
+
+### 마이 페이지
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/4d8eb300-0490-4cec-ba08-47eaa9fa4b4d" />
+
+<br/>
+<br/>
+<br/>
+
+### 로그인 페이지
+<img width="1425" alt="Image" src="https://github.com/user-attachments/assets/c6c8b0cd-3f89-4ef2-85d3-1786cb8e96e0" />
+
+<br/>
+<br/>
+<br/>
+
+### 반응형 구현
+![Image](https://github.com/user-attachments/assets/4baa0058-a46e-4874-bb49-f61e1532b275)
 ## 🔗 배포 링크
 
 [윌리의 서재 바로가기](https://9rodigital-willie.netlify.app)
@@ -135,15 +220,22 @@ npm run dev
 
 ### 노현수
 
-추가 바람
+먼저 프로젝트를 무사히 마무리할 수 있도록 각자 맡은 바를 성실하게 다해준 팀원들께 감사드립니다. 처음 개발자들끼리만 협업을 하는 과정이라 어려운 점도 있었지만 서로 소통하고 도움을 주며 협업과정에 대해서 배우고, 그동안 배운 것을 활용할 수 있었던 좋은 시간이었습니다.
+
+스크럼 마스터라는 역할을 처음 맡아 많이 부족한 점도 있었지만 이 경험을 통해 프로젝트 관리 능력을 크게 향상시킬 수 있었습니다. 팀원들과의 소통 방식, 일정 관리의 중요성을 깨달았으며, 특히 오류 발생과 같은 어려운 상황에서도 함께 해결책을 찾으며 협업의 중요성을 배웠고, 이 과정에서 개발자로서 그리고 팀원으로서 한층 성장할 수 있었습니다.
+
+앞으로도 이번 프로젝트에서 얻은 경험을 바탕으로 더 나은 개발자가 되기 위해 끊임없이 학습하고 성장해 나가겠습니다.
 
 ### 구성연
 
-추가 바람
+이번 UI 팀 프로젝트를 통해 소통이 잘 되는 팀원들과 함께 협력하며 큰 오류 없이 순조롭게 진행할 수 있어 매우 만족스러웠습니다. 특히 각자 맡은 역할을 성실히 수행하며 책임감을 가지고 임하는 모습이 인상 깊었습니다.
+
+다만, 프로젝트 막바지에 큰 오류가 발생했을 때 혼자 해결하려다 시간이 지체된 점은 아쉬웠습니다. 이를 통해 문제 발생 시 주변에 도움을 요청하는 습관의 중요성을 깨닫게 되었습니다. 앞으로는 적극적으로 소통하며 문제를 해결하는 자세를 갖추도록 노력하겠습니다.
+마지막으로 끝까지 함께해준 팀원들에게 다시 한번 진심으로 고맙다는 말을 전하고 싶습니다.
 
 ### 신동수
 
-추가 바람
+처음 프로젝트를 협업으로 진행해보면서 프로젝트이 환경설정의 중요성과 그동안 잘몰랐던 부분을 팀원과 상의하면서 해결해가는 과정이 도움이 많이 되었습니다. 그동안 배운 내용을 활용하여 노력했으며 협업과정에서 실력이 크게 향상된거 같습니다. 마지막으로 함께한 팀원들께 감사합니다.
 
 ## 📚 깃허브 위키
 
