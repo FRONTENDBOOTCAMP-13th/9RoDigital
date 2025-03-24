@@ -7,7 +7,7 @@ class MillieFooter extends HTMLElement {
             display: none;
           }
         </style>
-        <footer class="text-(--light-text-03) max-w-[81.25rem] mx-auto mb-[4.875rem] px-4 xl:px-0 lg:mb-0">
+        <footer class="text-(--light-text-03) max-w-[1400px] mx-auto mb-[4.875rem] px-4 xl:px-0 lg:mb-0">
           <div class="flex items-center justify-between">
             <h3 class="text-black font-[500]">(주) 윌리의 서재</h3>
             <ul class="flex gap-2">
