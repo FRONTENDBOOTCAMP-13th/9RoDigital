@@ -200,7 +200,7 @@
     <!-- 비쥬얼 영역 -->
     <main>
       <section
-        class="w-full h-[30rem] flex flex-row gap-8 justify-start md:justify-center px-5 md:px-0 items-end md:items-center mb-10 md:mb-20 md:h-[17.75rem] bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--landing-image)] bg-center bg-no-repeat bg-cover md:bg-gradient-to-b from-[#67AFBF] to-[#2D94A9] relative"
+        class="w-full h-[30rem] flex flex-row gap-0 justify-start md:justify-center px-0 md:px-0 items-end md:items-center mb-0 md:mb-20 md:h-[17.75rem] bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),var(--landing-image)] bg-center bg-no-repeat bg-cover md:bg-gradient-to-b from-[#67AFBF] to-[#2D94A9] relative"
         aria-labelledby="section-title"
       >
         <!-- 네비게이션 버튼 - 이전 -->
@@ -228,7 +228,7 @@
             <div class="flex items-center gap-4 py-2 md:mt-15 rounded-lg" role="group" aria-label="오디오북 재생 컨트롤">
               <!-- 진행 상태바 -->
               <div
-                class="relative w-[15.625rem] md:w-[12.5rem] h-[.0625rem] bg-gray-300 rounded-full"
+                class="relative max-w-[15.625rem] w-[200px] md:w-[12.5rem] h-[.0625rem] bg-gray-300 rounded-full"
                 role="progressbar"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -1496,6 +1496,34 @@
                             <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>29%</span></li>
                             <li><span aria-hidden="true"> | </span></li>
                             <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>122분</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="재와 빨강 (리마스터판)">
+                    <a href="#void">
+                      <div>
+                        <div>
+                          <p class="inline-block shadow-sm book-rounded overflow-hidden">
+                            <img
+                              srcset="../../assets/images/section-04-08-sm.webp 1x, ../../assets/images/section-04-08-xl.webp 2x"
+                              src="../../assets/images/section-04-08-sm.webp"
+                              alt=""
+                              class="rounded-[0 4px 4px 0]"
+                            />
+                          </p>
+                        </div>
+                        <div>
+                          <div>
+                            <h4 id="book-title-4-7" class="font-bold text-(--dark-ui-01) truncate">재와 빨강 (리마스터판)</h4>
+                            <p id="book-desc-4-7" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">편혜영</p>
+                          </div>
+                          <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
+                            <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
+                            <li><span class="sr-only">윌리 유저의 평균 완독 확률</span><span>85%</span></li>
+                            <li><span aria-hidden="true"> | </span></li>
+                            <li><span class="sr-only">윌리 유저의 완독까지 소요된 시간</span><span>148분</span></li>
                           </ul>
                         </div>
                       </div>
