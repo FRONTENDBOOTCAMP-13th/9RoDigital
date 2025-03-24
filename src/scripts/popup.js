@@ -20,6 +20,7 @@ function deleteCookie(name) {
 // 테스트용: 브라우저 콘솔에서 deletePopupCookie() 호출로 쿠키 삭제 가능
 window.deletePopupCookie = () => deleteCookie('hidePopup');
 
+
 // 페이지 로드 완료 후 실행
 document.addEventListener('DOMContentLoaded', function () {
   // 이미 오늘 다시 보지 않기 설정이 되어 있다면 팝업을 띄우지 않음
