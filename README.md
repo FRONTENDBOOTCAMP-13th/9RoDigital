@@ -1,9 +1,5 @@
 ![윌리의 서재](https://github.com/user-attachments/assets/2b587f0c-a5c5-4e67-be74-95aa132da4df)
 
-<div align="center">
-<a href="https://9rodigital-willie.netlify.app" style="display: inline-flex; align-items: center; justify-content: center; background-color: #FFEF6D; color: #000; text-align: center; padding: 0.75rem 1.5rem; border-radius: 9999px; font-size:1.2rem; font-weight: 500; text-decoration: none;">윌리의 서재 서비스 이용하기</a>
-</div>
-
 # 윌리의 서재를 소개합니다!
 
 안녕하세요! 9로디지털 팀은 국내 최대 전자책 구독 서비스 '밀리의 서재'의 디자인을 참고하여 '윌리의 서재' 프로젝트를 진행했습니다.  
@@ -15,6 +11,7 @@
 - [🎓 프로젝트 개요](#-프로젝트-개요)
 - [📝 프로젝트 소개](#-프로젝트-소개)
 - [📅 프로젝트 기간](#-프로젝트-기간)
+- [🔗 배포 링크](#-배포-링크)
 - [🛠️ 기술 스택 및 협업 툴](#️-기술-스택--협업-툴)
 - [🧑‍🤝‍🧑 팀 소개](#-팀을-소개합니다)
 - [💻 주요 기능](#-주요-기능)
@@ -35,6 +32,10 @@
 ## 📅 프로젝트 기간
 
 2025.03.14 ~ 2025.03.25
+
+## 🔗 배포 링크
+
+[윌리의 서재 바로가기](https://9rodigital-willie.netlify.app)
 
 ## 🛠️ 기술 스택 / 협업 툴
 
