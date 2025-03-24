@@ -9,7 +9,7 @@ class MillieFooter extends HTMLElement {
         </style>
         <footer class="text-(--light-text-03) max-w-[1400px] mx-auto mb-[4.875rem] px-4 xl:px-0 lg:mb-0">
           <div class="flex items-center justify-between">
-            <h3 class="text-black font-[500]">(주) 윌리의 서재</h3>
+            <h2 class="text-black font-[500]">(주) 윌리의 서재</h2>
             <ul class="flex gap-2">
               <li>
                 <a href="#void" aria-label="윌리의 서재 공식 인스타그램 바로가기">
