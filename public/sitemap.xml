@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- 메인 페이지 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>1.00</priority>
+</url>
+
+<!-- 홈 페이지 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/pages/home/home</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.90</priority>
+</url>
+
+<!-- 공통 컴포넌트 섹션 -->
+
+<!-- 버튼 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/button/button</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 타이틀 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/title/title</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 강조된 인용문 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/quote-frames/quote-frames</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 북 뱃지 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/book-badge/book-badge</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 레이아웃 컴포넌트 -->
+
+<!-- 헤더 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/header/header</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 푸터 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/footer/footer</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 랜딩 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/landing/landing</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 검색 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/search/search</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 인증 및 계정 관리 컴포넌트 -->
+
+<!-- 로그인 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/login/login</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 마이 페이지 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/mypage/mypage</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 멤버 관리 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/member/member</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 콘텐츠 섹션 컴포넌트 -->
+
+<!-- 윌리 페어링 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section1/section1</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 윌리 랭킹 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section2/section2</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 오늘 읽어야 할 단 한권 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section3/section3</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 따끈따끈, 새로 들어온 책 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section4/section4</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 윌리 오리지널 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section5/original</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 이럴 땐 이런 책 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section7/thisbook</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 오늘의 한문장 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section8/section8</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- 소셜 커뮤니티 컴포넌트 섹션 -->
+
+<!-- 피드 페이지 컴포넌트 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/components/feed/feed</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Pages -->
+
+<!-- 피드 페이지 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/pages/page/feed</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<!-- 검색 페이지 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/pages/page/search</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<!-- 마이 페이지 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/pages/page/mypage</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+<!-- 로그인 페이지 -->
+<url>
+  <loc>https://9rodigital-willie.netlify.app/src/pages/page/member</loc>
+  <lastmod>2025-03-25T11:00:00+09:00</lastmod>
+  <priority>0.64</priority>
+</url>
+</urlset>
