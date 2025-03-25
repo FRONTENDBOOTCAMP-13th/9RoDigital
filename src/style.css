@@ -178,10 +178,6 @@
     -ms-overflow-style: none;
   }
 
-  .text-last-center {
-    text-align-last: center;
-  }
-
   .ranking-text::after {
     content: ' |';
     color: #6f6f6f;
