@@ -14,7 +14,7 @@ class MillieFooter extends HTMLElement {
             <h2 class="text-black font-[500]">(주) 윌리의 서재</h2>
             <ul class="flex gap-2">
               <li>
-                <a href="#void" aria-label="윌리의 서재 공식 인스타그램 바로가기">
+                <a href="#" aria-label="윌리의 서재 공식 인스타그램 바로가기">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <title>윌리의 서재 공식 인스타 바로가기</title>
                     <path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" fill="#444444"></path>
@@ -22,7 +22,7 @@ class MillieFooter extends HTMLElement {
                 </a>
               </li>
               <li>
-                <a href="#void" aria-label="윌리의 서재 공식 유튜브 바로가기">
+                <a href="#" aria-label="윌리의 서재 공식 유튜브 바로가기">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <title>윌리의 서재 공식 유튜브 바로가기</title>
                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" fill="#444"></path>
@@ -30,7 +30,7 @@ class MillieFooter extends HTMLElement {
                 </a>
               </li>
               <li>
-                <a href="#void" aria-label="윌리의 서재 공식 카카오 플러스 친구 바로가기">
+                <a href="#" aria-label="윌리의 서재 공식 카카오 플러스 친구 바로가기">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
                     <title>윌리의 서재 공식 카카오 플러스 친구 바로가기</title>
                     <path fill="none" d="M256 236c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20V20C0 8.954 8.954 0 20 0h216c11.046 0 20 8.954 20 20v216z"></path>
@@ -75,7 +75,7 @@ class MillieFooter extends HTMLElement {
 
           <ul class="flex flex-wrap gap-3">
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 이용약관">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 이용약관">
                 이용약관
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -83,7 +83,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1 font-bold" aria-label="더보기: 개인정보처리방침">
+              <a href="#" class="inline-flex items-center gap-1 font-bold" aria-label="더보기: 개인정보처리방침">
                 개인정보처리방침
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -91,7 +91,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 청소년보호정책">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 청소년보호정책">
                 청소년보호정책
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -99,7 +99,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 고객센터">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 고객센터">
                 고객센터
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -107,7 +107,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 환불신청">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 환불신청">
                 환불신청
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -115,7 +115,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: B2B 문의">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: B2B 문의">
                 B2B 문의
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -123,7 +123,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 콘텐츠 제휴문의">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 콘텐츠 제휴문의">
                 콘텐츠 제휴문의
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -131,7 +131,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 저작권/도서오류 신고">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 저작권/도서오류 신고">
                 저작권/도서오류 신고
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -139,7 +139,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 뷰어 다운로드">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 뷰어 다운로드">
                 뷰어 다운로드
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -147,7 +147,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 종료 예정 도서">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 종료 예정 도서">
                 종료 예정 도서
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>
@@ -155,7 +155,7 @@ class MillieFooter extends HTMLElement {
               </a>
             </li>
             <li>
-              <a href="#void" class="inline-flex items-center gap-1" aria-label="더보기: 회사 소개">
+              <a href="#" class="inline-flex items-center gap-1" aria-label="더보기: 회사 소개">
                 회사 소개
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L16.7071 12.7071C17.0976 12.3166 17.0976 11.6834 16.7071 11.2929L9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L14.5858 12L8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071Z" fill="#444444"></path>

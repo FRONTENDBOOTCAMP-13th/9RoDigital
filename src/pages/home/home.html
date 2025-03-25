@@ -16,6 +16,14 @@
       import initAccentButtons from '../../components/button/accentButtonHandler.js';
       initAccentButtons();
     </script>
+    <script type="module">
+      // 다른 스크립트에서 사용
+      import { preventHashLinkClicks } from '../../scripts/hrefnotclick.js';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        preventHashLinkClicks();
+      });
+    </script>
   </head>
   <body class="font-sans">
     <!-- 해더 시작 -->
@@ -63,7 +71,7 @@
           </p>
           <!-- 알람 아이콘 -->
           <p class="block lg:hidden">
-            <a href="#void" aria-label="알림 열기">
+            <a href="#" aria-label="알림 열기">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="4" y="5" width="16" height="2" rx="1" fill="#000" />
                 <rect x="4" y="11" width="16" height="2" rx="1" fill="#000" />
@@ -82,7 +90,7 @@
     <nav>
       <ul class="flex justify-start max-w-[1440px] mx-auto tap-menu px-4 2xl:px-0 gap-6">
         <li class="hidden lg:block">
-          <a href="#void" class="block py-2" aria-label="메뉴 열기">
+          <a href="#" class="block py-2" aria-label="메뉴 열기">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <title>메뉴 열기</title>
               <rect x="4" y="5" width="16" height="2" rx="1" fill="#000000" />
@@ -92,11 +100,11 @@
           </a>
         </li>
         <li class="border-underline">
-          <a href="#void" class="inline-block font-bold py-2" aria-current="page">NOW</a>
+          <a href="#" class="inline-block font-bold py-2" aria-current="page">NOW</a>
         </li>
-        <li><a href="#void" class="inline-block py-2">윌리로드</a></li>
-        <li><a href="#void" class="inline-block py-2">스토리</a></li>
-        <li><a href="#void" class="inline-block py-2">오디오북</a></li>
+        <li><a href="#" class="inline-block py-2">윌리로드</a></li>
+        <li><a href="#" class="inline-block py-2">스토리</a></li>
+        <li><a href="#" class="inline-block py-2">오디오북</a></li>
       </ul>
     </nav>
     <!-- 모바일 nav -->
@@ -273,7 +281,7 @@
       <div id="main-content" class="main-container max-w-[1440px] mx-auto py-2 px-4 2xl:px-0">
         <!-- 첫번 째 섹션, 인기도서 섹션 -->
         <section>
-          <ul class="flex gap-1 flex-wrap my-5" data-group="landing">
+          <ul class="flex gap-1 flex-wrap my-5" data-group="landing" role="tablist">
             <li>
               <button
                 type="button"
@@ -376,9 +384,9 @@
             <div class="flex gap-3 w-max">
               <div class="pt-4 inline-flex gap-2">
                 <div class="w-[15.25rem]">
-                  <a href="#void" aria-label="읽던 지점 그대로, 윌리 페어링 이밴트 안내 사이트 바로가기">
+                  <a href="#" aria-label="읽던 지점 그대로, 윌리 페어링 이밴트 안내 사이트 바로가기">
                     <div class="rounded-2xl">
-                      <img src="../../assets/images/section-01-01.webp" alt="  " class="rounded-2xl" />
+                      <img src="../../assets/images/section-01-01.webp" alt=" 사람은 안 변해 그래서 독서가 변했지 " class="rounded-2xl" />
                     </div>
                     <p></p>
                   </a>
@@ -386,7 +394,7 @@
                 <div class="overflow-hidden inline-flex">
                   <ul class="flex items-end gap-4" role="list" aria-label="다른 추천 도서">
                     <li class="w-[145px]" aria-label="그래서 브랜딩이 필요합니다">
-                      <a href="#void" aria-labelledby="book-title-1-2" aria-describedby="book-desc-1-2">
+                      <a href="#" aria-labelledby="book-title-1-2" aria-describedby="book-desc-1-2">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -414,7 +422,7 @@
                       </a>
                     </li>
                     <li class="w-[145px]" aria-label="2025 대한민국 재테크 트렌드">
-                      <a href="#void" aria-labelledby="book-title-1-3" aria-describedby="book-desc-1-3">
+                      <a href="#" aria-labelledby="book-title-1-3" aria-describedby="book-desc-1-3">
                         <div>
                           <div class="badge">
                             <!-- 책 영역 -->
@@ -452,7 +460,7 @@
                       </a>
                     </li>
                     <li class="w-[145px]" aria-label="새벽에 그리다">
-                      <a href="#void" aria-labelledby="book-title-1-4" aria-describedby="book-desc-1-4">
+                      <a href="#" aria-labelledby="book-title-1-4" aria-describedby="book-desc-1-4">
                         <div>
                           <div class="badge">
                             <!-- 책 영역 -->
@@ -486,7 +494,7 @@
                       </a>
                     </li>
                     <li class="w-[145px]" aria-label="복숭아 토끼">
-                      <a href="#void" aria-labelledby="book-title-1-5" aria-describedby="book-desc-1-5">
+                      <a href="#" aria-labelledby="book-title-1-5" aria-describedby="book-desc-1-5">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -516,7 +524,7 @@
                       </a>
                     </li>
                     <li class="w-[145px]" aria-label="진화하는 언어">
-                      <a href="#void" aria-labelledby="book-title-1-6" aria-describedby="book-desc-1-6">
+                      <a href="#" aria-labelledby="book-title-1-6" aria-describedby="book-desc-1-6">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -546,7 +554,7 @@
                       </a>
                     </li>
                     <li class="w-[145px]" aria-label="삶이 허기질 때 나는 교양을 읽는다">
-                      <a href="#void" aria-labelledby="book-title-1-7" aria-describedby="book-desc-1-7">
+                      <a href="#" aria-labelledby="book-title-1-7" aria-describedby="book-desc-1-7">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -574,7 +582,7 @@
                       </a>
                     </li>
                     <li class="w-[145px]" aria-label="인간 실격">
-                      <a href="#void" aria-labelledby="book-title-1-8" aria-describedby="book-desc-1-8">
+                      <a href="#" aria-labelledby="book-title-1-8" aria-describedby="book-desc-1-8">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -631,7 +639,6 @@
                 type="button"
                 class="flex flex-row justify-center gap-1 items-center text-(length:--font-size-md) font-(--font-weight-regular) text-(--light-ui-10) cursor-pointer"
                 aria-expanded="false"
-                aria-controls="book-type-dropdown"
               >
                 도서 종류
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -663,7 +670,7 @@
             </a>
           </div>
           <!-- 아래 버튼 들 -->
-          <ul class="flex gap-1 flex-wrap my-5" data-group="ranking">
+          <ul class="flex gap-1 flex-wrap my-5" data-group="ranking" role="tablist">
             <li>
               <button
                 type="button"
@@ -771,7 +778,7 @@
             <div
               class="scrollbar-none grid grid-cols-1 md:grid-cols-2 lg:grid-flow-col lg:grid-rows-3 max-h-[31.25rem] md:max-h-none overflow-y-auto md:overflow-visible"
             >
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2-1">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -792,7 +799,7 @@
                   </div>
                   <!-- 텍스트 정보 -->
                   <div class="flex-1 max-w-1/2">
-                    <h3 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h3>
+                    <h3 id="book-title-2-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">율의 시선</h3>
                     <p class="text-sm text-(--light-text-03) truncate">
                       <span class="sr-only">저자:</span>
                       김민서
@@ -812,7 +819,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -853,7 +860,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2-3">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -874,18 +881,18 @@
                   </div>
                   <!-- 텍스트 정보 -->
                   <div class="flex-1 max-w-1/2">
-                    <h3 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">싯다르타</h3>
+                    <h3 id="book-title-2-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">싯다르타</h3>
                     <p class="text-sm text-(--light-text-03) truncate">
                       <span class="sr-only">저자:</span>
                       헤르만 헤세 지음/박병덕 옮김
                     </p>
                     <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_215_6)">
-                          <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                        <g clip-path="url(#clip0-215-3)">
+                          <mask id="mask0-215-3" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
                             <path d="M0 0H12V12H0V0Z" fill="white" />
                           </mask>
-                          <g mask="url(#mask0_215_6)">
+                          <g mask="url(#mask0-215-3)">
                             <path
                               fill-rule="evenodd"
                               clip-rule="evenodd"
@@ -895,7 +902,7 @@
                           </g>
                         </g>
                         <defs>
-                          <clipPath id="clip0_215_6">
+                          <clipPath id="clip0-215-3">
                             <rect width="12" height="12" fill="white" />
                           </clipPath>
                         </defs>
@@ -917,7 +924,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-3" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2-4">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -938,7 +945,7 @@
                   </div>
                   <!-- 텍스트 정보 -->
                   <div class="flex-1 max-w-1/2">
-                    <h3 id="book-title-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">결국 잘 되는 사람들의 태도</h3>
+                    <h3 id="book-title-2-4" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">결국 잘 되는 사람들의 태도</h3>
                     <p class="text-sm text-(--light-text-03) truncate">
                       <span class="sr-only">저자:</span>
                       앤드루 매코널 지음/안종설 옮김
@@ -952,7 +959,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-3" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2-5">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -965,7 +972,7 @@
                     <!-- 이미지 -->
                     <img
                       src="../../assets/images/section-02-05-xl.webp"
-                      alt="결국 잘 되는 사람들의 태도 도서 표지"
+                      alt=""
                       class="w-20 h-28 rounded-sm flex-shrink-0"
                       aria-describedby="book-rank-5"
                     />
@@ -973,7 +980,7 @@
                   </div>
                   <!-- 텍스트 정보 -->
                   <div class="flex-1 max-w-1/2">
-                    <h3 id="book-title-3" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">단어가 품은 세계</h3>
+                    <h3 id="book-title-2-5" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">단어가 품은 세계</h3>
                     <p class="text-sm text-(--light-text-03) truncate">
                       <span class="sr-only">저자:</span>
                       황선엽
@@ -987,7 +994,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-1" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-2-6">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -1008,18 +1015,18 @@
                   </div>
                   <!-- 텍스트 정보 -->
                   <div class="flex-1 max-w-1/2">
-                    <h3 id="book-title-1" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">스토너</h3>
+                    <h3 id="book-title-2-6" class="text-base font-bold text-(--light-ui-10) truncate mb-0.5">스토너</h3>
                     <p class="text-sm text-(--light-text-03) truncate">
                       <span class="sr-only">저자:</span>
                       존 윌리엄스 지음, 김승욱 옮김
                     </p>
                     <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_215_6)">
-                          <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                        <g clip-path="url(#clip0-215-6)">
+                          <mask id="mask0-215-6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
                             <path d="M0 0H12V12H0V0Z" fill="white" />
                           </mask>
-                          <g mask="url(#mask0_215_6)">
+                          <g mask="url(#mask0-215-6)">
                             <path
                               fill-rule="evenodd"
                               clip-rule="evenodd"
@@ -1029,7 +1036,7 @@
                           </g>
                         </g>
                         <defs>
-                          <clipPath id="clip0_215_6">
+                          <clipPath id="clip0-215-6">
                             <rect width="12" height="12" fill="white" />
                           </clipPath>
                         </defs>
@@ -1045,7 +1052,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-7" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-7">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -1073,11 +1080,11 @@
                     </p>
                     <div class="max-w-full inline-flex items-center justify-center gap-0.5 mt-2">
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_215_6)">
-                          <mask id="mask0_215_6" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                        <g clip-path="url(#clip0-215-7)">
+                          <mask id="mask0-215-7" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
                             <path d="M0 0H12V12H0V0Z" fill="white" />
                           </mask>
-                          <g mask="url(#mask0_215_6)">
+                          <g mask="url(#mask0-215-7)">
                             <path
                               fill-rule="evenodd"
                               clip-rule="evenodd"
@@ -1087,7 +1094,7 @@
                           </g>
                         </g>
                         <defs>
-                          <clipPath id="clip0_215_6">
+                          <clipPath id="clip0-215-8">
                             <rect width="12" height="12" fill="white" />
                           </clipPath>
                         </defs>
@@ -1103,7 +1110,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-8" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-8">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -1144,7 +1151,7 @@
                 </p>
               </a>
 
-              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-9" role="article">
+              <a href="#" class="inline-flex items-center justify-between my-4 px-6 rounded-lg w-full" aria-labelledby="book-title-9">
                 <div class="flex items-center space-x-6 w-full">
                   <div class="relative flex-shrink-0">
                     <!-- 큰 숫자 - 시각적 순위 표시 -->
@@ -1221,7 +1228,7 @@
                 </div>
               </div>
               <div class="flex justify-center items-center flex-1 text-center rounded-xl my-4 daily-quote-read">
-                <blockquote id="quote-text" class="break-keep" role="blockquote">
+                <blockquote id="quote-text-1" class="break-keep">
                   깊이 있는 문장과 감각적인 고백이 우리에게 감동과 깨달음을 선사해요. 읽기와 쓰기가 주는 의미를 담아낸 소중한 산문집이랍니다!
                 </blockquote>
               </div>
@@ -1255,7 +1262,7 @@
           </a>
           <h3 class="text-(length:--font-size-sm) font-(--font-weight-norma) text-(--dark-ui-05)">기다리던 책부터 곧 오픈될 책까지</h3>
           <!-- 아래 버튼 들 -->
-          <ul class="flex gap-1 flex-wrap my-5 mb-5" data-group="new-book">
+          <ul class="flex gap-1 flex-wrap my-5 mb-5" data-group="new-book" role="tablist">
             <li>
               <button
                 type="button"
@@ -1362,9 +1369,9 @@
             <section class="overflow-x-auto scrollbar-none relative" aria-label="인기 도서로 시작 섹션">
               <div class="flex gap-6 w-max my-2">
                 <!-- 암행영역 -->
-                <div class="flex" role="listitem" aria-label="암행">
+                <div class="flex" role="list" aria-label="암행">
                   <a
-                    href="#void"
+                    href="#"
                     class="relative block min-w-[328px] min-h-[260px] rounded-md shadow-lg overflow-hidden"
                     aria-labelledby="book-desc-4-1"
                     aria-describedby="book-desc-4-1"
@@ -1372,8 +1379,8 @@
                     <!-- 책 타이틀 -->
                     <aside class="flex justify-between items-start overflow-hidden px-4 pt-7 pb-0 bg-[#EBE6E5]">
                       <div>
-                        <h4 id="book-title-1" class="font-bold"><span class="sr-only">책 제목</span> 암행</h4>
-                        <p class="text-(--light-text-03)"><span class="sr-only">책 작가</span> 정명섭</p>
+                        <h4 id="book-title-6-1" class="font-bold"><span class="sr-only">책 제목</span> 암행</h4>
+                        <p class="text-(--light-text-01)"><span class="sr-only">책 작가</span> 정명섭</p>
                       </div>
                       <div class="w-[6.25rem]">
                         <img
@@ -1398,7 +1405,7 @@
                 <div class="overflow-hidden flex">
                   <ul class="flex items-end gap-6 flex-nowrap w-max" role="list" aria-label="다른 추천 도서">
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="관계의 뇌 과학">
-                      <a href="#void" aria-labelledby="book-title-4-2" aria-describedby="book-desc-4-2">
+                      <a href="#" aria-labelledby="book-title-4-2" aria-describedby="book-desc-4-2">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -1428,7 +1435,7 @@
                       >
                     </li>
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="좋은 것만 오직 좋은 것만">
-                      <a href="#void" aria-labelledby="book-title-4-3" aria-describedby="book-desc-4-3">
+                      <a href="#" aria-labelledby="book-title-4-3" aria-describedby="book-desc-4-3">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -1456,7 +1463,7 @@
                       >
                     </li>
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="경비병이 겁나 셈">
-                      <a href="#void" aria-labelledby="book-title-4-4" aria-describedby="book-desc-4-4">
+                      <a href="#" aria-labelledby="book-title-4-4" aria-describedby="book-desc-4-4">
                         <div>
                           <div class="badge">
                             <!-- 책 영역 -->
@@ -1493,7 +1500,7 @@
                       </a>
                     </li>
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="시네21 No.1497 : 2025.03.18">
-                      <a href="#void" aria-label="시네21 No.1497 : 2025.03.18">
+                      <a href="#" aria-label="시네21 No.1497 : 2025.03.18">
                         <div>
                           <div class="badge">
                             <!-- 책 영역 -->
@@ -1529,7 +1536,7 @@
                       </a>
                     </li>
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="AI 시대 생존 전략">
-                      <a href="#void" aria-labelledby="book-title-4-6" aria-describedby="book-desc-4-6">
+                      <a href="#" aria-labelledby="book-title-4-6" aria-describedby="book-desc-4-6">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -1559,7 +1566,7 @@
                       </a>
                     </li>
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="부모의 질문력">
-                      <a href="#void">
+                      <a href="#">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -1587,7 +1594,7 @@
                       </a>
                     </li>
                     <li class="w-[7.8125rem] flex-shrink-0 min-w-0" aria-label="재와 빨강 (리마스터판)">
-                      <a href="#void">
+                      <a href="#">
                         <div>
                           <div>
                             <p class="inline-block shadow-sm book-rounded overflow-hidden">
@@ -1601,8 +1608,8 @@
                           </div>
                           <div>
                             <div>
-                              <h4 id="book-title-4-7" class="font-bold text-(--dark-ui-01) truncate">재와 빨강 (리마스터판)</h4>
-                              <p id="book-desc-4-7" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">편혜영</p>
+                              <h4 id="book-title-4-8" class="font-bold text-(--dark-ui-01) truncate">재와 빨강 (리마스터판)</h4>
+                              <p id="book-desc-4-8" class="truncate text-(--light-text-03) text-(length:--font-size-sm) mt-0.5 mb-1.5">편혜영</p>
                             </div>
                             <ul class="flex justify-start items-center gap-2 text-(length:--font-size-sm) text-(--light-text-03)">
                               <li><img src="../../assets/icon/library-add.svg" alt="" aria-hidden="true" /></li>
@@ -1699,8 +1706,8 @@
           <section class="flex items-center">
             <div class="flex w-full flex-col md:flex-row gap-3">
               <div class="w-full lg:w-[50%] rounded-xl overflow-hidden">
-                <a href="#void" class="flex items-center justify-between p-3 bg-[#395ace]">
-                  <p class="text-white">
+                <a href="#" class="flex items-center justify-between p-3 bg-(--blue-11)">
+                  <p class="text-(--dark-text-strong)">
                     <span class="block font-bold">공개 예정 도서</span>
                     <span class="block font-bold">보러가기</span>
                     <span class="block text-(length:--font-size-xs) mt-2">매주 금요일 시간 공개</span>
@@ -1709,8 +1716,8 @@
                 </a>
               </div>
               <div class="w-full lg:w-[50%] rounded-xl overflow-hidden">
-                <a href="#void" class="flex items-center justify-between p-3 bg-[#80b777]">
-                  <p class="text-white">
+                <a href="#" class="flex items-center justify-between p-3 bg-[#28a745]">
+                  <p class="text-(--light-text-01)">
                     <span class="block font-bold">변화한 독서</span>
                     <span class="block font-bold">이제 이렇게 즐기세요</span>
                     <span class="block text-(length:--font-size-xs) mt-2">윌리가 제안하는 독서 지향점</span>
@@ -1745,7 +1752,7 @@
             <div class="overflow-x-scroll scrollbar-none">
               <ul class="pt-4 inline-flex gap-2 py-2">
                 <li class="bg-white shadow-2xl rounded-2xl w-70 p-2">
-                  <a href="#void" class="block">
+                  <a href="#" class="block">
                     <p class="mb-2 overflow-hidden hitespace-nowrap overflow-ellipsis break-all font-bold text-base h-5">
                       살다가 현타올 때 멘탈잡기 좋은 책
                     </p>
@@ -1895,7 +1902,7 @@
             <span class="sr-only">더보기</span>
           </a>
           <section class="flex justify-center items-center text-center font-NotoSerifKR daily-quote py-10">
-            <a href="#void" aria-labelledby="quote-title" aria-describedby="quote-text">
+            <a href="#" aria-labelledby="quote-title" aria-describedby="quote-text">
               <h3 class="font-bold text-2xl" id="quote-title">철석같은 심장</h3>
               <article class="flex justify-center items-center text-center rounded-xl w-[16.25rem] min-h-[15rem] my-4 shadow-md">
                 <blockquote id="quote-text" class="text-(length:--font-size-lg) break-keep">
@@ -1914,11 +1921,11 @@
     <!-- 푸터 끝 -->
 
     <!-- 스크롤 탑 버튼 -->
-    <button class="top-button shadow-md z-2 fixed md:right-[50px] right-1/2 bottom-[90px] translate-x-1/2 bg-white p-2 rounded-[3.125rem]">
+    <p class="top-button shadow-md z-2 fixed md:right-[50px] right-1/2 bottom-[90px] translate-x-1/2 bg-white p-2 rounded-[3.125rem]">
       <a href="#" aria-label="클릭하시면 위로 올라갑니다">
         <span aria-hidden="true"><img src="../../assets/icon/arrow_top.svg" alt="" /></span>
         <span class="text-(le)">top</span>
       </a>
-    </button>
+    </p>
   </body>
 </html>
