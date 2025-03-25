@@ -1,6 +1,6 @@
 export function preventHashLinkClicks() {
   const topButton = document.querySelector('.top-button');
-  const hideScrollThreshold = window.innerHeight * 0.7; // 뷰포트 높이의 0.7배 기준
+  const hideScrollThreshold = window.innerHeight * 0.5; // 뷰포트 높이의 0.7배 기준
 
   // 상단 버튼이 존재할 경우에만 스크롤 이벤트 및 클릭 이벤트 추가
   if (topButton) {
