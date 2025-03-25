@@ -141,14 +141,14 @@
 
 <!-- 이럴 땐 이런 책 컴포넌트 -->
 <url>
-  <loc>https://9rodigital-willie.netlify.app/src/components/section7/thisbook</loc>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section6/thisbook</loc>
   <lastmod>2025-03-25T11:00:00+09:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <!-- 오늘의 한문장 컴포넌트 -->
 <url>
-  <loc>https://9rodigital-willie.netlify.app/src/components/section8/section8</loc>
+  <loc>https://9rodigital-willie.netlify.app/src/components/section7/section7</loc>
   <lastmod>2025-03-25T11:00:00+09:00</lastmod>
   <priority>0.80</priority>
 </url>
