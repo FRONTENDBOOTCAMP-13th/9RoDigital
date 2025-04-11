@@ -46,7 +46,7 @@
         "name": "9로디지털",
         "url": "https://9rodigital-willie.netlify.app",
         "logo": "https://9rodigital-willie.netlify.app/favicon.svg",
-        "description": "윌리의 서재는 밀리의 서재 디자인을 참고하여 진행한 UI 프로젝트입니다. 다양한 UI 컴포넌트와 레이아웃 구조를 소개하며, 비상업적 학습 목적으로 9로디지털 팀이 제작하였습니다.",
+        "description": "윌리의 서재는 밀리의 서재 디자인을 참고하여 진행한 UI 프로젝트이며 9로디지털 팀이 제작하였습니다. 다양한 UI 컴포넌트와 레이아웃 구조를 소개하며, 비상업적 학습 목적으로 상업적으로 사용할 가능성이 없습니다 ",
         "member": [
           {
             "@type": "Person",
@@ -86,6 +86,7 @@
     <!-- 스크립트 로드 -->
     <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/scripts/popup.js"></script>
     <script type="module">
       import initAccentButtons from './src/scripts/accordionHandler.js';
       initAccentButtons();
@@ -94,6 +95,7 @@
     </script>
   </head>
   <body class="font-pretendard bg-white text-black leading-relaxed">
+    <!-- 해당 사이트는 비영리적 학습 목적임으로 실제 밀리의 서재 사이트가 아닙니다 -->
     <!-- 헤더 -->
     <header class="bg-white shadow-sm">
       <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -127,6 +129,10 @@
         </div>
       </div>
     </header>
+
+    <!-- 좌측 사이드 팝업 시작 -->
+    <div id="app"></div>
+    <!-- 좌측 사이드 팝업 끝 -->
 
     <!-- 메인 내비게이션 -->
     <nav class="bg-gray-100 shadow-sm">
@@ -1081,6 +1087,7 @@
           >
         </div>
         <p class="text-gray-400 text-sm">© 2025. 9RoDigital. All rights reserved.</p>
+        <p class="text-gray-400 text-sm">ⓒ 2025. (주)kt 밀리의서재 Co., Ltd. All rights reserved.</p>
       </div>
     </footer>
   </body>
